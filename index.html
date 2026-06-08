@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farm Erichsfelde — Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #0f1410;
+    --surface:   #161d18;
+    --border:    #2a3a2d;
+    --text:      #e8ede9;
+    --muted:     #7a9480;
+    --accent:    #6db87a;
+    --accent2:   #d4a843;
+    --red:       #e05c5c;
+    --orange:    #d97706;
+    --blue:      #5b9bd5;
+    --farm:      #6db87a;
+    --haus:      #a78bfa;
+    --angest:    #f59e0b;
+    --allg:      #60a5fa;
+    --arbeit:    #f472b6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* LOGIN */
+  #login-screen {
+    position: fixed; inset: 0;
+    background: var(--bg);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 100;
+  }
+  .login-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 48px 40px;
+    width: 360px;
+    text-align: center;
+  }
+  .login-box h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .login-box p { color: var(--muted); font-size: .85rem; margin-bottom: 28px; }
+  .login-box input {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: var(--text);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+    outline: none;
+  }
+  .login-box input:focus { border-color: var(--accent); }
+  .login-box button {
+    width: 100%;
+    background: var(--accent);
+    color: #0f1410;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: .95rem;
+    cursor: pointer;
+  }
+  .login-box button:hover { opacity: .9; }
+  .login-error { color: var(--red); font-size: .82rem; margin-top: 10px; }
+
+  /* HEADER */
+  #app { display: none; }
+  .header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky; top: 0; z-index: 10;
+  }
+  .header-left { display: flex; align-items: center; gap: 16px; }
+  .farm-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--accent);
+  }
+  .header-meta { font-size: .75rem; color: var(--muted); }
+  .stale-banner {
+    background: #3d1f1f;
+    color: var(--red);
+    border: 1px solid #5a2d2d;
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: .78rem;
+    display: none;
+  }
+
+  /* MAIN GRID */
+  .main { padding: 28px 32px; max-width: 1400px; margin: 0 auto; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid-full { margin-bottom: 20px; }
+
+  /* CARD */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .card-header {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .card-title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: .85rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--muted);
+  }
+  .card-body { padding: 16px 20px; }
+
+  /* TABS */
+  .tabs { display: flex; gap: 2px; background: var(--bg); border-radius: 8px; padding: 3px; margin-bottom: 14px; }
+  .tab {
+    flex: 1; padding: 7px; border: none; border-radius: 6px;
+    background: transparent; color: var(--muted);
+    font-family: 'IBM Plex Sans', sans-serif; font-size: .8rem; font-weight: 500;
+    cursor: pointer; transition: all .15s;
+  }
+  .tab.active { background: var(--surface); color: var(--text); }
+
+  /* TASK LIST */
+  .task-item {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .task-item:last-child { border-bottom: none; }
+  .prio-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    flex-shrink: 0; margin-top: 5px;
+  }
+  .prio-1 { background: var(--red); }
+  .prio-2 { background: var(--orange); }
+  .prio-3 { background: var(--accent2); }
+  .prio-4 { background: var(--muted); }
+  .prio-5 { background: #444; }
+  .task-title { font-size: .88rem; line-height: 1.4; flex: 1; }
+  .task-meta { font-size: .72rem; color: var(--muted); margin-top: 2px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .kat-chip {
+    font-size: .68rem; padding: 1px 7px; border-radius: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .kat-farm     { background: #1a3d1f; color: var(--farm); }
+  .kat-haus_hof { background: #2d1f4a; color: var(--haus); }
+  .kat-angestellte { background: #3d2a0f; color: var(--angest); }
+  .kat-allgemein   { background: #1a2d4a; color: var(--allg); }
+  .kat-arbeit      { background: #3d1f35; color: var(--arbeit); }
+  .kat-default     { background: #2a2a2a; color: var(--muted); }
+
+  /* STATUS CHIPS */
+  .status-chip {
+    font-size: .72rem; padding: 2px 10px; border-radius: 10px; font-weight: 600;
+  }
+  .status-ok          { background: #1a3d1f; color: var(--accent); }
+  .status-bald_faellig { background: #3d2a0f; color: var(--orange); }
+  .status-ueberfaellig { background: #3d1f1f; color: var(--red); }
+
+  /* MACHINE CARDS */
+  .machine-item {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 0; border-bottom: 1px solid var(--border);
+  }
+  .machine-item:last-child { border-bottom: none; }
+  .machine-name { font-size: .88rem; font-weight: 500; }
+  .machine-sub  { font-size: .72rem; color: var(--muted); margin-top: 2px; }
+
+  /* WEATHER */
+  .weather-current {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px;
+  }
+  .weather-stat {
+    background: var(--bg);
+    border-radius: 8px; padding: 12px;
+    text-align: center;
+  }
+  .weather-val { font-size: 1.4rem; font-weight: 600; font-family: 'IBM Plex Mono', monospace; color: var(--accent); }
+  .weather-lbl { font-size: .7rem; color: var(--muted); margin-top: 2px; }
+  .forecast-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+  .forecast-day {
+    background: var(--bg); border-radius: 8px; padding: 10px 6px;
+    text-align: center;
+  }
+  .forecast-day .day-name { font-size: .7rem; color: var(--muted); margin-bottom: 4px; }
+  .forecast-day .day-icon { font-size: 1.2rem; margin-bottom: 4px; }
+  .forecast-day .day-max  { font-size: .88rem; font-weight: 600; color: var(--accent2); }
+  .forecast-day .day-min  { font-size: .75rem; color: var(--muted); }
+  .forecast-day .day-rain { font-size: .7rem; color: var(--blue); margin-top: 3px; }
+
+  /* IRRIGATION */
+  .irr-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .irr-item {
+    background: var(--bg); border-radius: 8px; padding: 10px 12px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .irr-name { font-size: .82rem; }
+  .irr-date { font-size: .7rem; color: var(--muted); }
+
+  /* KALENDER */
+  .kal-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 8px 0; border-bottom: 1px solid var(--border);
+  }
+  .kal-item:last-child { border-bottom: none; }
+  .kal-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .75rem; color: var(--muted);
+    min-width: 70px;
+  }
+  .kal-title { font-size: .85rem; flex: 1; }
+
+  /* LOGOUT */
+  .logout-btn {
+    background: transparent; border: 1px solid var(--border);
+    color: var(--muted); border-radius: 6px;
+    padding: 6px 14px; font-size: .78rem; cursor: pointer;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  .logout-btn:hover { border-color: var(--red); color: var(--red); }
+
+  /* EMPTY */
+  .empty { color: var(--muted); font-size: .82rem; padding: 12px 0; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    .weather-current { grid-template-columns: repeat(2, 1fr); }
+    .forecast-grid { grid-template-columns: repeat(4, 1fr); }
+    .irr-grid { grid-template-columns: repeat(2, 1fr); }
+    .main { padding: 16px; }
+    .header { padding: 12px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="login-screen">
+  <div class="login-box">
+    <div style="font-size:2rem;margin-bottom:12px">🌿</div>
+    <h1>Erichsfelde</h1>
+    <p>Farm Manager Dashboard</p>
+    <input type="password" id="pw-input" placeholder="Passwort" onkeydown="if(event.key==='Enter')doLogin()">
+    <button onclick="doLogin()">Anmelden</button>
+    <div class="login-error" id="login-error"></div>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app">
+  <div class="header">
+    <div class="header-left">
+      <div class="farm-title">🌿 Erichsfelde</div>
+      <div class="header-meta" id="export-time">—</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px">
+      <div class="stale-banner" id="stale-banner">⚠ Daten veraltet</div>
+      <button class="logout-btn" onclick="doLogout()">Abmelden</button>
+    </div>
+  </div>
+
+  <div class="main">
+
+    <!-- ROW 1: Aufgaben + Wetter -->
+    <div class="grid-2">
+
+      <!-- AUFGABEN -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">📋 Aufgaben</span>
+        </div>
+        <div class="card-body">
+          <div class="tabs">
+            <button class="tab active" onclick="switchTab('heute')">Heute</button>
+            <button class="tab" onclick="switchTab('7tage')">Nächste 7 Tage</button>
+          </div>
+          <div id="tasks-heute"></div>
+          <div id="tasks-7tage" style="display:none"></div>
+        </div>
+      </div>
+
+      <!-- WETTER -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">🌤 Wetter — Erichsfelde</span>
+        </div>
+        <div class="card-body">
+          <div class="weather-current" id="weather-current"></div>
+          <div style="font-size:.75rem;color:var(--muted);margin-bottom:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em">7-Tage Vorhersage</div>
+          <div class="forecast-grid" id="forecast-grid"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 2: Windmotoren + Fahrzeuge + Bewässerung -->
+    <div class="grid-3">
+
+      <!-- WINDMOTOREN -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">💨 Windmotoren</span>
+        </div>
+        <div class="card-body" id="windmotoren-body"></div>
+      </div>
+
+      <!-- FAHRZEUGE -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">🚗 Fahrzeuge</span>
+        </div>
+        <div class="card-body" id="fahrzeuge-body"></div>
+      </div>
+
+      <!-- BEWÄSSERUNG -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">💧 Bewässerung</span>
+        </div>
+        <div class="card-body" id="bewaesserung-body"></div>
+      </div>
+    </div>
+
+    <!-- ROW 3: Kalender -->
+    <div class="grid-full">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">📅 Kalender — Nächste 30 Tage</span>
+        </div>
+        <div class="card-body" id="kalender-body"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+const DATA_URL = 'https://raw.githubusercontent.com/gitnamelast/farm-dashboard/main/data/dashboard.json';
+let dashData = null;
+
+// ── PASSWORT ──────────────────────────────────────────────────────────────────
+async function sha256(msg) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(msg));
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+
+async function doLogin() {
+  const pw = document.getElementById('pw-input').value;
+  if (!pw) return;
+  const hash = await sha256(pw);
+  if (!dashData) {
+    document.getElementById('login-error').textContent = 'Daten werden geladen…';
+    return;
+  }
+  if (hash === dashData.passwort_hash) {
+    localStorage.setItem('eri_auth', hash);
+    showApp();
+  } else {
+    document.getElementById('login-error').textContent = 'Falsches Passwort';
+  }
+}
+
+function doLogout() {
+  localStorage.removeItem('eri_auth');
+  location.reload();
+}
+
+function showApp() {
+  document.getElementById('login-screen').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+  renderAll();
+}
+
+// ── DATA LOAD ─────────────────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const r = await fetch(DATA_URL + '?t=' + Date.now());
+    dashData = await r.json();
+  } catch(e) {
+    document.getElementById('login-error').textContent = 'Verbindungsfehler — bitte später versuchen';
+    return;
+  }
+  // Auto-login wenn bereits eingeloggt
+  const saved = localStorage.getItem('eri_auth');
+  if (saved && saved === dashData.passwort_hash) {
+    showApp();
+  }
+}
+
+// ── RENDER ALL ────────────────────────────────────────────────────────────────
+function renderAll() {
+  renderHeader();
+  renderTasks();
+  renderWetter();
+  renderWindmotoren();
+  renderFahrzeuge();
+  renderBewaesserung();
+  renderKalender();
+}
+
+function renderHeader() {
+  const exp = dashData.exportiert_am;
+  const d = new Date(exp);
+  const fmt = d.getDate()+'.'+(d.getMonth()+1)+'.'+d.getFullYear()+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
+  document.getElementById('export-time').textContent = 'Stand: ' + fmt;
+  const diffH = (Date.now() - d.getTime()) / 3600000;
+  if (diffH > 24) {
+    const banner = document.getElementById('stale-banner');
+    banner.style.display = 'block';
+    banner.textContent = '⚠ Daten veraltet — letzter Stand vor ' + Math.round(diffH) + ' Stunden';
+  }
+}
+
+// ── AUFGABEN ──────────────────────────────────────────────────────────────────
+function katClass(k) {
+  const m = {farm:'kat-farm',haus_hof:'kat-haus_hof',angestellte:'kat-angestellte',allgemein:'kat-allgemein',arbeit:'kat-arbeit'};
+  return m[k] || 'kat-default';
+}
+function katLabel(k) {
+  const m = {farm:'Farm',haus_hof:'Haus & Hof',angestellte:'Angestellte',allgemein:'Allgemein',arbeit:'Arbeit',privat:'Privat'};
+  return m[k] || k || '—';
+}
+function besitzerLabel(b) {
+  return b==='werner'?'Werner':b==='wanda'?'Wanda':'Gemeinsam';
+}
+function fmtDate(s) {
+  if(!s) return '—';
+  const d = new Date(s+'T00:00:00');
+  return d.getDate()+'.'+(d.getMonth()+1)+'.'+d.getFullYear();
+}
+
+function taskHtml(tasks) {
+  if (!tasks || !tasks.length) return '<div class="empty">Keine Aufgaben</div>';
+  return tasks.map(t => `
+    <div class="task-item">
+      <div class="prio-dot prio-${t.prioritaet}"></div>
+      <div style="flex:1">
+        <div class="task-title">${esc(t.titel)}</div>
+        <div class="task-meta">
+          <span class="kat-chip ${katClass(t.kategorie)}">${katLabel(t.kategorie)}</span>
+          <span>${fmtDate(t.faellig)}</span>
+          <span>${besitzerLabel(t.besitzer)}</span>
+        </div>
+        ${t.beschreibung ? `<div style="font-size:.75rem;color:var(--muted);margin-top:3px">${esc(t.beschreibung)}</div>` : ''}
+      </div>
+    </div>`).join('');
+}
+
+function renderTasks() {
+  document.getElementById('tasks-heute').innerHTML = taskHtml(dashData.aufgaben.heute);
+  document.getElementById('tasks-7tage').innerHTML = taskHtml(dashData.aufgaben.naechste_7_tage);
+}
+
+function switchTab(which) {
+  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active', (i===0&&which==='heute')||(i===1&&which==='7tage')));
+  document.getElementById('tasks-heute').style.display  = which==='heute'  ? '' : 'none';
+  document.getElementById('tasks-7tage').style.display  = which==='7tage'  ? '' : 'none';
+}
+
+// ── WETTER ────────────────────────────────────────────────────────────────────
+function wIcon(wcode, rain) {
+  if (rain > 5) return '🌧';
+  if (rain > 0) return '🌦';
+  if (wcode >= 3) return '☁️';
+  if (wcode === 2) return '⛅';
+  return '☀️';
+}
+function wochentag(ds) {
+  const t = ['So','Mo','Di','Mi','Do','Fr','Sa'];
+  return t[new Date(ds+'T00:00:00').getDay()];
+}
+
+function renderWetter() {
+  const w = dashData.wetter.aktuell;
+  document.getElementById('weather-current').innerHTML = `
+    <div class="weather-stat"><div class="weather-val">${w.temp_max}°</div><div class="weather-lbl">Max °C</div></div>
+    <div class="weather-stat"><div class="weather-val">${w.temp_min}°</div><div class="weather-lbl">Min °C</div></div>
+    <div class="weather-stat"><div class="weather-val">${w.rainfall_24h}<span style="font-size:.9rem">mm</span></div><div class="weather-lbl">Regen 24h</div></div>
+    <div class="weather-stat"><div class="weather-val">${w.wind_speed}<span style="font-size:.9rem">km/h</span></div><div class="weather-lbl">Wind</div></div>`;
+
+  const fc = dashData.wetter.vorhersage || [];
+  document.getElementById('forecast-grid').innerHTML = fc.map(f => `
+    <div class="forecast-day">
+      <div class="day-name">${wochentag(f.date)}</div>
+      <div class="day-icon">${wIcon(f.wcode, f.rain)}</div>
+      <div class="day-max">${f.temp_max}°</div>
+      <div class="day-min">${f.temp_min}°</div>
+      ${f.rain > 0 ? `<div class="day-rain">${f.rain}mm</div>` : ''}
+    </div>`).join('');
+}
+
+// ── WINDMOTOREN ───────────────────────────────────────────────────────────────
+function renderWindmotoren() {
+  const items = dashData.windmotoren || [];
+  if (!items.length) { document.getElementById('windmotoren-body').innerHTML = '<div class="empty">Keine Windmotoren</div>'; return; }
+  document.getElementById('windmotoren-body').innerHTML = items.map(m => `
+    <div class="machine-item">
+      <div>
+        <div class="machine-name">${esc(m.name)}</div>
+        <div class="machine-sub">${m.marke_modell||''} ${m.standort?'· '+m.standort:''}</div>
+        <div class="machine-sub">${m.naechster_service ? '📅 Nächster Service: '+fmtDate(m.naechster_service) : m.letzter_service ? 'Letzter: '+fmtDate(m.letzter_service) : 'Kein Service eingetragen'}</div>
+      </div>
+      <span class="status-chip status-${m.status}">${m.status==='ok'?'OK':m.status==='bald_faellig'?'Bald fällig':'Überfällig'}</span>
+    </div>`).join('');
+}
+
+// ── FAHRZEUGE ─────────────────────────────────────────────────────────────────
+function renderFahrzeuge() {
+  const items = dashData.fahrzeuge || [];
+  if (!items.length) { document.getElementById('fahrzeuge-body').innerHTML = '<div class="empty">Keine Fahrzeuge</div>'; return; }
+  document.getElementById('fahrzeuge-body').innerHTML = items.map(v => `
+    <div class="machine-item">
+      <div>
+        <div class="machine-name">${esc(v.name)}</div>
+        <div class="machine-sub">${v.typ||''}</div>
+        <div class="machine-sub">${v.naechste_wartung ? '🔧 Wartung: '+fmtDate(v.naechste_wartung) : 'Keine Wartung eingetragen'}</div>
+      </div>
+      <span class="status-chip status-${v.status_wartung}">${v.status_wartung==='ok'?'OK':v.status_wartung==='bald_faellig'?'Bald fällig':'Überfällig'}</span>
+    </div>`).join('');
+}
+
+// ── BEWÄSSERUNG ───────────────────────────────────────────────────────────────
+function renderBewaesserung() {
+  const items = dashData.bewaesserung || [];
+  if (!items.length) { document.getElementById('bewaesserung-body').innerHTML = '<div class="empty">Keine Daten</div>'; return; }
+  document.getElementById('bewaesserung-body').innerHTML =
+    `<div class="irr-grid">` +
+    items.map(p => `
+      <div class="irr-item">
+        <div>
+          <div class="irr-name">🌱 ${esc(p.name)}</div>
+          <div class="irr-date">${p.zuletzt_bewaessert ? fmtDate(p.zuletzt_bewaessert) : 'Noch nie'}</div>
+        </div>
+      </div>`).join('') +
+    `</div>`;
+}
+
+// ── KALENDER ──────────────────────────────────────────────────────────────────
+function renderKalender() {
+  const items = dashData.kalender || [];
+  if (!items.length) { document.getElementById('kalender-body').innerHTML = '<div class="empty">Keine Einträge</div>'; return; }
+
+  // Gruppieren nach Datum
+  const grouped = {};
+  items.forEach(e => {
+    if (!grouped[e.datum]) grouped[e.datum] = [];
+    grouped[e.datum].push(e);
+  });
+
+  let html = '<div style="columns:2;gap:24px">';
+  Object.keys(grouped).sort().forEach(datum => {
+    html += `<div style="break-inside:avoid;margin-bottom:16px">
+      <div style="font-size:.72rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;font-family:'IBM Plex Mono',monospace">${fmtDate(datum)}</div>`;
+    grouped[datum].forEach(e => {
+      html += `<div class="kal-item">
+        <span class="kat-chip ${katClass(e.kategorie)}">${katLabel(e.kategorie)}</span>
+        <span class="kal-title">${esc(e.titel)}</span>
+        <span style="font-size:.72rem;color:var(--muted)">${besitzerLabel(e.besitzer)}</span>
+      </div>`;
+    });
+    html += '</div>';
+  });
+  html += '</div>';
+  document.getElementById('kalender-body').innerHTML = html;
+}
+
+// ── UTILS ─────────────────────────────────────────────────────────────────────
+function esc(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── INIT ──────────────────────────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>
