@@ -1,0 +1,379 @@
+{
+  "exportiert_am": "2026-06-08T08:19:37",
+  "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
+  "aufgaben": {
+    "heute": [
+      {
+        "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
+        "kategorie": "haus_hof",
+        "prioritaet": 1,
+        "faellig": "2026-06-08",
+        "besitzer": "werner",
+        "beschreibung": "",
+        "wiederholung": "einmalig"
+      },
+      {
+        "titel": "Tanks bei Ombotozu kontrollieren =",
+        "kategorie": "farm",
+        "prioritaet": 2,
+        "faellig": "2026-06-08",
+        "besitzer": "shared",
+        "beschreibung": "Martin fragen Ochsen Raus",
+        "wiederholung": "einmalig"
+      },
+      {
+        "titel": "Haus und Hof in Ordnung bringen",
+        "kategorie": "haus_hof",
+        "prioritaet": 3,
+        "faellig": "2026-06-08",
+        "besitzer": "werner",
+        "beschreibung": "",
+        "wiederholung": "einmalig"
+      },
+      {
+        "titel": "Zaun Ombotzu kamp",
+        "kategorie": "angestellte",
+        "prioritaet": 3,
+        "faellig": "2026-06-08",
+        "besitzer": "werner",
+        "beschreibung": "",
+        "wiederholung": "einmalig"
+      },
+      {
+        "titel": "Gras Ballen",
+        "kategorie": "angestellte",
+        "prioritaet": 3,
+        "faellig": "2026-06-08",
+        "besitzer": "werner",
+        "beschreibung": "",
+        "wiederholung": "einmalig"
+      }
+    ],
+    "naechste_7_tage": [
+      {
+        "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
+        "kategorie": "haus_hof",
+        "prioritaet": 1,
+        "faellig": "2026-06-08",
+        "besitzer": "werner",
+        "beschreibung": "",
+        "wiederholung": "einmalig"
+      },
+      {
+        "titel": "Glen fragen für quote für Reperatur der Häuser",
+        "kategorie": "",
+        "prioritaet": 1,
+        "faellig": "2026-06-09",
+        "besitzer": "shared",
+        "beschreibung": "",
+        "wiederholung": "einmalig"
+      },
+      {
+        "titel": "Jungfarmer topics zusammen fassen",
+        "kategorie": "allgemein",
+        "prioritaet": 1,
+        "faellig": "2026-06-09",
+        "besitzer": "werner",
+        "beschreibung": "",
+        "wiederholung": "einmalig"
+      },
+      {
+        "titel": "Neuen Zaun Gemüsegarten",
+        "kategorie": "angestellte",
+        "prioritaet": 1,
+        "faellig": "2026-06-12",
+        "besitzer": "werner",
+        "beschreibung": "",
+        "wiederholung": "einmalig"
+      },
+      {
+        "titel": "Tanks bei Ombotozu kontrollieren =",
+        "kategorie": "farm",
+        "prioritaet": 2,
+        "faellig": "2026-06-08",
+        "besitzer": "shared",
+        "beschreibung": "Martin fragen Ochsen Raus",
+        "wiederholung": "einmalig"
+      },
+      {
+        "titel": "Haus und Hof in Ordnung bringen",
+        "kategorie": "haus_hof",
+        "prioritaet": 3,
+        "faellig": "2026-06-08",
+        "besitzer": "werner",
+        "beschreibung": "",
+        "wiederholung": "einmalig"
+      },
+      {
+        "titel": "Zaun Ombotzu kamp",
+        "kategorie": "angestellte",
+        "prioritaet": 3,
+        "faellig": "2026-06-08",
+        "besitzer": "werner",
+        "beschreibung": "",
+        "wiederholung": "einmalig"
+      },
+      {
+        "titel": "Gras Ballen",
+        "kategorie": "angestellte",
+        "prioritaet": 3,
+        "faellig": "2026-06-08",
+        "besitzer": "werner",
+        "beschreibung": "",
+        "wiederholung": "einmalig"
+      },
+      {
+        "titel": "Mangement program aufräumen",
+        "kategorie": "allgemein",
+        "prioritaet": 4,
+        "faellig": "2026-06-09",
+        "besitzer": "werner",
+        "beschreibung": "",
+        "wiederholung": "einmalig"
+      }
+    ]
+  },
+  "windmotoren": [
+    {
+      "name": "Verrit",
+      "standort": "",
+      "marke_modell": "",
+      "status": "ok",
+      "letzter_service": null,
+      "naechster_service": null
+    }
+  ],
+  "fahrzeuge": [
+    {
+      "name": "Toyota Landcruiser 70",
+      "typ": "bakkie",
+      "status_wartung": "ok",
+      "naechste_wartung": null
+    }
+  ],
+  "bewaesserung": [
+    {
+      "name": "Moringa",
+      "typ": "tree",
+      "zuletzt_bewaessert": null
+    },
+    {
+      "name": "White Stinkwood",
+      "typ": "tree",
+      "zuletzt_bewaessert": null
+    },
+    {
+      "name": "Mopane",
+      "typ": "tree",
+      "zuletzt_bewaessert": null
+    },
+    {
+      "name": "Zitrus",
+      "typ": "tree",
+      "zuletzt_bewaessert": null
+    },
+    {
+      "name": "Guava",
+      "typ": "tree",
+      "zuletzt_bewaessert": null
+    },
+    {
+      "name": "Avocado",
+      "typ": "tree",
+      "zuletzt_bewaessert": null
+    },
+    {
+      "name": "Mango",
+      "typ": "tree",
+      "zuletzt_bewaessert": null
+    },
+    {
+      "name": "Maulbeere",
+      "typ": "tree",
+      "zuletzt_bewaessert": null
+    },
+    {
+      "name": "Granadilla",
+      "typ": "vine",
+      "zuletzt_bewaessert": null
+    },
+    {
+      "name": "Weinrebe",
+      "typ": "vine",
+      "zuletzt_bewaessert": null
+    },
+    {
+      "name": "Feige",
+      "typ": "tree",
+      "zuletzt_bewaessert": null
+    }
+  ],
+  "kalender": [
+    {
+      "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
+      "kategorie": "haus_hof",
+      "datum": "2026-06-08",
+      "besitzer": "werner"
+    },
+    {
+      "titel": "Haus und Hof in Ordnung bringen",
+      "kategorie": "haus_hof",
+      "datum": "2026-06-08",
+      "besitzer": "werner"
+    },
+    {
+      "titel": "Tanks bei Ombotozu kontrollieren =",
+      "kategorie": "farm",
+      "datum": "2026-06-08",
+      "besitzer": "shared"
+    },
+    {
+      "titel": "Zaun Ombotzu kamp",
+      "kategorie": "angestellte",
+      "datum": "2026-06-08",
+      "besitzer": "werner"
+    },
+    {
+      "titel": "Gras Ballen",
+      "kategorie": "angestellte",
+      "datum": "2026-06-08",
+      "besitzer": "werner"
+    },
+    {
+      "titel": "Glen fragen für quote für Reperatur der Häuser",
+      "kategorie": "",
+      "datum": "2026-06-09",
+      "besitzer": "shared"
+    },
+    {
+      "titel": "Mangement program aufräumen",
+      "kategorie": "allgemein",
+      "datum": "2026-06-09",
+      "besitzer": "werner"
+    },
+    {
+      "titel": "Jungfarmer topics zusammen fassen",
+      "kategorie": "allgemein",
+      "datum": "2026-06-09",
+      "besitzer": "werner"
+    },
+    {
+      "titel": "Neuen Zaun Gemüsegarten",
+      "kategorie": "angestellte",
+      "datum": "2026-06-12",
+      "besitzer": "werner"
+    },
+    {
+      "titel": "Solar Licht",
+      "kategorie": "haus_hof",
+      "datum": "2026-06-16",
+      "besitzer": "werner"
+    },
+    {
+      "titel": "Wasserhahn Okaruheke fertigmachen",
+      "kategorie": "farm",
+      "datum": "2026-06-17",
+      "besitzer": "shared"
+    },
+    {
+      "titel": "Bullen raus – Ende Sommerdeckzeit (C-G -> A)",
+      "kategorie": "farm",
+      "datum": "2026-06-25",
+      "besitzer": "shared"
+    },
+    {
+      "titel": "Hunde Wurm-Tabletten (alle)",
+      "kategorie": "farm",
+      "datum": "2026-07-01",
+      "besitzer": "shared"
+    },
+    {
+      "titel": "Reparaturliste durchgehen",
+      "kategorie": "farm",
+      "datum": "2026-07-01",
+      "besitzer": "shared"
+    },
+    {
+      "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
+      "kategorie": "haus_hof",
+      "datum": "2026-07-01",
+      "besitzer": "shared"
+    },
+    {
+      "titel": "Animal Health Declaration Form (Q1)",
+      "kategorie": "arbeit",
+      "datum": "2026-07-07",
+      "besitzer": "shared"
+    }
+  ],
+  "wetter": {
+    "aktuell": {
+      "station": "Erichsfelde (31197)",
+      "date": "08.06.2026",
+      "rainfall_24h": 0.0,
+      "temp_max": 13.8,
+      "temp_min": 7.7,
+      "temp_mean": 11.2,
+      "humidity": 37.8,
+      "wind_speed": 1.9
+    },
+    "vorhersage": [
+      {
+        "date": "2026-06-04",
+        "temp_max": 22.4,
+        "temp_min": 6.9,
+        "rain": 0.0,
+        "wind_max": 14.3,
+        "wcode": 2
+      },
+      {
+        "date": "2026-06-05",
+        "temp_max": 23.1,
+        "temp_min": 6.5,
+        "rain": 0.0,
+        "wind_max": 16.9,
+        "wcode": 0
+      },
+      {
+        "date": "2026-06-06",
+        "temp_max": 24.6,
+        "temp_min": 8.3,
+        "rain": 0.0,
+        "wind_max": 12.4,
+        "wcode": 0
+      },
+      {
+        "date": "2026-06-07",
+        "temp_max": 26.0,
+        "temp_min": 8.5,
+        "rain": 0.0,
+        "wind_max": 14.4,
+        "wcode": 0
+      },
+      {
+        "date": "2026-06-08",
+        "temp_max": 26.8,
+        "temp_min": 9.8,
+        "rain": 0.0,
+        "wind_max": 13.5,
+        "wcode": 3
+      },
+      {
+        "date": "2026-06-09",
+        "temp_max": 27.1,
+        "temp_min": 11.4,
+        "rain": 0.0,
+        "wind_max": 10.1,
+        "wcode": 2
+      },
+      {
+        "date": "2026-06-10",
+        "temp_max": 25.7,
+        "temp_min": 9.4,
+        "rain": 0.0,
+        "wind_max": 18.8,
+        "wcode": 1
+      }
+    ]
+  }
+}
