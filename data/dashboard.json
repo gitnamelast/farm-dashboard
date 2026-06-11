@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-06-11T20:42:37",
+  "exported_at": "2026-06-11T20:49:28",
   "summaries": {
     "tasks": {
       "due_today": 0,
@@ -10,7 +10,7 @@
       "_online": true
     },
     "farm": {
-      "fetched_at": "2026-06-11T20:33:53.431508+02:00",
+      "fetched_at": "2026-06-11T20:42:42.264693+02:00",
       "forecast_today": {
         "date": "2026-06-11",
         "description": "Klarer Himmel",
@@ -5394,7 +5394,7 @@
   "fahrzeuge": [],
   "hunde": [],
   "weather": {
-    "fetched_at": "2026-06-11T20:42:42.264693+02:00",
+    "fetched_at": "2026-06-11T20:49:49.992498+02:00",
     "luftfeuchtigkeit": 6.6,
     "niederschlag_mm": 0.0,
     "station_id": "31197",
@@ -5403,5 +5403,6 @@
     "temperatur_min": 5.1,
     "windgeschwindigkeit": 2.5,
     "windrichtung": 21.5
-  }
+  },
+  "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b"
 }
