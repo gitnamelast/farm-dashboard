@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-06-11T20:33:31",
+  "exported_at": "2026-06-11T20:34:41",
   "summaries": {
     "tasks": {
       "due_today": 0,
@@ -10,7 +10,7 @@
       "_online": true
     },
     "farm": {
-      "fetched_at": "2026-06-11T20:16:10.923377+02:00",
+      "fetched_at": "2026-06-11T20:33:53.431508+02:00",
       "forecast_today": {
         "date": "2026-06-11",
         "description": "Klarer Himmel",
