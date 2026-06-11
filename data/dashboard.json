@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-06-11T20:34:41",
+  "exported_at": "2026-06-11T20:42:37",
   "summaries": {
     "tasks": {
       "due_today": 0,
@@ -5394,7 +5394,7 @@
   "fahrzeuge": [],
   "hunde": [],
   "weather": {
-    "fetched_at": "2026-06-11T20:33:53.431508+02:00",
+    "fetched_at": "2026-06-11T20:42:42.264693+02:00",
     "luftfeuchtigkeit": 6.6,
     "niederschlag_mm": 0.0,
     "station_id": "31197",
