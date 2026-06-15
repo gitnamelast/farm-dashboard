@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-06-15T20:36:34",
+  "exportiert_am": "2026-06-15T20:44:20",
   "aufgaben": {
     "heute": [
       {
@@ -102,6 +102,14 @@
         "beschreibung": ""
       },
       {
+        "titel": "copit von erichsfelde daen reinf♀9ttern",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-16",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
         "titel": "Wasserhahn Okaruheke fertigmachen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -134,7 +142,57 @@
       "rainfall_24h": 0.0,
       "wind_speed": 2.6
     },
-    "vorhersage": []
+    "vorhersage": [
+      {
+        "date": "2026-06-15",
+        "wcode": 0,
+        "temp_max": 23.6,
+        "temp_min": 8.6,
+        "rain": 0
+      },
+      {
+        "date": "2026-06-16",
+        "wcode": 0,
+        "temp_max": 23.3,
+        "temp_min": 7.6,
+        "rain": 0
+      },
+      {
+        "date": "2026-06-17",
+        "wcode": 1,
+        "temp_max": 20.5,
+        "temp_min": 4.8,
+        "rain": 0
+      },
+      {
+        "date": "2026-06-18",
+        "wcode": 0,
+        "temp_max": 16.0,
+        "temp_min": 1.7,
+        "rain": 0
+      },
+      {
+        "date": "2026-06-19",
+        "wcode": 0,
+        "temp_max": 18.0,
+        "temp_min": 1.2,
+        "rain": 0
+      },
+      {
+        "date": "2026-06-20",
+        "wcode": 0,
+        "temp_max": 17.8,
+        "temp_min": 2.2,
+        "rain": 0
+      },
+      {
+        "date": "2026-06-21",
+        "wcode": 0,
+        "temp_max": 18.7,
+        "temp_min": 2.6,
+        "rain": 0
+      }
+    ]
   },
   "windmotoren": [
     {
