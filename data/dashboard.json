@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-06-15T20:04:06",
+  "exportiert_am": "2026-06-15T20:21:53",
   "aufgaben": {
     "heute": [
       {
@@ -108,67 +108,11 @@
         "beschreibung": "Woechentliche Farmaufgabe"
       },
       {
-        "titel": "Rabies-Impfung + Supervax – alle Tiere",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-02-14",
-        "besitzer": "shared",
-        "beschreibung": "Zusammen impfen"
-      },
-      {
-        "titel": "Ochsen Supervax + Bullen Testen / Einkauf pruefen",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-02-28",
-        "besitzer": "shared",
-        "beschreibung": "Ca. 27./28. Feb"
-      },
-      {
-        "titel": "Herde A -> C-G: Kuethe fuer Bullen rausholen",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-03-21",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Winterkaelber absetzen + Eigentumsbrand",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-05-15",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Grassschneider fixen/servicen",
-        "prioritaet": 2,
-        "kategorie": "allgemein",
-        "faellig": "2026-05-26",
-        "besitzer": "werner",
-        "beschreibung": "Ist bei OMT mal nachfragen wie weit"
-      },
-      {
-        "titel": "Kapp-Neger-Haus",
-        "prioritaet": 2,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-01",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "Elektrozaun Windmotor und Kaelberkraal",
         "prioritaet": 2,
         "kategorie": "allgemein",
         "faellig": "2026-06-01",
         "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Winterlecke geben (Phosphat/Salz)",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-06-01",
-        "besitzer": "shared",
         "beschreibung": ""
       },
       {
@@ -178,22 +122,6 @@
         "faellig": "2026-06-03",
         "besitzer": "werner",
         "beschreibung": ""
-      },
-      {
-        "titel": "Schafe chipen",
-        "prioritaet": 2,
-        "kategorie": "schafe",
-        "faellig": "2026-06-03",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Hunde Wurm-Tabletten (alle)",
-        "prioritaet": 2,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-04",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
         "titel": "SIM-Karten pruefen",
@@ -212,11 +140,35 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
+        "titel": "Schafe chipen",
+        "prioritaet": 2,
+        "kategorie": "schafe",
+        "faellig": "2026-06-19",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Rabies-Impfung + Supervax – alle Tiere",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2026-06-22",
+        "besitzer": "shared",
+        "beschreibung": "Zusammen impfen"
+      },
+      {
         "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
         "prioritaet": 2,
         "kategorie": "wohnhaus",
         "faellig": "2026-06-23",
         "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Herde A -> C-G: Kuethe fuer Bullen rausholen",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2026-06-23",
+        "besitzer": "shared",
         "beschreibung": ""
       },
       {
@@ -242,6 +194,22 @@
         "faellig": "2026-06-25",
         "besitzer": "shared",
         "beschreibung": "Ca. 25/06"
+      },
+      {
+        "titel": "Grassschneider fixen/servicen",
+        "prioritaet": 2,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-26",
+        "besitzer": "werner",
+        "beschreibung": "Ist bei OMT mal nachfragen wie weit"
+      },
+      {
+        "titel": "Kapp-Neger-Haus",
+        "prioritaet": 2,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-02",
+        "besitzer": "werner",
+        "beschreibung": ""
       },
       {
         "titel": "Hunde GPS Collar pruefen",
@@ -396,12 +364,36 @@
         "beschreibung": ""
       },
       {
+        "titel": "Ochsen Supervax + Bullen Testen / Einkauf pruefen",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2027-03-01",
+        "besitzer": "shared",
+        "beschreibung": "Ca. 27./28. Feb"
+      },
+      {
         "titel": "Bullen einsetzen – Sommerdeckzeit beginnt",
         "prioritaet": 2,
         "kategorie": "rinder",
         "faellig": "2027-04-07",
         "besitzer": "shared",
         "beschreibung": "Ca. 07/04"
+      },
+      {
+        "titel": "Winterkaelber absetzen + Eigentumsbrand",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2027-05-17",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Winterlecke geben (Phosphat/Salz)",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2027-06-01",
+        "besitzer": "shared",
+        "beschreibung": ""
       },
       {
         "titel": "Licht Schlachteplatz",
@@ -500,58 +492,10 @@
         "beschreibung": "Woechentliche Farmaufgabe"
       },
       {
-        "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-01-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Werkzeugkammer Werner aufraeumen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-02-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Pad bauen / Todo-Liste aktualisieren",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-02-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Kiesdamm Zaun pruefen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-02-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
         "titel": "Reparaturliste durchgehen",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-03-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Herbstputz Hof",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-03-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Squares schneiden Security Camps",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-04-01",
         "besitzer": "shared",
         "beschreibung": "Aus Jahresprogramm 2026"
       },
@@ -564,20 +508,12 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
-        "titel": "Jungs PPE-Kasten fest anbringen",
+        "titel": "Werkzeugkammer Werner aufraeumen",
         "prioritaet": 3,
-        "kategorie": "allgemein",
+        "kategorie": "wohnhaus",
         "faellig": "2026-05-25",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Plan fuer Grasschneiden erstellen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-05-26",
-        "besitzer": "werner",
-        "beschreibung": ""
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
         "titel": "Koos Brand Strom",
@@ -594,22 +530,6 @@
         "faellig": "2026-06-01",
         "besitzer": "shared",
         "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Winterputz",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "WiFi aussortieren",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-03",
-        "besitzer": "werner",
-        "beschreibung": ""
       },
       {
         "titel": "Fleisch kühler",
@@ -692,6 +612,38 @@
         "beschreibung": ""
       },
       {
+        "titel": "Jungs PPE-Kasten fest anbringen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-25",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-06-25",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Plan fuer Grasschneiden erstellen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-26",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "WiFi aussortieren",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-06-30",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
         "titel": "Reparaturliste durchgehen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -704,6 +656,14 @@
         "prioritaet": 3,
         "kategorie": "wohnhaus",
         "faellig": "2026-07-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Kiesdamm Zaun pruefen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-07",
         "besitzer": "shared",
         "beschreibung": "Aus Jahresprogramm 2026"
       },
@@ -804,6 +764,14 @@
         "beschreibung": ""
       },
       {
+        "titel": "Pad bauen / Todo-Liste aktualisieren",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2027-02-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
         "titel": "Impfung — Tollwut fällig — Schiwa",
         "prioritaet": 3,
         "kategorie": "hunde",
@@ -826,6 +794,30 @@
         "faellig": "2027-02-01",
         "besitzer": "werner",
         "beschreibung": ""
+      },
+      {
+        "titel": "Herbstputz Hof",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2027-03-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Squares schneiden Security Camps",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2027-04-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Winterputz",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2027-06-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
         "titel": "Graeber nachfragen",
@@ -868,18 +860,18 @@
         "beschreibung": ""
       },
       {
-        "titel": "Tools aufraeumen",
-        "prioritaet": 4,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-03",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "Mangement program aufräumen",
         "prioritaet": 4,
         "kategorie": "allgemein",
         "faellig": "2026-06-09",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Tools aufraeumen",
+        "prioritaet": 4,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-10",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -1062,67 +1054,11 @@
         "beschreibung": "Woechentliche Farmaufgabe"
       },
       {
-        "titel": "Rabies-Impfung + Supervax – alle Tiere",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-02-14",
-        "besitzer": "shared",
-        "beschreibung": "Zusammen impfen"
-      },
-      {
-        "titel": "Ochsen Supervax + Bullen Testen / Einkauf pruefen",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-02-28",
-        "besitzer": "shared",
-        "beschreibung": "Ca. 27./28. Feb"
-      },
-      {
-        "titel": "Herde A -> C-G: Kuethe fuer Bullen rausholen",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-03-21",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Winterkaelber absetzen + Eigentumsbrand",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-05-15",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Grassschneider fixen/servicen",
-        "prioritaet": 2,
-        "kategorie": "allgemein",
-        "faellig": "2026-05-26",
-        "besitzer": "werner",
-        "beschreibung": "Ist bei OMT mal nachfragen wie weit"
-      },
-      {
-        "titel": "Kapp-Neger-Haus",
-        "prioritaet": 2,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-01",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "Elektrozaun Windmotor und Kaelberkraal",
         "prioritaet": 2,
         "kategorie": "allgemein",
         "faellig": "2026-06-01",
         "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Winterlecke geben (Phosphat/Salz)",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-06-01",
-        "besitzer": "shared",
         "beschreibung": ""
       },
       {
@@ -1132,22 +1068,6 @@
         "faellig": "2026-06-03",
         "besitzer": "werner",
         "beschreibung": ""
-      },
-      {
-        "titel": "Schafe chipen",
-        "prioritaet": 2,
-        "kategorie": "schafe",
-        "faellig": "2026-06-03",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Hunde Wurm-Tabletten (alle)",
-        "prioritaet": 2,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-04",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
         "titel": "SIM-Karten pruefen",
@@ -1166,11 +1086,35 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
+        "titel": "Schafe chipen",
+        "prioritaet": 2,
+        "kategorie": "schafe",
+        "faellig": "2026-06-19",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Rabies-Impfung + Supervax – alle Tiere",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2026-06-22",
+        "besitzer": "shared",
+        "beschreibung": "Zusammen impfen"
+      },
+      {
         "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
         "prioritaet": 2,
         "kategorie": "wohnhaus",
         "faellig": "2026-06-23",
         "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Herde A -> C-G: Kuethe fuer Bullen rausholen",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2026-06-23",
+        "besitzer": "shared",
         "beschreibung": ""
       },
       {
@@ -1196,6 +1140,22 @@
         "faellig": "2026-06-25",
         "besitzer": "shared",
         "beschreibung": "Ca. 25/06"
+      },
+      {
+        "titel": "Grassschneider fixen/servicen",
+        "prioritaet": 2,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-26",
+        "besitzer": "werner",
+        "beschreibung": "Ist bei OMT mal nachfragen wie weit"
+      },
+      {
+        "titel": "Kapp-Neger-Haus",
+        "prioritaet": 2,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-02",
+        "besitzer": "werner",
+        "beschreibung": ""
       },
       {
         "titel": "Hunde GPS Collar pruefen",
@@ -1350,12 +1310,36 @@
         "beschreibung": ""
       },
       {
+        "titel": "Ochsen Supervax + Bullen Testen / Einkauf pruefen",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2027-03-01",
+        "besitzer": "shared",
+        "beschreibung": "Ca. 27./28. Feb"
+      },
+      {
         "titel": "Bullen einsetzen – Sommerdeckzeit beginnt",
         "prioritaet": 2,
         "kategorie": "rinder",
         "faellig": "2027-04-07",
         "besitzer": "shared",
         "beschreibung": "Ca. 07/04"
+      },
+      {
+        "titel": "Winterkaelber absetzen + Eigentumsbrand",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2027-05-17",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Winterlecke geben (Phosphat/Salz)",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2027-06-01",
+        "besitzer": "shared",
+        "beschreibung": ""
       },
       {
         "titel": "Licht Schlachteplatz",
@@ -1454,58 +1438,10 @@
         "beschreibung": "Woechentliche Farmaufgabe"
       },
       {
-        "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-01-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Werkzeugkammer Werner aufraeumen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-02-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Pad bauen / Todo-Liste aktualisieren",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-02-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Kiesdamm Zaun pruefen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-02-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
         "titel": "Reparaturliste durchgehen",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-03-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Herbstputz Hof",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-03-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Squares schneiden Security Camps",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-04-01",
         "besitzer": "shared",
         "beschreibung": "Aus Jahresprogramm 2026"
       },
@@ -1518,20 +1454,12 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
-        "titel": "Jungs PPE-Kasten fest anbringen",
+        "titel": "Werkzeugkammer Werner aufraeumen",
         "prioritaet": 3,
-        "kategorie": "allgemein",
+        "kategorie": "wohnhaus",
         "faellig": "2026-05-25",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Plan fuer Grasschneiden erstellen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-05-26",
-        "besitzer": "werner",
-        "beschreibung": ""
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
         "titel": "Koos Brand Strom",
@@ -1548,22 +1476,6 @@
         "faellig": "2026-06-01",
         "besitzer": "shared",
         "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Winterputz",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "WiFi aussortieren",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-03",
-        "besitzer": "werner",
-        "beschreibung": ""
       },
       {
         "titel": "Fleisch kühler",
@@ -1646,6 +1558,38 @@
         "beschreibung": ""
       },
       {
+        "titel": "Jungs PPE-Kasten fest anbringen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-25",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-06-25",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Plan fuer Grasschneiden erstellen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-26",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "WiFi aussortieren",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-06-30",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
         "titel": "Reparaturliste durchgehen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -1658,6 +1602,14 @@
         "prioritaet": 3,
         "kategorie": "wohnhaus",
         "faellig": "2026-07-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Kiesdamm Zaun pruefen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-07",
         "besitzer": "shared",
         "beschreibung": "Aus Jahresprogramm 2026"
       },
@@ -1758,6 +1710,14 @@
         "beschreibung": ""
       },
       {
+        "titel": "Pad bauen / Todo-Liste aktualisieren",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2027-02-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
         "titel": "Impfung — Tollwut fällig — Schiwa",
         "prioritaet": 3,
         "kategorie": "hunde",
@@ -1780,6 +1740,30 @@
         "faellig": "2027-02-01",
         "besitzer": "werner",
         "beschreibung": ""
+      },
+      {
+        "titel": "Herbstputz Hof",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2027-03-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Squares schneiden Security Camps",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2027-04-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Winterputz",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2027-06-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
         "titel": "Graeber nachfragen",
@@ -1822,18 +1806,18 @@
         "beschreibung": ""
       },
       {
-        "titel": "Tools aufraeumen",
-        "prioritaet": 4,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-03",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "Mangement program aufräumen",
         "prioritaet": 4,
         "kategorie": "allgemein",
         "faellig": "2026-06-09",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Tools aufraeumen",
+        "prioritaet": 4,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-10",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -1916,7 +1900,7 @@
       "temp_max": 25.1,
       "temp_min": 8.3,
       "rainfall_24h": 0.0,
-      "wind_speed": 2.7
+      "wind_speed": 2.6
     },
     "vorhersage": []
   },
@@ -1940,15 +1924,47 @@
   ],
   "bewaesserung": [
     {
-      "name": "plants",
+      "name": "Moringa",
       "zuletzt_bewaessert": ""
     },
     {
-      "name": "rain_today_mm",
+      "name": "White Stinkwood",
       "zuletzt_bewaessert": ""
     },
     {
-      "name": "recommend_skip_irrigation",
+      "name": "Mopane",
+      "zuletzt_bewaessert": ""
+    },
+    {
+      "name": "Zitrus",
+      "zuletzt_bewaessert": ""
+    },
+    {
+      "name": "Guava",
+      "zuletzt_bewaessert": ""
+    },
+    {
+      "name": "Avocado",
+      "zuletzt_bewaessert": ""
+    },
+    {
+      "name": "Mango",
+      "zuletzt_bewaessert": ""
+    },
+    {
+      "name": "Maulbeere",
+      "zuletzt_bewaessert": ""
+    },
+    {
+      "name": "Granadilla",
+      "zuletzt_bewaessert": ""
+    },
+    {
+      "name": "Weinrebe",
+      "zuletzt_bewaessert": ""
+    },
+    {
+      "name": "Feige",
       "zuletzt_bewaessert": ""
     }
   ],
