@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-06-15T21:04:14",
+  "exportiert_am": "2026-06-15T21:10:26",
   "aufgaben": {
     "heute": [
       {
@@ -376,370 +376,292 @@
   ],
   "kalender": [
     {
-      "datum": "2026-06-01",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-06-02",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-06-03",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-06-04",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-06-05",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-06-06",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-06-07",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-06-08",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-06-09",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-06-10",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-06-11",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-06-12",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-06-13",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-06-14",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "datum": "2026-06-15",
+      "titel": "SIM-Karten  aufladen",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
     },
     {
       "datum": "2026-06-15",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "bush kappen ausarbeiten",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-06-15",
+      "titel": "berg force zylinder",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-06-15",
+      "titel": "Bundu Roofing",
+      "kategorie": "kalender",
+      "besitzer": "Gemeinsam"
     },
     {
       "datum": "2026-06-16",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Driver License CE machen",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-06-16",
+      "titel": "Glen fragen für quote für Reperatur der Häuser",
+      "kategorie": "wohnhaus",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-06-16",
+      "titel": "Solar Licht",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-06-16",
+      "titel": "Tontauben ding abbauen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-06-16",
+      "titel": "copit von erichsfelde daen reinf♀9ttern",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-06-17",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Wasserhahn Okaruheke fertigmachen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-06-18",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "John Hollow bricks",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-06-19",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Windmotor neue Bergseite – Elektropumpe rein",
+      "kategorie": "boreholes",
+      "besitzer": "werner"
     },
     {
-      "datum": "2026-06-20",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "datum": "2026-06-19",
+      "titel": "Feuerspritze + andere Feuerloeschgeraete pruefen",
+      "kategorie": "sonstige_maschinen",
+      "besitzer": "shared"
     },
     {
-      "datum": "2026-06-21",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "datum": "2026-06-19",
+      "titel": "Schafe chipen",
+      "kategorie": "schafe",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-06-19",
+      "titel": "Fleisch kühler",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-06-19",
+      "titel": "Jongboer meeting",
+      "kategorie": "kalender",
+      "besitzer": "Gemeinsam"
     },
     {
       "datum": "2026-06-22",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Rabies-Impfung + Supervax – alle Tiere",
+      "kategorie": "rinder",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-06-23",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-06-23",
+      "titel": "Herde A -> C-G: Kuethe fuer Bullen rausholen",
+      "kategorie": "rinder",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-06-23",
+      "titel": "Koos Brand Strom",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-06-23",
+      "titel": "Rinder für EU inspektion zusammen bekomme",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
     },
     {
       "datum": "2026-06-24",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Eu certificat inspection",
+      "kategorie": "rinder",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-06-24",
+      "titel": "Dr Lala Inspektion am 24 Juni",
+      "kategorie": "rinder",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-06-24",
+      "titel": "Inspection EU by DrLala",
+      "kategorie": "kalender",
+      "besitzer": "Gemeinsam"
     },
     {
       "datum": "2026-06-25",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Bullen raus – Ende Sommerdeckzeit (C-G -> A)",
+      "kategorie": "rinder",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-06-25",
+      "titel": "Jungs PPE-Kasten fest anbringen",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-06-25",
+      "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
+      "kategorie": "wohnhaus",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-06-25",
+      "titel": "Reparaturliste durchgehen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-06-26",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Grassschneider fixen/servicen",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
     },
     {
-      "datum": "2026-06-27",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "datum": "2026-06-26",
+      "titel": "Plan fuer Grasschneiden erstellen",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-06-26",
+      "titel": "Werner und Wanda ❤️",
+      "kategorie": "kalender",
+      "besitzer": "Gemeinsam"
     },
     {
       "datum": "2026-06-28",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-06-29",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Werkzeugkammer Werner aufraeumen",
+      "kategorie": "wohnhaus",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-06-30",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Elektrozaun Windmotor und Kaelberkraal",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-06-30",
+      "titel": "WiFi aussortieren",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
     },
     {
       "datum": "2026-07-01",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Werkzeugkammer Jungs aufraeumen",
+      "kategorie": "wohnhaus",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-01",
+      "titel": "Reparaturliste durchgehen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-01",
+      "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
+      "kategorie": "wohnhaus",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-07-02",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Kapp-Neger-Haus",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-02",
+      "titel": "Jakof Boran wla auction",
+      "kategorie": "kalender",
+      "besitzer": "Gemeinsam"
     },
     {
       "datum": "2026-07-03",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-04",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-05",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "MEATCO Agm",
+      "kategorie": "kalender",
+      "besitzer": "Gemeinsam"
     },
     {
       "datum": "2026-07-06",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Hunde GPS Collar pruefen",
+      "kategorie": "hunde",
+      "besitzer": "werner"
     },
     {
       "datum": "2026-07-07",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Animal Health Declaration Form (Q1)",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-07",
+      "titel": "Kiesdamm Zaun pruefen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-07-08",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-09",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Fitting-Raum aufraeumen",
+      "kategorie": "wohnhaus",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-07-10",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Tools aufraeumen",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
     },
     {
-      "datum": "2026-07-11",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-12",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-13",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-14",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "datum": "2026-07-10",
+      "titel": "Knobel Jagd Wochenende Michu",
+      "kategorie": "kalender",
+      "besitzer": "Gemeinsam"
     },
     {
       "datum": "2026-07-15",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "titel": "Land Tax pruefen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
     },
     {
-      "datum": "2026-07-16",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-17",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-18",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-19",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-20",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-21",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-22",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-23",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-24",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-25",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-26",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-27",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-28",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-29",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-30",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
-    },
-    {
-      "datum": "2026-07-31",
-      "titel": "",
-      "kategorie": "",
-      "besitzer": ""
+      "datum": "2026-07-15",
+      "titel": "Kastrieren und Enthornen",
+      "kategorie": "rinder",
+      "besitzer": "shared"
     }
   ]
 }
