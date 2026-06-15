@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-06-15T20:50:50",
+  "exportiert_am": "2026-06-15T21:04:14",
   "aufgaben": {
     "heute": [
       {
@@ -374,5 +374,372 @@
       ]
     }
   ],
-  "kalender": []
+  "kalender": [
+    {
+      "datum": "2026-06-01",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-02",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-03",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-04",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-05",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-06",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-07",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-08",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-09",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-10",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-11",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-12",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-13",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-14",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-15",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-16",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-17",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-18",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-19",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-20",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-21",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-22",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-23",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-24",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-25",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-26",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-27",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-28",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-29",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-06-30",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-01",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-02",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-03",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-04",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-05",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-06",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-07",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-08",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-09",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-10",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-11",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-12",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-13",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-14",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-15",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-16",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-17",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-18",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-19",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-20",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-21",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-22",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-23",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-24",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-25",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-26",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-27",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-28",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-29",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-30",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    },
+    {
+      "datum": "2026-07-31",
+      "titel": "",
+      "kategorie": "",
+      "besitzer": ""
+    }
+  ]
 }
