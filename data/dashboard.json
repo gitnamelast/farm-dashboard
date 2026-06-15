@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-06-15T19:54:32",
+  "exportiert_am": "2026-06-15T20:04:06",
   "aufgaben": {
     "heute": [
       {
@@ -1958,21 +1958,114 @@
       "rasse": "Anatolischer Schäferhunf",
       "status": "ok",
       "naechste_behandlung": "2026-10-04",
-      "behandlungen": []
+      "behandlungen": [
+        {
+          "datum": "2026-06-04",
+          "behandlungsart": "Entwurmung",
+          "mittel": "Tri Worm-D",
+          "gewicht_kg": 40.0,
+          "lot_nummer": "TWD0223",
+          "verfallsdatum_mittel": "2027-03-31",
+          "durchgefuehrt_von": "Werner"
+        },
+        {
+          "datum": "2026-02-15",
+          "behandlungsart": "Impfung — Tollwut",
+          "mittel": "Nobivac Rabies",
+          "gewicht_kg": null,
+          "lot_nummer": "F82778",
+          "verfallsdatum_mittel": "2026-07-13",
+          "durchgefuehrt_von": "Werner"
+        },
+        {
+          "datum": "2025-11-04",
+          "behandlungsart": "Entwurmung",
+          "mittel": "Tri Worm-D",
+          "gewicht_kg": 36.5,
+          "lot_nummer": "TWD0423",
+          "verfallsdatum_mittel": "2027-07-31",
+          "durchgefuehrt_von": "Werner"
+        }
+      ]
     },
     {
       "name": "Ruby",
       "rasse": "BGS",
       "status": "ok",
       "naechste_behandlung": "2026-10-04",
-      "behandlungen": []
+      "behandlungen": [
+        {
+          "datum": "2026-06-14",
+          "behandlungsart": "Sonstige Behandlung",
+          "mittel": "Ketfoen",
+          "gewicht_kg": 18.0,
+          "lot_nummer": "",
+          "verfallsdatum_mittel": "",
+          "durchgefuehrt_von": "Werner"
+        },
+        {
+          "datum": "2026-06-04",
+          "behandlungsart": "Entwurmung",
+          "mittel": "Tri Worm-D",
+          "gewicht_kg": 18.0,
+          "lot_nummer": "TWD0423",
+          "verfallsdatum_mittel": "2027-07-31",
+          "durchgefuehrt_von": "Werner"
+        },
+        {
+          "datum": "2026-02-15",
+          "behandlungsart": "Impfung — Tollwut",
+          "mittel": "Nobivac Rabies",
+          "gewicht_kg": null,
+          "lot_nummer": "F82778",
+          "verfallsdatum_mittel": "2026-07-13",
+          "durchgefuehrt_von": "Werner"
+        },
+        {
+          "datum": "2025-11-04",
+          "behandlungsart": "Entwurmung",
+          "mittel": "Tri Worm-D",
+          "gewicht_kg": 15.9,
+          "lot_nummer": "TWD0423",
+          "verfallsdatum_mittel": "2027-07-31",
+          "durchgefuehrt_von": "Werner"
+        }
+      ]
     },
     {
       "name": "Schiwa",
       "rasse": "Mix",
       "status": "ok",
       "naechste_behandlung": "2026-10-04",
-      "behandlungen": []
+      "behandlungen": [
+        {
+          "datum": "2026-06-04",
+          "behandlungsart": "Entwurmung",
+          "mittel": "Tri Worm-D",
+          "gewicht_kg": 26.0,
+          "lot_nummer": "TWD0423",
+          "verfallsdatum_mittel": "2027-07-31",
+          "durchgefuehrt_von": "Werner"
+        },
+        {
+          "datum": "2026-02-25",
+          "behandlungsart": "Impfung — Tollwut",
+          "mittel": "Nobivac Rabisin",
+          "gewicht_kg": null,
+          "lot_nummer": "F82778",
+          "verfallsdatum_mittel": "2026-07-13",
+          "durchgefuehrt_von": "Werner"
+        },
+        {
+          "datum": "2025-11-04",
+          "behandlungsart": "Entwurmung",
+          "mittel": "Tri worm-D",
+          "gewicht_kg": 23.1,
+          "lot_nummer": "TWD0423",
+          "verfallsdatum_mittel": "2027-07-31",
+          "durchgefuehrt_von": "Werner"
+        }
+      ]
     }
   ],
   "kalender": []
