@@ -1,18 +1,10 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-06-19T16:01:45",
+  "exportiert_am": "2026-06-20T06:00:07",
   "aufgaben": {
     "heute": [
       {
         "titel": "Tontauben ding abbauen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-19",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "cockpit von erichsfelde daen reinfüttern",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-06-19",
@@ -204,64 +196,72 @@
         "faellig": "2026-06-26",
         "besitzer": "werner",
         "beschreibung": "wiegen und austrennen"
+      },
+      {
+        "titel": "cockpit von erichsfelde daen reinfüttern",
+        "prioritaet": 4,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-23",
+        "besitzer": "werner",
+        "beschreibung": ""
       }
     ]
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 15.8,
-      "temp_min": -1.3,
+      "temp_max": 4.8,
+      "temp_min": 3.1,
       "rainfall_24h": 0.0,
-      "wind_speed": 2.5
+      "wind_speed": 2.4
     },
     "vorhersage": [
       {
-        "date": "2026-06-19",
-        "wcode": 0,
-        "temp_max": 16.6,
-        "temp_min": 0.4,
-        "rain": 0
-      },
-      {
         "date": "2026-06-20",
         "wcode": 0,
-        "temp_max": 21.5,
-        "temp_min": 3.9,
+        "temp_max": 21.3,
+        "temp_min": 4.1,
         "rain": 0
       },
       {
         "date": "2026-06-21",
-        "wcode": 0,
-        "temp_max": 22.9,
-        "temp_min": 5.5,
+        "wcode": 2,
+        "temp_max": 22.5,
+        "temp_min": 5.8,
         "rain": 0
       },
       {
         "date": "2026-06-22",
-        "wcode": 0,
-        "temp_max": 24.4,
-        "temp_min": 5.9,
+        "wcode": 1,
+        "temp_max": 24.2,
+        "temp_min": 6.2,
         "rain": 0
       },
       {
         "date": "2026-06-23",
         "wcode": 0,
-        "temp_max": 24.7,
-        "temp_min": 8.6,
+        "temp_max": 25.0,
+        "temp_min": 8.8,
         "rain": 0
       },
       {
         "date": "2026-06-24",
-        "wcode": 1,
-        "temp_max": 25.7,
-        "temp_min": 8.6,
+        "wcode": 0,
+        "temp_max": 25.9,
+        "temp_min": 9.3,
         "rain": 0
       },
       {
         "date": "2026-06-25",
-        "wcode": 2,
-        "temp_max": 23.0,
-        "temp_min": 8.0,
+        "wcode": 0,
+        "temp_max": 25.2,
+        "temp_min": 9.2,
+        "rain": 0
+      },
+      {
+        "date": "2026-06-26",
+        "wcode": 1,
+        "temp_max": 19.5,
+        "temp_min": 3.0,
         "rain": 0
       }
     ]
@@ -448,24 +448,6 @@
   ],
   "kalender": [
     {
-      "datum": "2026-06-19",
-      "titel": "Tontauben ding abbauen",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-06-19",
-      "titel": "cockpit von erichsfelde daen reinfüttern",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-06-19",
-      "titel": "Jongboer meeting",
-      "kategorie": "kalender",
-      "besitzer": "Gemeinsam"
-    },
-    {
       "datum": "2026-06-22",
       "titel": "Driver License CE machen",
       "kategorie": "allgemein",
@@ -530,6 +512,12 @@
       "titel": "John Hollow bricks",
       "kategorie": "allgemein",
       "besitzer": "shared"
+    },
+    {
+      "datum": "2026-06-23",
+      "titel": "cockpit von erichsfelde daen reinfüttern",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
     },
     {
       "datum": "2026-06-24",
@@ -746,6 +734,12 @@
       "titel": "Gernot krauer Geburtstagfeier",
       "kategorie": "kalender",
       "besitzer": "Gemeinsam"
+    },
+    {
+      "datum": "2026-07-20",
+      "titel": "Winterherde: BVD Hiprabovis + Vibrin spritzen",
+      "kategorie": "rinder",
+      "besitzer": "shared"
     }
   ],
   "jahresplanung": {
