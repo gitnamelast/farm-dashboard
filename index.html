@@ -1,3 +1,4 @@
+<!-- index.html v2.0 — 20.06.2026 -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -129,66 +130,6 @@
   .kal-date { font-family: 'IBM Plex Mono', monospace; font-size: .75rem; color: var(--muted); min-width: 70px; }
   .kal-title { font-size: .85rem; flex: 1; }
 
-  /* JAHRESPLANUNG */
-  .jp-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 16px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--border);
-  }
-  .jp-tab {
-    padding: 6px 12px;
-    border-radius: 6px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    color: var(--muted);
-    cursor: pointer;
-    font-size: .82rem;
-    transition: all .2s;
-  }
-  .jp-tab:hover { border-color: var(--accent); color: var(--accent); }
-  .jp-tab.active {
-    background: var(--accent);
-    color: #0f1410;
-    border-color: var(--accent);
-    font-weight: 600;
-  }
-  .jp-cols {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-  }
-  .jp-col { background: var(--surface); border-radius: 8px; overflow: hidden; }
-  .jp-col-head {
-    padding: 10px 14px;
-    font-weight: 700;
-    font-size: .82rem;
-    text-align: center;
-  }
-  .jp-col-head.jp-prog { background: var(--allg); color: #fff; }
-  .jp-col-head.jp-rinder { background: var(--farm); color: #fff; }
-  .jp-col-head.jp-weide { background: var(--haus); color: #fff; }
-  .jp-col-head.jp-haus { background: var(--angest); color: #fff; }
-  .jp-col-body { padding: 10px 12px; min-height: 120px; }
-  .jp-item {
-    padding: 6px 0;
-    border-bottom: 1px solid var(--border);
-    font-size: .8rem;
-    line-height: 1.4;
-    color: var(--text);
-  }
-  .jp-item:last-child { border-bottom: none; }
-  .jp-empty { color: var(--muted); font-style: italic; font-size: .78rem; }
-  @media (max-width: 900px) {
-    .jp-cols { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 600px) {
-    .jp-cols { grid-template-columns: 1fr; }
-    .jp-tabs { justify-content: center; }
-  }
-
   /* EMPTY */
   .empty { color: var(--muted); font-size: .82rem; padding: 12px 0; }
 
@@ -211,25 +152,6 @@
     .weather-current { grid-template-columns: repeat(2, 1fr); }
     .login-box { width: 90%; padding: 32px 24px; }
   }
-
-/* Jahresplanung buttons */
-.jp-btn {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text-muted);
-  padding: 6px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.8rem;
-  transition: all 0.2s;
-}
-.jp-btn:hover { border-color: var(--accent); color: var(--text); }
-.jp-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-.jp-col ul { list-style: none; padding: 0; margin: 0; }
-.jp-col ul li { font-size: 0.82rem; color: var(--text); padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
-.jp-col ul li:last-child { border-bottom: none; }
-.jp-empty { color: var(--text-muted); font-size: 0.8rem; font-style: italic; }
-
 </style>
 </head>
 <body>
@@ -320,22 +242,12 @@
       </div>
     </div>
 
-    <!-- ROW 5: Jahresplanung -->
-    <div class="grid-full">
-      <div class="card">
-        <div class="card-header"><span class="card-title">📆 Jahresplanung</span></div>
-        <div class="card-body">
-          <div class="jp-tabs" id="jp-tabs"></div>
-          <div class="jp-cols" id="jp-cols"></div>
-        </div>
-      </div>
-    </div>
-
   </div>
 </div>
 
 <script>
 const DATA_URL = 'https://raw.githubusercontent.com/gitnamelast/farm-dashboard/main/data/dashboard.json';
+const APP_VERSION = 'v2.0';
 let dashData = null;
 
 async function sha256(msg) {
@@ -381,14 +293,13 @@ function renderAll() {
   renderBewaesserung();
   renderHunde();
   renderKalender();
-  renderJahresplanung(dashData);
 }
 
 function renderHeader() {
   const exp = dashData.exportiert_am;
   const d = new Date(exp);
   const fmt = d.getDate()+'.'+(d.getMonth()+1)+'.'+d.getFullYear()+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
-  document.getElementById('export-time').textContent = 'Stand: ' + fmt;
+  document.getElementById('export-time').textContent = 'Stand: ' + fmt + ' · ' + APP_VERSION;
   const diffH = (Date.now() - d.getTime()) / 3600000;
   if (diffH > 24) {
     const banner = document.getElementById('stale-banner');
@@ -599,52 +510,6 @@ function renderKalender() {
   });
   html += '</div>';
   document.getElementById('kalender-body').innerHTML = html;
-}
-
-
-const MONTHS = [
-  {key:'januar',label:'Januar'},{key:'februar',label:'Februar'},{key:'maerz',label:'März'},
-  {key:'april',label:'April'},{key:'mai',label:'Mai'},{key:'juni',label:'Juni'},
-  {key:'juli',label:'Juli'},{key:'august',label:'August'},{key:'september',label:'September'},
-  {key:'oktober',label:'Oktober'},{key:'november',label:'November'},{key:'dezember',label:'Dezember'}
-];
-
-let activeMonth = MONTHS[new Date().getMonth()].key;
-
-function renderJahresplanung(data) {
-  if (!data.jahresplanung) return;
-  const tabs = document.getElementById('jp-tabs');
-  const cols = document.getElementById('jp-cols');
-  if (!tabs || !cols) return;
-
-  tabs.innerHTML = MONTHS.map(m =>
-    `<button class="jp-btn${m.key === activeMonth ? ' active' : ''}" onclick="selectMonth('${m.key}')">${m.label}</button>`
-  ).join('');
-
-  renderMonth(data.jahresplanung, activeMonth);
-}
-
-function selectMonth(key) {
-  activeMonth = key;
-  document.querySelectorAll('.jp-btn').forEach(b => b.classList.toggle('active', MONTHS.find(m=>m.key===key).label === b.textContent));
-  if (window._jpData) renderMonth(window._jpData, key);
-}
-
-function renderMonth(jp, key) {
-  const cols = document.getElementById('jp-cols');
-  const m = jp[key] || {};
-  const groups = [
-    {title:'🌍 Jahresprogramm', data: m.jahresprogramm},
-    {title:'🐄 Rinder', data: m.rinder},
-    {title:'🌿 Weide', data: m.weide},
-    {title:'🏠 Haus & Hof', data: m.haus_hof}
-  ];
-  cols.innerHTML = groups.map(g => `
-    <div class="jp-col">
-      <h3>${g.title}</h3>
-      ${g.data && g.data.length ? `<ul>${g.data.map(i=>`<li>${i}</li>`).join('')}</ul>` : '<p class="jp-empty">Keine Einträge</p>'}
-    </div>
-  `).join('');
 }
 
 loadData();
