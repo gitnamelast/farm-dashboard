@@ -1,4 +1,4 @@
-<!-- index.html v2.3 — 20.06.2026 -->
+<!-- index.html v2.4 — 22.06.2026 -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -115,7 +115,8 @@
   .dog-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
   .dog-name { font-size: 1rem; font-weight: 600; }
   .dog-meta { font-size: .75rem; color: var(--muted); margin-bottom: 10px; }
-  .dog-next { font-size: .78rem; color: var(--accent2); margin-bottom: 10px; }
+  .dog-next { font-size: .78rem; color: var(--accent2); margin-bottom: 6px; }
+  .dog-weight { font-size: .78rem; color: var(--accent2); margin-bottom: 6px; font-family: 'IBM Plex Mono', monospace; }
   .behandlung-table { width: 100%; border-collapse: collapse; font-size: .75rem; }
   .behandlung-table th { text-align: left; color: var(--muted); font-weight: 500; padding: 4px 8px; border-bottom: 1px solid var(--border); }
   .behandlung-table td { padding: 6px 8px; border-bottom: 1px solid #1a2a1d; }
@@ -387,7 +388,7 @@
 
 <script>
 const DATA_URL = 'https://raw.githubusercontent.com/gitnamelast/farm-dashboard/main/data/dashboard.json';
-const APP_VERSION = 'v2.3';
+const APP_VERSION = 'v2.4';
 let dashData = null;
 
 // ===== AUTH =====
@@ -582,6 +583,7 @@ function renderHunde() {
       </div>
       <div class="dog-meta">${esc(h.rasse||'—')}</div>
       ${h.naechste_behandlung?`<div class="dog-next">📅 Nächste Behandlung: ${fmtDate(h.naechste_behandlung)}</div>`:''}
+      ${h.letztes_gewicht_kg?`<div class="dog-weight">⚖ ${h.letztes_gewicht_kg} kg${h.letztes_gewicht_datum?' ('+fmtDate(h.letztes_gewicht_datum)+')':''}</div>`:''}
       ${bHtml}</div>`;
   }).join('');
 }
@@ -781,6 +783,7 @@ function renderKWGrid(jp, key) {
 
 loadData();
 </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"8607d2a720d14b038279025b2b5a82e5","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"8607d2a720d14b038279025b2b5a82e5","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
