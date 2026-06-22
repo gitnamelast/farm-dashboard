@@ -1,26 +1,8 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-06-20T15:19:45",
+  "exportiert_am": "2026-06-22T08:38:02",
   "aufgaben": {
     "heute": [
-      {
-        "titel": "Tontauben ding abbauen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-19",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Haus und Hof in Ordnung bringen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-08-26",
-        "besitzer": "werner",
-        "beschreibung": ""
-      }
-    ],
-    "naechste_7_tage": [
       {
         "titel": "Driver License CE machen",
         "prioritaet": 1,
@@ -54,13 +36,55 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
-        "titel": "Rabies-Impfung + Supervax – alle Tiere",
-        "prioritaet": 2,
-        "kategorie": "rinder",
+        "titel": "Tontauben ding abbauen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-19",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Fleisch arbeiten",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
         "faellig": "2026-06-22",
         "besitzer": "shared",
-        "beschreibung": "Zusammen impfen"
+        "beschreibung": ""
       },
+      {
+        "titel": "Okh fahren und einkäufe machen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-22",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Agra einkaufliste durchschicken",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-22",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Faninazen werner pettycahs jagd etc fertig machen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-22",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Haus und Hof in Ordnung bringen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-08-26",
+        "besitzer": "werner",
+        "beschreibung": ""
+      }
+    ],
+    "naechste_7_tage": [
       {
         "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
         "prioritaet": 2,
@@ -68,6 +92,14 @@
         "faellig": "2026-06-23",
         "besitzer": "werner",
         "beschreibung": ""
+      },
+      {
+        "titel": "Rabies-Impfung + Supervax – alle Tiere",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2026-06-23",
+        "besitzer": "shared",
+        "beschreibung": "Zusammen impfen"
       },
       {
         "titel": "Herde A -> C-G: Kuethe fuer Bullen rausholen",
@@ -198,6 +230,14 @@
         "beschreibung": "wiegen und austrennen"
       },
       {
+        "titel": "Werkzeugkammer Werner aufraeumen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-06-28",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
         "titel": "cockpit von erichsfelde daen reinfüttern",
         "prioritaet": 4,
         "kategorie": "allgemein",
@@ -209,60 +249,60 @@
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 18.5,
-      "temp_min": 2.3,
+      "temp_max": 10.2,
+      "temp_min": 5.7,
       "rainfall_24h": 0.0,
-      "wind_speed": 2.9
+      "wind_speed": 2.1
     },
     "vorhersage": [
       {
-        "date": "2026-06-20",
-        "wcode": 0,
-        "temp_max": 21.0,
-        "temp_min": 3.6,
-        "rain": 0
-      },
-      {
-        "date": "2026-06-21",
-        "wcode": 0,
-        "temp_max": 22.3,
-        "temp_min": 5.2,
-        "rain": 0
-      },
-      {
         "date": "2026-06-22",
-        "wcode": 1,
-        "temp_max": 23.7,
-        "temp_min": 6.5,
+        "wcode": 3,
+        "temp_max": 24.2,
+        "temp_min": 4.9,
         "rain": 0
       },
       {
         "date": "2026-06-23",
-        "wcode": 1,
-        "temp_max": 25.2,
-        "temp_min": 8.7,
+        "wcode": 3,
+        "temp_max": 24.4,
+        "temp_min": 9.8,
         "rain": 0
       },
       {
         "date": "2026-06-24",
         "wcode": 1,
         "temp_max": 25.4,
-        "temp_min": 8.2,
+        "temp_min": 10.4,
         "rain": 0
       },
       {
         "date": "2026-06-25",
-        "wcode": 0,
-        "temp_max": 25.1,
-        "temp_min": 8.0,
+        "wcode": 2,
+        "temp_max": 23.4,
+        "temp_min": 11.0,
         "rain": 0
       },
       {
         "date": "2026-06-26",
-        "wcode": 0,
-        "temp_max": 22.4,
-        "temp_min": 6.9,
+        "wcode": 3,
+        "temp_max": 23.4,
+        "temp_min": 10.6,
         "rain": 0
+      },
+      {
+        "date": "2026-06-27",
+        "wcode": 51,
+        "temp_max": 21.8,
+        "temp_min": 11.8,
+        "rain": 0.3
+      },
+      {
+        "date": "2026-06-28",
+        "wcode": 51,
+        "temp_max": 23.6,
+        "temp_min": 9.1,
+        "rain": 0.3
       }
     ]
   },
@@ -271,6 +311,14 @@
       "name": "Verrit",
       "marke_modell": "",
       "standort": "",
+      "naechster_service": "",
+      "letzter_service": "",
+      "status": "ok"
+    },
+    {
+      "name": "Vlei",
+      "marke_modell": "",
+      "standort": "Vlei",
       "naechster_service": "",
       "letzter_service": "",
       "status": "ok"
@@ -473,8 +521,26 @@
     },
     {
       "datum": "2026-06-22",
-      "titel": "Rabies-Impfung + Supervax – alle Tiere",
-      "kategorie": "rinder",
+      "titel": "Fleisch arbeiten",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-06-22",
+      "titel": "Okh fahren und einkäufe machen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-06-22",
+      "titel": "Agra einkaufliste durchschicken",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-06-22",
+      "titel": "Faninazen werner pettycahs jagd etc fertig machen",
+      "kategorie": "allgemein",
       "besitzer": "shared"
     },
     {
@@ -482,6 +548,12 @@
       "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
       "kategorie": "wohnhaus",
       "besitzer": "werner"
+    },
+    {
+      "datum": "2026-06-23",
+      "titel": "Rabies-Impfung + Supervax – alle Tiere",
+      "kategorie": "rinder",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-06-23",
@@ -748,24 +820,28 @@
         {
           "titel": "Hunde Wurm Tabletten",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         }
       ],
       "rinder": [
         {
           "titel": "Sommerlecke (Salz/Phosphat),Herde H->A",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "Animal Health declartion Form",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "Animal Health Declaration Form (Q2)",
           "kategorie": "rinder",
-          "source": "task"
+          "source": "task",
+          "datum": "2027-01-04"
         }
       ],
       "weide": [],
@@ -776,51 +852,60 @@
         {
           "titel": "Gift Obstbäume Zaun Weidewechsel",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Pad bauen Todo Liste",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Kiesdamm Zaun Zaun Weidewechsel",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Pad bauen / Todo-Liste aktualisieren",
           "kategorie": "allgemein",
-          "source": "task"
+          "source": "task",
+          "datum": "2027-02-01"
         }
       ],
       "rinder": [
         {
           "titel": "Rabies impfung zusammen mit Supervax",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "Ochsen Supavax, gucken mit einkauf Bullen Testen 27/28 Feb",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         }
       ],
       "weide": [
         {
           "titel": "Winterherde Trächtigkeitsuntersuche Pferde untersuchung vom Tierartzt",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         },
         {
           "titel": "12 Mo. alte Sommerfärsen 1st Und abgekalbte Färsen 3th Chlamydia Spritze.",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         },
         {
           "titel": "Kastrieren und enthornen",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         }
       ],
       "haus_hof": []
@@ -830,58 +915,68 @@
         {
           "titel": "Feuerspritze wartet Ebenso andere Feuerlöschgeräte Reparatur Liste gucken. Zaun Weidewechsel",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Pad bauen Todo Liste",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Zaun Weidewechsel Herbstputz Hof",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         }
       ],
       "rinder": [
         {
           "titel": "Bullen Testen",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "Färsen Brucella",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "Herde A => C-G Kühe für Bullen rausholen",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "Ochsen Supervax + Bullen Testen / Einkauf pruefen",
           "kategorie": "rinder",
-          "source": "task"
+          "source": "task",
+          "datum": "2027-03-01"
         }
       ],
       "weide": [
         {
           "titel": "Bullen einsetzen",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         },
         {
           "titel": "Winterkälber absetzen + Färsen Brucella impfen+ Eigentums Brant",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         }
       ],
       "haus_hof": [
         {
           "titel": "Herbstputz Hof",
           "kategorie": "wohnhaus",
-          "source": "task"
+          "source": "task",
+          "datum": "2027-03-01"
         }
       ]
     },
@@ -890,51 +985,60 @@
         {
           "titel": "Alle Hunde Wurm Tabletten Reparatur Liste gucken Zaun Weidewechsel",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Pad bauen Todo Liste",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Zaun Weidewechsel",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Squares schneiden Securty camps Frei",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Squares schneiden Security Camps",
           "kategorie": "allgemein",
-          "source": "task"
+          "source": "task",
+          "datum": "2027-04-01"
         }
       ],
       "rinder": [
         {
           "titel": "Rabies impfung zusammen mit Supervax",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "07/04 Bullen einsetzen",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "Bullen einsetzen – Sommerdeckzeit beginnt",
           "kategorie": "rinder",
-          "source": "task"
+          "source": "task",
+          "datum": "2027-04-07"
         }
       ],
       "weide": [
         {
           "titel": "Sommerherde impfen, Milzbrand, Lahmsiek (Supavax), Tollwut",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         }
       ],
       "haus_hof": []
@@ -944,36 +1048,42 @@
         {
           "titel": "Zaun Weidewechsel",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Pad bauen Todo Liste",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Zaun Weidewechsel",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         }
       ],
       "rinder": [
         {
           "titel": "Wkälber absetzen + Eigentums Bra",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "Winterkaelber absetzen + Eigentumsbrand",
           "kategorie": "rinder",
-          "source": "task"
+          "source": "task",
+          "datum": "2027-05-17"
         }
       ],
       "weide": [
         {
           "titel": "Bullen raus",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         }
       ],
       "haus_hof": []
@@ -983,93 +1093,110 @@
         {
           "titel": "Zaun Weidewechsel",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Pad bauen Todo Liste",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Winterputz",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Feuerspritze + andere Feuerloeschgeraete pruefen",
           "kategorie": "sonstige_maschinen",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-06-22"
         },
         {
           "titel": "Reparaturliste durchgehen",
           "kategorie": "allgemein",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-06-25"
         }
       ],
       "rinder": [
         {
           "titel": "Lecke geben (Winterlecke)",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "25/06 Bullen raus C-G =>A",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "Rabies-Impfung + Supervax – alle Tiere",
           "kategorie": "rinder",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-06-23"
         },
         {
           "titel": "Herde A -> C-G: Kuethe fuer Bullen rausholen",
           "kategorie": "rinder",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-06-23"
         },
         {
           "titel": "Bullen raus – Ende Sommerdeckzeit (C-G -> A)",
           "kategorie": "rinder",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-06-25"
         },
         {
           "titel": "Winterlecke geben (Phosphat/Salz)",
           "kategorie": "rinder",
-          "source": "task"
+          "source": "task",
+          "datum": "2027-06-01"
         }
       ],
       "weide": [
         {
           "titel": "Lecke geben (Winterlecke)",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         },
         {
           "titel": "Lecke geben (Winterlecke)",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         },
         {
           "titel": "Winterfärsem Hiprabovis spritzen + 2nd CEVAC Chlamydia",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         }
       ],
       "haus_hof": [
         {
           "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
           "kategorie": "wohnhaus",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-06-25"
         },
         {
           "titel": "Werkzeugkammer Werner aufraeumen",
           "kategorie": "wohnhaus",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-06-28"
         },
         {
           "titel": "Winterputz",
           "kategorie": "wohnhaus",
-          "source": "task"
+          "source": "task",
+          "datum": "2027-06-01"
         }
       ]
     },
@@ -1078,88 +1205,104 @@
         {
           "titel": "Alle Hunde Wurm Tabletten",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Reparatur Liste gucken",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Auto Graben umbauen",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Spülkasten läuft durch nach dem Spülen Gästehaus Ansitz Kiesdamm",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Animal Health Declaration Form (Q1)",
           "kategorie": "allgemein",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-07-07"
         },
         {
           "titel": "Land Tax pruefen",
           "kategorie": "allgemein",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-07-15"
         },
         {
           "titel": "Reparaturliste durchgehen",
           "kategorie": "allgemein",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-07-01"
         },
         {
           "titel": "Kiesdamm Zaun pruefen",
           "kategorie": "allgemein",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-07-07"
         }
       ],
       "rinder": [
         {
           "titel": "Animal Health declartion Form",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "Kastrieren und Enthornen",
           "kategorie": "rinder",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-07-15"
         },
         {
           "titel": "Winterherde: BVD Hiprabovis + Vibrin spritzen",
           "kategorie": "rinder",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-07-20"
         }
       ],
       "weide": [
         {
           "titel": "Kastrieren und enthornen",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         },
         {
           "titel": "Winterherde (alle) (BVD Hiprabovis + Vibrin) spritzen.",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         }
       ],
       "haus_hof": [
         {
           "titel": "Werkzeugkammer Jungs aufraeumen",
           "kategorie": "wohnhaus",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-07-01"
         },
         {
           "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
           "kategorie": "wohnhaus",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-07-01"
         },
         {
           "titel": "Fitting-Raum aufraeumen",
           "kategorie": "wohnhaus",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-07-08"
         }
       ]
     },
@@ -1168,73 +1311,86 @@
         {
           "titel": "Müll Sortiere/Store anlange",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Badtür streichen",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Ansitze Land tax gucken",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Vogelschutz netze unter Dach Gäste",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Sommerherde Traechtigkeitsuntersuchung",
           "kategorie": "allgemein",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-08-15"
         }
       ],
       "rinder": [
         {
           "titel": "12 Mon. Winterfaersen: 1. Chlamydia + abgekalbt: 3. Spritze",
           "kategorie": "rinder",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-08-20"
         }
       ],
       "weide": [
         {
           "titel": "Sommerherde Trächtigkeitsuntersuche",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         },
         {
           "titel": "Sommerherde Trächtigkeitsuntersuche",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         },
         {
           "titel": "Sommerherde Trächtigkeitsuntersuche",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         }
       ],
       "haus_hof": [
         {
           "titel": "Gift Obstbaeume",
           "kategorie": "garten",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-08-01"
         },
         {
           "titel": "Muell: Sortier-/Lageranlage",
           "kategorie": "wohnhaus",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-08-01"
         },
         {
           "titel": "Badtuer Gastehaus streichen",
           "kategorie": "wohnhaus",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-08-01"
         },
         {
           "titel": "Vogelschutznetze unter Dach Gastehaus anbringen",
           "kategorie": "wohnhaus",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-08-01"
         }
       ]
     },
@@ -1243,88 +1399,104 @@
         {
           "titel": "Hof Schrottplatz",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Beete Hühnerstall Spanspeck pflanzen",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Reparatur Liste gucken",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Ansitze Zaun beim Kiesdamm kamp",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Pferde: 1. Impfung Pferdesterbe + Tetanus",
           "kategorie": "haustiere",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-09-01"
         },
         {
           "titel": "Vit A Sommerherde (falls noetig)",
           "kategorie": "allgemein",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-09-07"
         },
         {
           "titel": "Sommerkaelber absetzen + Faersen Brucella + Eigentumsbrand",
           "kategorie": "allgemein",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-09-21"
         },
         {
           "titel": "Pferde: 2. Impfung Pferdesterbe + Tollwut",
           "kategorie": "allgemein",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-09-22"
         },
         {
           "titel": "Ansitze pruefen",
           "kategorie": "allgemein",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-09-01"
         },
         {
           "titel": "Zaun Kiesdamm Kamp",
           "kategorie": "zaun",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-09-01"
         }
       ],
       "rinder": [
         {
           "titel": "Bullen einsetzen – Winterdeckzeit beginnt",
           "kategorie": "rinder",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-09-01"
         }
       ],
       "weide": [
         {
           "titel": "Bullen einsetzen",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         },
         {
           "titel": "eventuell Sommerherde Vit A spritzen",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         },
         {
           "titel": "Sommerkälber absetzen + Färsen Brucella impfen + Eigentums Brant",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         }
       ],
       "haus_hof": [
         {
           "titel": "Hof Schrottplatz aufraeumen",
           "kategorie": "wohnhaus",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-09-01"
         },
         {
           "titel": "Beete Huehnerstall + Spanspeck pflanzen",
           "kategorie": "garten",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-09-01"
         }
       ]
     },
@@ -1333,51 +1505,60 @@
         {
           "titel": "Alle Hunde Wurm Tabletten",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Reparatur Liste gucken",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Reparatur Liste gucken",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Traechtigkeitsuntersuchung Winterherde + Absetzen -> H",
           "kategorie": "allgemein",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-10-15"
         },
         {
           "titel": "Hunde Wurm-Tabletten (alle)",
           "kategorie": "allgemein",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-10-01"
         }
       ],
       "rinder": [
         {
           "titel": "Trächtigkeitsuntersuche",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "S_kälber absetzen + Färsen Brucella + Eigentums Bra =>Herde H",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "Winterherde impfen: Vit A, Milzbrand, Lahmsiek, Tollwut",
           "kategorie": "rinder",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-10-15"
         }
       ],
       "weide": [
         {
           "titel": "Winterherde impfen, Vit A, Milzbrand,Lahm siek(S.vax) Tollwut",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         }
       ],
       "haus_hof": []
@@ -1387,46 +1568,54 @@
         {
           "titel": "Einfahrt Hof",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Hof Aufräumen",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Reparatur Liste gucken",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Reparatur Liste gucken",
           "kategorie": "jahresprogramm",
-          "source": "Jahresprogramm"
+          "source": "Jahresprogramm",
+          "datum": ""
         },
         {
           "titel": "Bullen raus – Ende Winterdeckzeit",
           "kategorie": "weide",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-11-15"
         }
       ],
       "rinder": [
         {
           "titel": "eventuell Kuhherde Vit A spritzen, Supavax alle Kühe",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "Supervax alle Kuethe + evtl. Vit A",
           "kategorie": "rinder",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-11-20"
         }
       ],
       "weide": [
         {
           "titel": "Bullen raus",
           "kategorie": "weide",
-          "source": "Weidemanagement"
+          "source": "Weidemanagement",
+          "datum": ""
         }
       ],
       "haus_hof": []
@@ -1437,12 +1626,14 @@
         {
           "titel": "Sommerlecke (Salz/Phosphat)",
           "kategorie": "rinder",
-          "source": "Rinderprogramm"
+          "source": "Rinderprogramm",
+          "datum": ""
         },
         {
           "titel": "Sommerlecke geben (Salz/Phosphat)",
           "kategorie": "rinder",
-          "source": "task"
+          "source": "task",
+          "datum": "2026-12-01"
         }
       ],
       "weide": [],
