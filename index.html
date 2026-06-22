@@ -1,789 +1,991 @@
-<!-- index.html v2.4 — 22.06.2026 -->
+<!-- index_v3_RC1.html — Dashboard v3 RC1 — 22.06.2026 -->
+<!-- Änderungen gegenüber test_dashboard_v3c v1.1:
+     - Echter Datenfetch von GitHub (Fallback: Demo-Daten)
+     - CSS Fix: Mobile Kategorie-Tabs inaktiv/aktiv unterscheidbar
+     - Fix: isoStr() UTC-Timezone Bug (Namibia UTC+2)
+     - Dynamische Hunde-Namen im App-Launcher
+     - Empty-States für Wetter, Wasser, alle Module
+     - Demo-Banner wenn Offline-Fallback aktiv
+     - Version RC1 sichtbar -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Farm Erichsfelde</title>
+<title>Farm Erichsfelde — Dashboard v3</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg:        #0f1410;
-    --surface:   #161d18;
-    --border:    #2a3a2d;
-    --text:      #e8ede9;
-    --muted:     #7a9480;
-    --accent:    #6db87a;
-    --accent2:   #d4a843;
-    --red:       #e05c5c;
-    --orange:    #d97706;
-    --blue:      #5b9bd5;
-    --farm:      #6db87a;
-    --haus:      #a78bfa;
-    --angest:    #f59e0b;
-    --allg:      #60a5fa;
-    --arbeit:    #f472b6;
+    --bg:       #f2ead8;
+    --surface:  #ffffff;
+    --surface2: #f9f4e8;
+    --border:   #c8b89a;
+    --text:     #1e2a1e;
+    --muted:    #5a6b50;
+    --accent:   #2d6636;
+    --accent-lt:#e8f5ec;
+    --accent2:  #a07a20;
+    --red:      #b91c1c;
+    --red-lt:   #fee2e2;
+    --orange:   #b45309;
+    --orange-lt:#fef3c7;
+    --blue:     #1d4ed8;
+    --blue-lt:  #dbeafe;
+    --shadow-sm: 0 1px 3px rgba(40,30,10,.10);
+    --shadow:    0 2px 8px rgba(40,30,10,.10), 0 1px 3px rgba(40,30,10,.08);
+    --radius:    10px;
   }
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'IBM Plex Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  body { font-family: 'IBM Plex Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; -webkit-tap-highlight-color: transparent; }
 
-  /* LOGIN */
-  #login-screen { position: fixed; inset: 0; background: var(--bg); display: flex; align-items: center; justify-content: center; z-index: 100; }
-  .login-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 48px 40px; width: 360px; text-align: center; }
-  .login-box h1 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--accent); margin-bottom: 6px; }
-  .login-box p { color: var(--muted); font-size: .85rem; margin-bottom: 28px; }
-  .login-box input { width: 100%; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px 16px; color: var(--text); font-family: 'IBM Plex Mono', monospace; font-size: 1rem; text-align: center; letter-spacing: 4px; margin-bottom: 12px; outline: none; }
+  /* ─── LOGIN ─── */
+  #login-screen { position: fixed; inset: 0; background: var(--bg); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 20px; }
+  .login-box { background: var(--surface); border: 1.5px solid var(--border); border-radius: 16px; padding: 40px 32px; width: 100%; max-width: 340px; text-align: center; box-shadow: var(--shadow); }
+  .login-logo { font-size: 2.2rem; margin-bottom: 6px; }
+  .login-box h1 { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--accent); margin-bottom: 4px; }
+  .login-box p { color: var(--muted); font-size: .82rem; margin-bottom: 24px; }
+  .login-box input { width: 100%; background: var(--bg); border: 1.5px solid var(--border); border-radius: 8px; padding: 12px 14px; color: var(--text); font-family: 'IBM Plex Mono', monospace; font-size: 1rem; text-align: center; letter-spacing: 4px; margin-bottom: 10px; outline: none; transition: border-color .15s; }
   .login-box input:focus { border-color: var(--accent); }
-  .login-box button { width: 100%; background: var(--accent); color: #0f1410; border: none; border-radius: 8px; padding: 12px; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: .95rem; cursor: pointer; }
-  .login-error { color: var(--red); font-size: .82rem; margin-top: 10px; }
+  .login-box button { width: 100%; background: var(--accent); color: #fff; border: none; border-radius: 8px; padding: 13px; font-weight: 600; font-size: .95rem; cursor: pointer; transition: background .15s; }
+  .login-box button:disabled { opacity: .6; cursor: default; }
+  .login-box button:active:not(:disabled) { background: #1e4a27; }
+  .login-error { color: var(--red); font-size: .82rem; margin-top: 8px; min-height: 1.2em; }
+  .login-loading { color: var(--muted); font-size: .78rem; margin-top: 8px; }
 
-  /* HEADER */
+  /* ─── APP ─── */
   #app { display: none; }
-  .header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 32px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 10; }
-  .farm-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--accent); }
-  .header-meta { font-size: .75rem; color: var(--muted); }
-  .stale-banner { background: #3d1f1f; color: var(--red); border: 1px solid #5a2d2d; border-radius: 6px; padding: 4px 12px; font-size: .78rem; display: none; }
-  .logout-btn { background: transparent; border: 1px solid var(--border); color: var(--muted); border-radius: 6px; padding: 6px 14px; font-size: .78rem; cursor: pointer; font-family: 'IBM Plex Sans', sans-serif; }
-  .logout-btn:hover { border-color: var(--red); color: var(--red); }
 
-  /* MAIN */
-  .main { padding: 28px 32px; max-width: 1400px; margin: 0 auto; }
-  .grid-full { margin-bottom: 20px; }
+  /* ─── HEADER ─── */
+  .header { display: flex; justify-content: space-between; align-items: center; padding: 10px 16px; background: var(--accent); color: #fff; position: sticky; top: 0; z-index: 100; }
+  .farm-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: #fff; }
+  .header-right { display: flex; align-items: center; gap: 12px; }
+  .header-meta { font-size: .68rem; color: rgba(255,255,255,.8); font-family: 'IBM Plex Mono', monospace; }
+  .logout-btn { background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.35); color: #fff; padding: 5px 10px; border-radius: 6px; font-size: .75rem; cursor: pointer; }
+  .logout-btn:active { background: rgba(255,255,255,.25); }
+  .stale-banner { display: none; background: var(--orange-lt); border-bottom: 2px solid var(--orange); color: var(--orange); text-align: center; padding: 5px 12px; font-size: .78rem; font-weight: 500; }
+  .demo-banner  { display: none; background: var(--blue-lt); border-bottom: 2px solid var(--blue); color: var(--blue); text-align: center; padding: 5px 12px; font-size: .78rem; font-weight: 500; }
 
-  /* CARD */
-  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
-  .card-header { padding: 14px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
-  .card-title { font-weight: 600; font-size: .85rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
-  .card-body { padding: 16px 20px; }
+  /* ─── MAIN ─── */
+  .main-wrap { max-width: 640px; margin: 0 auto; padding: 12px 12px 56px; }
 
-  /* TABS */
-  .tabs { display: flex; gap: 2px; background: var(--bg); border-radius: 8px; padding: 3px; margin-bottom: 14px; }
-  .tab { flex: 1; padding: 7px; border: none; border-radius: 6px; background: transparent; color: var(--muted); font-family: 'IBM Plex Sans', sans-serif; font-size: .8rem; font-weight: 500; cursor: pointer; transition: all .15s; }
-  .tab.active { background: var(--surface); color: var(--text); }
+  /* ─── SECTION LABEL ─── */
+  .sec-label { font-size: .65rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 12px 0 6px 2px; }
+  .sec-label:first-child { margin-top: 0; }
 
-  /* TASKS */
-  .task-item { display: flex; align-items: flex-start; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+  /* ════════════════════════════════
+     STATUSKARTEN — kompakt, 4er-Reihe
+  ════════════════════════════════ */
+  .status-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 10px; }
+  @media (max-width: 400px) { .status-grid { grid-template-columns: repeat(2, 1fr); } }
+
+  .sc { background: var(--surface); border: 1.5px solid var(--border); border-radius: 8px; padding: 10px 10px 8px; box-shadow: var(--shadow-sm); position: relative; overflow: hidden; cursor: default; }
+  .sc::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background: var(--sc-color, var(--accent)); }
+  .sc.c-green  { --sc-color: var(--accent); }
+  .sc.c-orange { --sc-color: var(--orange); }
+  .sc.c-red    { --sc-color: var(--red); }
+  .sc.c-blue   { --sc-color: var(--blue); }
+
+  .sc-top  { display: flex; align-items: center; gap: 4px; margin-bottom: 3px; }
+  .sc-icon { font-size: .95rem; line-height: 1; }
+  .sc-lbl  { font-size: .62rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .sc-val  { font-size: 1.35rem; font-weight: 700; font-family: 'IBM Plex Mono', monospace; line-height: 1; color: var(--text); }
+  .sc-val.v-red    { color: var(--red); }
+  .sc-val.v-orange { color: var(--orange); }
+  .sc-val.v-green  { color: var(--accent); }
+  .sc-sub  { font-size: .62rem; color: var(--muted); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  /* ════════════════════════════════
+     PRIORITÄTEN — einklappbar
+  ════════════════════════════════ */
+  .prio-wrap { background: var(--surface); border: 1.5px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); margin-bottom: 10px; overflow: hidden; }
+  .prio-toggle { display: flex; align-items: center; gap: 8px; padding: 10px 14px; cursor: pointer; user-select: none; -webkit-user-select: none; transition: background .12s; }
+  .prio-toggle:active { background: var(--surface2); }
+  .prio-toggle.has-crit { background: #fff8f0; border-bottom: 1.5px solid var(--orange-lt); }
+  .prio-arrow { font-size: .7rem; color: var(--muted); transition: transform .2s; flex-shrink: 0; }
+  .prio-arrow.open { transform: rotate(90deg); }
+  .prio-toggle-title { font-weight: 600; font-size: .88rem; flex: 1; color: var(--text); }
+  .prio-count-badge { font-size: .68rem; font-weight: 700; padding: 2px 8px; border-radius: 10px; background: var(--orange-lt); color: var(--orange); font-family: 'IBM Plex Mono', monospace; }
+  .prio-count-badge.none { background: var(--accent-lt); color: var(--accent); }
+  .prio-body { display: none; }
+  .prio-body.open { display: block; }
+  .prio-item { display: flex; align-items: flex-start; gap: 10px; padding: 9px 14px; border-top: 1px solid var(--bg); }
+  .prio-item:hover { background: var(--surface2); }
+  .pdot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+  .pdot.crit { background: var(--red); }
+  .pdot.warn { background: var(--orange); }
+  .pdot.info { background: var(--accent2); }
+  .prio-txt { flex: 1; font-size: .85rem; color: var(--text); font-weight: 500; }
+  .prio-txt small { display: block; font-size: .72rem; color: var(--muted); font-weight: 400; margin-top: 1px; }
+  .ptag { font-size: .65rem; padding: 2px 6px; border-radius: 6px; font-weight: 700; white-space: nowrap; flex-shrink: 0; letter-spacing: .02em; }
+  .ptag.aufgabe { background: var(--blue-lt);   color: var(--blue); }
+  .ptag.hund    { background: #fce7f3;           color: #9d174d; }
+  .ptag.masch   { background: var(--orange-lt);  color: var(--orange); }
+  .prio-empty { padding: 12px 14px; font-size: .83rem; color: var(--muted); }
+
+  /* ════════════════════════════════
+     APP LAUNCHER
+  ════════════════════════════════ */
+  .app-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  @media (max-width: 360px) { .app-grid { grid-template-columns: repeat(2, 1fr); } }
+
+  .app-tile { background: var(--surface); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 16px 10px 14px; display: flex; flex-direction: column; align-items: center; text-align: center; cursor: pointer; box-shadow: var(--shadow-sm); position: relative; transition: transform .15s, box-shadow .15s, border-color .15s; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+  .app-tile:active { transform: scale(.97); box-shadow: none; }
+  @media (hover: hover) { .app-tile:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: var(--accent); } }
+  .tile-icon  { font-size: 2rem; margin-bottom: 7px; line-height: 1; }
+  .tile-title { font-family: 'Playfair Display', serif; font-size: .95rem; color: var(--text); font-weight: 700; margin-bottom: 2px; }
+  .tile-desc  { font-size: .68rem; color: var(--muted); line-height: 1.35; }
+  .tile-badge { position: absolute; top: 7px; right: 7px; font-size: .62rem; padding: 2px 6px; border-radius: 8px; font-weight: 700; font-family: 'IBM Plex Mono', monospace; }
+  .b-red    { background: var(--red-lt);    color: var(--red); }
+  .b-orange { background: var(--orange-lt); color: var(--orange); }
+  .b-green  { background: var(--accent-lt); color: var(--accent); }
+
+  /* ════════════════════════════════
+     SUB-VIEWS
+  ════════════════════════════════ */
+  .sub-view { display: none; }
+  .back-nav { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .back-btn { background: var(--surface); border: 1.5px solid var(--border); color: var(--text); padding: 7px 14px; border-radius: 8px; font-size: .83rem; font-weight: 600; cursor: pointer; box-shadow: var(--shadow-sm); display: inline-flex; align-items: center; gap: 5px; }
+  .back-btn:active { background: var(--surface2); }
+  .view-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--text); }
+  .card { background: var(--surface); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 16px; margin-bottom: 12px; box-shadow: var(--shadow-sm); }
+  .card-title { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--accent); margin-bottom: 12px; font-weight: 700; }
+  .empty-state { color: var(--muted); font-size: .83rem; padding: 4px 0; font-style: italic; }
+
+  /* Tasks */
+  .task-item { display: flex; align-items: flex-start; gap: 9px; padding: 9px 0; border-bottom: 1px solid var(--bg); }
   .task-item:last-child { border-bottom: none; }
-  .prio-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
-  .prio-1 { background: var(--red); }
-  .prio-2 { background: var(--orange); }
-  .prio-3 { background: var(--accent2); }
-  .prio-4 { background: var(--muted); }
-  .prio-5 { background: #444; }
-  .task-title { font-size: .88rem; line-height: 1.4; flex: 1; }
-  .task-meta { font-size: .72rem; color: var(--muted); margin-top: 2px; display: flex; gap: 8px; flex-wrap: wrap; }
-  .kat-chip { font-size: .68rem; padding: 1px 7px; border-radius: 10px; font-family: 'IBM Plex Mono', monospace; }
-  .kat-allgemein { background: #1a2d4a; color: var(--allg); }
-  .kat-wohnhaus { background: #2d1f4a; color: var(--haus); }
-  .kat-garten { background: #1a3d1f; color: var(--farm); }
-  .kat-default { background: #2a2a2a; color: var(--muted); }
+  .tprio { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+  .p1 { background: var(--red); } .p2 { background: var(--orange); }
+  .p3 { background: var(--accent2); } .p4 { background: var(--muted); }
+  .task-info { flex: 1; }
+  .task-title { font-size: .85rem; color: var(--text); font-weight: 500; }
+  .task-meta  { font-size: .72rem; color: var(--muted); margin-top: 2px; }
+  .tag-od { display: inline-block; font-size: .65rem; padding: 1px 5px; border-radius: 4px; font-weight: 700; background: var(--red-lt); color: var(--red); margin-right: 3px; }
 
-  /* STATUS */
-  .status-chip { font-size: .72rem; padding: 2px 10px; border-radius: 10px; font-weight: 600; }
-  .status-ok { background: #1a3d1f; color: var(--accent); }
-  .status-bald_faellig { background: #3d2a0f; color: var(--orange); }
-  .status-ueberfaellig { background: #3d1f1f; color: var(--red); }
+  /* Weather */
+  .wstat-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  .wstat { flex: 1; min-width: 80px; background: var(--surface2); border-radius: 7px; padding: 10px 12px; border: 1px solid var(--border); }
+  .wsl { font-size: .68rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+  .wsv { font-size: 1.2rem; font-weight: 700; font-family: 'IBM Plex Mono', monospace; color: var(--text); margin-top: 2px; }
 
-  /* MACHINES */
-  .machine-item { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); }
-  .machine-item:last-child { border-bottom: none; }
-  .machine-name { font-size: .88rem; font-weight: 500; }
-  .machine-sub { font-size: .72rem; color: var(--muted); margin-top: 2px; }
+  /* Forecast table */
+  .fc-row { display: flex; justify-content: space-between; align-items: center; padding: 7px 0; border-bottom: 1px solid var(--bg); font-size: .83rem; }
+  .fc-row:last-child { border-bottom: none; }
+  .fc-day { color: var(--muted); width: 40px; }
+  .fc-temp { font-family: 'IBM Plex Mono', monospace; font-weight: 600; }
+  .fc-rain { color: var(--blue); font-size: .75rem; }
 
-  /* WEATHER */
-  .weather-current { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
-  .weather-stat { background: var(--bg); border-radius: 8px; padding: 12px; text-align: center; }
-  .weather-val { font-size: 1.4rem; font-weight: 600; font-family: 'IBM Plex Mono', monospace; color: var(--accent); }
-  .weather-lbl { font-size: .7rem; color: var(--muted); margin-top: 2px; }
-  .forecast-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
-  .forecast-day { background: var(--bg); border-radius: 8px; padding: 10px 6px; text-align: center; }
-  .forecast-day .day-name { font-size: .7rem; color: var(--muted); margin-bottom: 4px; }
-  .forecast-day .day-icon { font-size: 1.2rem; margin-bottom: 4px; }
-  .forecast-day .day-max { font-size: .88rem; font-weight: 600; color: var(--accent2); }
-  .forecast-day .day-min { font-size: .75rem; color: var(--muted); }
-  .forecast-day .day-rain { font-size: .7rem; color: var(--blue); margin-top: 3px; }
+  /* Dogs / Machines */
+  .list-row { display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--bg); }
+  .list-row:last-child { border-bottom: none; }
+  .list-name { font-weight: 600; font-size: .88rem; }
+  .list-sub  { font-size: .74rem; color: var(--muted); }
+  .dot-ok   { display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--accent); }
+  .dot-warn { display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--orange); }
+  .dot-crit { display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red); }
 
-  /* IRRIGATION */
-  .irr-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-  .irr-item { background: var(--bg); border-radius: 8px; padding: 10px 12px; display: flex; align-items: center; justify-content: space-between; }
-  .irr-name { font-size: .82rem; }
-  .irr-date { font-size: .7rem; color: var(--muted); }
+  /* Plants grid */
+  .plant-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; }
+  .plant-card { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 10px; text-align: center; }
+  .plant-name { font-size: .8rem; font-weight: 600; margin-top: 4px; }
+  .plant-sub  { font-size: .68rem; color: var(--muted); margin-top: 2px; }
 
-  /* HUNDE */
-  .dog-card { background: var(--bg); border-radius: 10px; padding: 14px; margin-bottom: 12px; }
-  .dog-card:last-child { margin-bottom: 0; }
-  .dog-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
-  .dog-name { font-size: 1rem; font-weight: 600; }
-  .dog-meta { font-size: .75rem; color: var(--muted); margin-bottom: 10px; }
-  .dog-next { font-size: .78rem; color: var(--accent2); margin-bottom: 6px; }
-  .dog-weight { font-size: .78rem; color: var(--accent2); margin-bottom: 6px; font-family: 'IBM Plex Mono', monospace; }
-  .behandlung-table { width: 100%; border-collapse: collapse; font-size: .75rem; }
-  .behandlung-table th { text-align: left; color: var(--muted); font-weight: 500; padding: 4px 8px; border-bottom: 1px solid var(--border); }
-  .behandlung-table td { padding: 6px 8px; border-bottom: 1px solid #1a2a1d; }
-  .behandlung-table tr:last-child td { border-bottom: none; }
-  .no-behandlung { color: var(--muted); font-size: .8rem; font-style: italic; }
+  /* ── JP: Monats-Tabs ── */
+  .jp-tabs { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 12px; }
+  .jp-tab  { padding: 4px 10px; border-radius: 6px; background: var(--surface2); border: 1.5px solid var(--border); font-size: .75rem; cursor: pointer; font-weight: 600; color: var(--muted); transition: all .12s; }
+  .jp-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
 
-  /* KALENDER */
-  .kal-item { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--border); }
-  .kal-item:last-child { border-bottom: none; }
-  .kal-title { font-size: .85rem; flex: 1; }
+  /* ── JP: KW-Tabelle (Desktop) ── */
+  .jp-desktop { display: block; }
+  .jp-mobile  { display: none; }
+  @media (max-width: 600px) { .jp-desktop { display: none; } .jp-mobile { display: block; } }
 
-  /* JAHRESPLANUNG — Tabs */
-  .jp-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 16px;
-  }
-  .jp-btn {
-    padding: 6px 14px;
-    border-radius: 6px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    color: var(--muted);
-    cursor: pointer;
-    font-size: .82rem;
-    font-family: 'IBM Plex Sans', sans-serif;
-    transition: all .2s;
-  }
-  .jp-btn:hover { border-color: var(--accent); color: var(--accent); }
-  .jp-btn.active { background: var(--accent); color: #0f1410; border-color: var(--accent); font-weight: 600; }
+  .kw-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .kw-table  { width: 100%; border-collapse: collapse; font-size: .78rem; min-width: 480px; }
+  .kw-table thead th { padding: 7px 8px; text-align: left; font-size: .68rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); background: var(--surface2); border-bottom: 2px solid var(--border); white-space: nowrap; }
+  .kw-table thead th.th-kw { width: 100px; }
+  .kw-table thead th.th-prog   { border-top: 2px solid var(--accent); }
+  .kw-table thead th.th-rinder { border-top: 2px solid var(--blue); }
+  .kw-table thead th.th-weide  { border-top: 2px solid #7c3aed; }
+  .kw-table thead th.th-haus   { border-top: 2px solid var(--orange); }
+  .kw-table tbody tr { border-bottom: 1px solid var(--border); }
+  .kw-table tbody tr:last-child { border-bottom: none; }
+  .kw-table tbody tr:hover td { background: var(--surface2); }
+  .kw-table tbody tr.kw-current td { background: #eef7f1; }
+  .kw-table tbody tr.kw-current .td-kw { border-left: 3px solid var(--accent); }
+  .td-kw  { padding: 9px 8px; vertical-align: top; white-space: nowrap; }
+  .kw-num { font-weight: 700; font-size: .8rem; color: var(--text); }
+  .kw-badge { display: inline-block; font-size: .6rem; padding: 1px 5px; background: var(--accent); color: #fff; border-radius: 4px; margin-left: 4px; vertical-align: middle; }
+  .kw-range { font-size: .68rem; color: var(--muted); margin-top: 1px; }
+  .td-cell { padding: 8px 6px; vertical-align: top; }
+  .td-cell.c-prog   { border-left: 2px solid var(--accent); }
+  .td-cell.c-rinder { border-left: 2px solid var(--blue); }
+  .td-cell.c-weide  { border-left: 2px solid #7c3aed; }
+  .td-cell.c-haus   { border-left: 2px solid var(--orange); }
+  .cell-entry { display: flex; justify-content: space-between; align-items: baseline; gap: 4px; padding: 3px 0; border-bottom: 1px solid var(--surface2); font-size: .77rem; }
+  .cell-entry:last-child { border-bottom: none; }
+  .cell-title { color: var(--text); flex: 1; }
+  .cell-title.from-task { font-style: italic; }
+  .cell-date  { font-size: .68rem; color: var(--muted); white-space: nowrap; font-family: 'IBM Plex Mono', monospace; }
 
-  /* JAHRESPLANUNG — KW-Grid-Tabelle */
-  .jp-kw-wrap { overflow-x: auto; }
-  .jp-kw-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: .8rem;
-    min-width: 640px;
-  }
-  .jp-kw-table thead th {
-    padding: 8px 12px;
-    text-align: left;
-    font-size: .72rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .06em;
-    color: var(--muted);
-    background: var(--bg);
-    border-bottom: 2px solid var(--border);
-  }
-  .jp-kw-table thead th.jp-th-kw {
-    width: 120px;
-    min-width: 110px;
-  }
-  /* Farbige obere Linie pro Kategorie-Spalte */
-  .jp-kw-table thead th.col-prog   { border-top: 3px solid var(--allg); }
-  .jp-kw-table thead th.col-rinder { border-top: 3px solid var(--farm); }
-  .jp-kw-table thead th.col-weide  { border-top: 3px solid var(--haus); }
-  .jp-kw-table thead th.col-haus   { border-top: 3px solid var(--angest); }
+  /* ── JP: Mobile Kategorie-Ansicht ──
+     FIX: Inaktive Tabs heller, nur aktive Tab zeigt volle Kategoriefarbe */
+  .jp-cat-tabs { display: flex; gap: 4px; margin-bottom: 10px; overflow-x: auto; padding-bottom: 2px; }
+  .jp-cat-tab  { flex-shrink: 0; padding: 5px 10px; border-radius: 6px; background: var(--surface2); border: 1.5px solid var(--border); font-size: .75rem; cursor: pointer; font-weight: 600; color: var(--muted); transition: all .12s; }
+  /* Aktiv: volle Kategoriefarbe */
+  .jp-cat-tab.active.ct-prog   { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .jp-cat-tab.active.ct-rinder { background: var(--blue);   color: #fff; border-color: var(--blue); }
+  .jp-cat-tab.active.ct-weide  { background: #7c3aed;       color: #fff; border-color: #7c3aed; }
+  .jp-cat-tab.active.ct-haus   { background: var(--orange); color: #fff; border-color: var(--orange); }
 
-  .jp-kw-row td {
-    padding: 8px 10px;
-    vertical-align: top;
-    border-bottom: 1px solid var(--border);
-  }
-  .jp-kw-row:last-child td { border-bottom: none; }
-  .jp-kw-row:hover { background: rgba(255,255,255,0.02); }
-
-  /* Aktuelle KW */
-  .jp-kw-row.current-kw { background: rgba(91,155,213,0.08); }
-  .jp-kw-row.current-kw .jp-kw-label-td { border-left: 3px solid var(--blue); }
-
-  /* Linke Spalte: KW-Label */
-  .jp-kw-label-td {
-    white-space: nowrap;
-    padding: 8px 12px;
-    vertical-align: top;
-    border-bottom: 1px solid var(--border);
-  }
-  .jp-kw-num {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-weight: 600;
-    font-size: .82rem;
-    color: var(--text);
-    margin-bottom: 2px;
-    font-family: 'IBM Plex Mono', monospace;
-  }
-  .jp-kw-range {
-    font-size: .7rem;
-    color: var(--muted);
-  }
-  .kw-heute-badge {
-    font-size: .62rem;
-    background: var(--blue);
-    color: #fff;
-    border-radius: 4px;
-    padding: 1px 5px;
-    font-weight: 600;
-    font-family: 'IBM Plex Sans', sans-serif;
-  }
-
-  /* Kategorie-Zellen: farbiger Links-Balken */
-  .jp-kw-cell {
-    vertical-align: top;
-    border-bottom: 1px solid var(--border);
-    padding: 6px 10px 6px 12px;
-  }
-  .jp-kw-cell.col-prog   { border-left: 3px solid var(--allg);   }
-  .jp-kw-cell.col-rinder { border-left: 3px solid var(--farm);   }
-  .jp-kw-cell.col-weide  { border-left: 3px solid var(--haus);   }
-  .jp-kw-cell.col-haus   { border-left: 3px solid var(--angest); }
-
-  /* Eintrag in einer Zelle */
-  .jp-cell-entry {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 6px;
-    padding: 3px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
-    line-height: 1.3;
-  }
-  .jp-cell-entry:last-child { border-bottom: none; }
-  .jp-cell-title { flex: 1; color: var(--text); font-size: .78rem; }
-  .jp-cell-date {
-    font-size: .68rem;
-    color: var(--muted);
-    white-space: nowrap;
-    font-family: 'IBM Plex Mono', monospace;
-    flex-shrink: 0;
-  }
-
-  /* Monatsübersicht-Zeile (Einträge ohne KW-Zuweisung) */
-  .jp-kw-row.month-row td { background: rgba(255,255,255,0.015); }
-  .jp-month-label {
-    font-size: .72rem;
-    color: var(--muted);
-    font-style: italic;
-  }
-
-  /* EMPTY */
-  .empty { color: var(--muted); font-size: .82rem; padding: 12px 0; }
-
-  /* MOBILE */
-  @media (max-width: 768px) {
-    .header { padding: 12px 16px; }
-    .farm-title { font-size: 1.1rem; }
-    .main { padding: 12px; }
-    .weather-current { grid-template-columns: repeat(2, 1fr); }
-    .forecast-grid { grid-template-columns: repeat(4, 1fr); }
-    .irr-grid { grid-template-columns: repeat(2, 1fr); }
-    .behandlung-table { display: block; overflow-x: auto; }
-    .header-meta { display: none; }
-    [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
-    .jp-tabs { justify-content: center; }
-  }
-  @media (max-width: 480px) {
-    .forecast-grid { grid-template-columns: repeat(3, 1fr); }
-    .irr-grid { grid-template-columns: 1fr 1fr; }
-    .weather-current { grid-template-columns: repeat(2, 1fr); }
-    .login-box { width: 90%; padding: 32px 24px; }
-  }
+  .jp-mob-item { display: flex; justify-content: space-between; align-items: flex-start; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: .83rem; }
+  .jp-mob-item:last-child { border-bottom: none; }
+  .jp-mob-title { flex: 1; color: var(--text); }
+  .jp-mob-title.from-task { font-style: italic; }
+  .jp-mob-date  { font-size: .72rem; color: var(--muted); font-family: 'IBM Plex Mono', monospace; white-space: nowrap; margin-left: 8px; }
 </style>
 </head>
 <body>
 
-<!-- LOGIN -->
+<!-- ─── LOGIN ─── -->
 <div id="login-screen">
   <div class="login-box">
-    <div style="font-size:2rem;margin-bottom:12px">🌿</div>
-    <h1>Erichsfelde</h1>
-    <p>Farm Manager Dashboard</p>
-    <input type="password" id="pw-input" placeholder="Passwort" onkeydown="if(event.key==='Enter')doLogin()">
-    <button onclick="doLogin()">Anmelden</button>
+    <div class="login-logo">🌾</div>
+    <h1>Farm Erichsfelde</h1>
+    <p>Passwort eingeben</p>
+    <input type="password" id="pw-input" placeholder="••••••••" maxlength="32">
+    <button id="login-btn" onclick="doLogin()">Anmelden</button>
     <div class="login-error" id="login-error"></div>
+    <div class="login-loading" id="login-loading"></div>
   </div>
 </div>
 
-<!-- APP -->
+<!-- ─── APP ─── -->
 <div id="app">
+
   <div class="header">
-    <div style="display:flex;align-items:center;gap:16px">
-      <div class="farm-title">🌿 Erichsfelde</div>
-      <div class="header-meta" id="export-time">—</div>
-    </div>
-    <div style="display:flex;align-items:center;gap:12px">
-      <div class="stale-banner" id="stale-banner">⚠ Daten veraltet</div>
+    <span class="farm-title">🌾 Farm Erichsfelde</span>
+    <div class="header-right">
+      <span class="header-meta" id="export-time"></span>
       <button class="logout-btn" onclick="doLogout()">Abmelden</button>
     </div>
   </div>
+  <div class="stale-banner" id="stale-banner">⚠ Daten veraltet — vor <span id="stale-h">?</span> Stunden</div>
+  <div class="demo-banner"  id="demo-banner">📋 Demo-Modus — keine Verbindung zum Farm-Server</div>
 
-  <div class="main">
+  <!-- HOMESCREEN -->
+  <div id="homescreen">
+    <div class="main-wrap">
 
-    <!-- ROW 1: Aufgaben + Wetter/Maschinen/Tiere -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px;align-items:start">
-
-      <!-- LINKS: Aufgaben -->
-      <div class="card">
-        <div class="card-header"><span class="card-title">📋 Aufgaben</span></div>
-        <div class="card-body">
-          <div class="tabs">
-            <button class="tab active" onclick="switchTab('heute')">Heute</button>
-            <button class="tab" onclick="switchTab('7tage')">Nächste 7 Tage</button>
-          </div>
-          <div id="tasks-heute"></div>
-          <div id="tasks-7tage" style="display:none"></div>
+      <!-- 1. STATUSKARTEN -->
+      <div class="sec-label">Tagesübersicht</div>
+      <div class="status-grid">
+        <div class="sc c-green" id="sc-aufg">
+          <div class="sc-top"><span class="sc-icon">📋</span><span class="sc-lbl">Heute</span></div>
+          <div class="sc-val" id="sc-aufg-v">—</div>
+          <div class="sc-sub" id="sc-aufg-s"></div>
+        </div>
+        <div class="sc c-orange" id="sc-warn">
+          <div class="sc-top"><span class="sc-icon">⚠️</span><span class="sc-lbl">Warnungen</span></div>
+          <div class="sc-val" id="sc-warn-v">—</div>
+          <div class="sc-sub" id="sc-warn-s"></div>
+        </div>
+        <div class="sc c-blue" id="sc-wass">
+          <div class="sc-top"><span class="sc-icon">💧</span><span class="sc-lbl">Wasser</span></div>
+          <div class="sc-val" id="sc-wass-v">—</div>
+          <div class="sc-sub" id="sc-wass-s"></div>
+        </div>
+        <div class="sc c-blue" id="sc-wett">
+          <div class="sc-top"><span class="sc-icon">🌤️</span><span class="sc-lbl">Wetter</span></div>
+          <div class="sc-val" id="sc-wett-v">—</div>
+          <div class="sc-sub" id="sc-wett-s"></div>
         </div>
       </div>
 
-      <!-- RECHTS: Wetter + Windmotoren + Fahrzeuge + Bewässerung + Hunde -->
-      <div style="display:flex;flex-direction:column;gap:16px">
-
-        <div class="card">
-          <div class="card-header"><span class="card-title">🌤 Wetter — Erichsfelde</span></div>
-          <div class="card-body">
-            <div class="weather-current" id="weather-current"></div>
-            <div style="font-size:.75rem;color:var(--muted);margin-bottom:10px;font-weight:600;text-transform:uppercase;letter-spacing:.06em">7-Tage Vorhersage</div>
-            <div class="forecast-grid" id="forecast-grid"></div>
-          </div>
+      <!-- 2. PRIORITÄTEN — einklappbar -->
+      <div class="prio-wrap" id="prio-wrap">
+        <div class="prio-toggle" id="prio-toggle" onclick="togglePrio()">
+          <span class="prio-arrow" id="prio-arrow">▶</span>
+          <span class="prio-toggle-title">Prioritäten heute</span>
+          <span class="prio-count-badge" id="prio-badge">0</span>
         </div>
-
-        <div class="card">
-          <div class="card-header"><span class="card-title">💨 Windmotoren</span></div>
-          <div class="card-body" id="windmotoren-body"></div>
+        <div class="prio-body" id="prio-body">
+          <div id="prio-list"></div>
         </div>
-
-        <div class="card">
-          <div class="card-header"><span class="card-title">🚗 Fahrzeuge</span></div>
-          <div class="card-body" id="fahrzeuge-body"></div>
-        </div>
-
-        <div class="card">
-          <div class="card-header"><span class="card-title">💧 Bewässerung</span></div>
-          <div class="card-body" id="bewaesserung-body"></div>
-        </div>
-
-        <div class="card">
-          <div class="card-header"><span class="card-title">🐕 Hunde</span></div>
-          <div class="card-body" id="hunde-body"></div>
-        </div>
-
       </div>
+
+      <!-- 3. APP-LAUNCHER -->
+      <div class="sec-label">Module</div>
+      <div class="app-grid">
+
+        <div class="app-tile" onclick="showView('aufgaben')">
+          <span class="tile-badge b-red" id="badge-aufg" style="display:none"></span>
+          <div class="tile-icon">✅</div>
+          <div class="tile-title">Aufgaben</div>
+          <div class="tile-desc">Heute, 7 Tage, offene Tasks</div>
+        </div>
+
+        <div class="app-tile" onclick="showView('wetter')">
+          <div class="tile-icon">🌤️</div>
+          <div class="tile-title">Wetter</div>
+          <div class="tile-desc">Aktuell & Vorhersage</div>
+        </div>
+
+        <div class="app-tile" onclick="showView('maschinen')">
+          <span class="tile-badge b-orange" id="badge-masch" style="display:none"></span>
+          <div class="tile-icon">🚗</div>
+          <div class="tile-title">Maschinen</div>
+          <div class="tile-desc">Fahrzeuge & Windmotoren</div>
+        </div>
+
+        <div class="app-tile" onclick="showView('wasser')">
+          <div class="tile-icon">💧</div>
+          <div class="tile-title">Wasser</div>
+          <div class="tile-desc">Bohrlöcher & Bewässerung</div>
+        </div>
+
+        <div class="app-tile" onclick="showView('hunde')">
+          <span class="tile-badge b-orange" id="badge-hunde" style="display:none"></span>
+          <div class="tile-icon">🐕</div>
+          <div class="tile-title">Hunde</div>
+          <div class="tile-desc" id="hunde-tile-desc">Übersicht</div>
+        </div>
+
+        <div class="app-tile" onclick="showView('jahresplanung')">
+          <div class="tile-icon">🗓️</div>
+          <div class="tile-title">Jahresplan</div>
+          <div class="tile-desc">Monatsübersicht & Kalender</div>
+        </div>
+
+      </div><!-- /app-grid -->
+    </div><!-- /main-wrap -->
+  </div><!-- /homescreen -->
+
+  <!-- ─── SUB-VIEWS ─── -->
+
+  <div id="view-aufgaben" class="sub-view">
+    <div class="main-wrap">
+      <div class="back-nav">
+        <button class="back-btn" onclick="showHome()">← Zurück</button>
+        <span class="view-title">Aufgaben</span>
+      </div>
+      <div class="card"><div class="card-title">📋 Heute fällig</div><div id="vt-heute"></div></div>
+      <div class="card"><div class="card-title">📆 Nächste 7 Tage</div><div id="vt-woche"></div></div>
     </div>
-
-    <!-- ROW 2: Kalender -->
-    <div class="grid-full">
-      <div class="card">
-        <div class="card-header"><span class="card-title">📅 Kalender — Nächste 30 Tage</span></div>
-        <div class="card-body" id="kalender-body"></div>
-      </div>
-    </div>
-
-    <!-- ROW 3: Jahresplanung -->
-    <div class="grid-full">
-      <div class="card">
-        <div class="card-header"><span class="card-title">📆 Jahresplanung</span></div>
-        <div class="card-body">
-          <div class="jp-tabs" id="jp-tabs"></div>
-          <div class="jp-kw-wrap" id="jp-kw-wrap"></div>
-        </div>
-      </div>
-    </div>
-
   </div>
-</div>
+
+  <div id="view-wetter" class="sub-view">
+    <div class="main-wrap">
+      <div class="back-nav">
+        <button class="back-btn" onclick="showHome()">← Zurück</button>
+        <span class="view-title">Wetter</span>
+      </div>
+      <div class="card"><div class="card-title">🌡️ Aktuell</div><div class="wstat-row" id="vw-aktuell"></div></div>
+      <div class="card"><div class="card-title">📅 7-Tage-Vorhersage</div><div id="vw-forecast"></div></div>
+    </div>
+  </div>
+
+  <div id="view-maschinen" class="sub-view">
+    <div class="main-wrap">
+      <div class="back-nav">
+        <button class="back-btn" onclick="showHome()">← Zurück</button>
+        <span class="view-title">Maschinen</span>
+      </div>
+      <div class="card"><div class="card-title">🚗 Fahrzeuge</div><div id="vm-fzg"></div></div>
+      <div class="card"><div class="card-title">💨 Windmotoren</div><div id="vm-wind"></div></div>
+    </div>
+  </div>
+
+  <div id="view-wasser" class="sub-view">
+    <div class="main-wrap">
+      <div class="back-nav">
+        <button class="back-btn" onclick="showHome()">← Zurück</button>
+        <span class="view-title">Wasser & Bewässerung</span>
+      </div>
+      <div class="card"><div class="card-title">💧 Pflanzen</div><div class="plant-grid" id="vwa-pflanzen"></div></div>
+    </div>
+  </div>
+
+  <div id="view-hunde" class="sub-view">
+    <div class="main-wrap">
+      <div class="back-nav">
+        <button class="back-btn" onclick="showHome()">← Zurück</button>
+        <span class="view-title">Hunde</span>
+      </div>
+      <div class="card"><div class="card-title">🐕 Übersicht</div><div id="vh-list"></div></div>
+    </div>
+  </div>
+
+  <div id="view-jahresplanung" class="sub-view">
+    <div class="main-wrap">
+      <div class="back-nav">
+        <button class="back-btn" onclick="showHome()">← Zurück</button>
+        <span class="view-title">Jahresplanung</span>
+      </div>
+      <div class="card" style="padding:14px">
+        <div class="jp-tabs" id="jp-tabs"></div>
+        <div class="jp-desktop">
+          <div class="kw-scroll"><div id="jp-kw-table"></div></div>
+        </div>
+        <div class="jp-mobile">
+          <div class="jp-cat-tabs" id="jp-cat-tabs"></div>
+          <div id="jp-mob-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /app -->
 
 <script>
-const DATA_URL = 'https://raw.githubusercontent.com/gitnamelast/farm-dashboard/main/data/dashboard.json';
-const APP_VERSION = 'v2.4';
-let dashData = null;
+'use strict';
 
-// ===== AUTH =====
-async function sha256(msg) {
-  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(msg));
-  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
-}
-async function doLogin() {
-  const pw = document.getElementById('pw-input').value;
-  if (!pw) return;
-  const hash = await sha256(pw);
-  if (!dashData) { document.getElementById('login-error').textContent = 'Daten werden geladen…'; return; }
-  if (hash === dashData.passwort_hash) { localStorage.setItem('eri_auth', hash); showApp(); }
-  else { document.getElementById('login-error').textContent = 'Falsches Passwort'; }
-}
-function doLogout() { localStorage.removeItem('eri_auth'); location.reload(); }
-function showApp() {
-  document.getElementById('login-screen').style.display = 'none';
-  document.getElementById('app').style.display = 'block';
-  renderAll();
-}
-async function loadData() {
-  try {
-    const r = await fetch(DATA_URL + '?t=' + Date.now());
-    dashData = await r.json();
-  } catch(e) {
-    document.getElementById('login-error').textContent = 'Verbindungsfehler — bitte später versuchen';
-    return;
+// ─── KONFIGURATION ───────────────────────────────────────────
+const DASH_URL = 'https://raw.githubusercontent.com/gitnamelast/farm-dashboard/main/data/dashboard.json';
+const APP_VERSION = 'v3-RC1';
+
+// ─── DEMO-FALLBACK-DATEN ─────────────────────────────────────
+const D_DEMO = {
+  exportiert_am: new Date().toISOString().slice(0,19), // jetzt — kein stale-banner in demo
+  passwort_hash: "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
+  aufgaben: {
+    heute: [
+      {titel:"Tontauben-Anlage abbauen", prioritaet:3, kategorie:"allgemein", faellig:"2026-06-22", besitzer:"shared"},
+      {titel:"Haus und Hof in Ordnung bringen", prioritaet:3, kategorie:"wohnhaus", faellig:"2026-06-22", besitzer:"werner"}
+    ],
+    naechste_7_tage: [
+      {titel:"Driver License CE machen", prioritaet:1, kategorie:"allgemein", faellig:"2026-06-22", besitzer:"werner"},
+      {titel:"Glen fragen — Reparatur Häuser", prioritaet:1, kategorie:"wohnhaus", faellig:"2026-06-22", besitzer:"shared"},
+      {titel:"Rabies-Impfung + Supervax – alle Tiere", prioritaet:2, kategorie:"rinder", faellig:"2026-06-22", besitzer:"shared"},
+      {titel:"Herde A → C-G: Kühe für Bullen rausholen", prioritaet:2, kategorie:"rinder", faellig:"2026-06-23", besitzer:"shared"},
+      {titel:"EU Zertifikat Inspektion", prioritaet:2, kategorie:"rinder", faellig:"2026-06-24", besitzer:"werner"},
+      {titel:"Dr. Lala Inspektion 24. Juni", prioritaet:2, kategorie:"rinder", faellig:"2026-06-24", besitzer:"werner"},
+      {titel:"Bullen raus — Ende Sommerdeckzeit", prioritaet:2, kategorie:"rinder", faellig:"2026-06-25", besitzer:"shared"},
+      {titel:"Grassschneider fixen/servicen", prioritaet:2, kategorie:"allgemein", faellig:"2026-06-26", besitzer:"werner"}
+    ]
+  },
+  wetter: {
+    aktuell: {temp_max:18.5, temp_min:2.3, rainfall_24h:0.0, wind_speed:2.9},
+    vorhersage: [
+      {date:"2026-06-20",wcode:0,temp_max:21.0,temp_min:3.6,rain:0},
+      {date:"2026-06-21",wcode:0,temp_max:22.3,temp_min:5.2,rain:0},
+      {date:"2026-06-22",wcode:1,temp_max:23.7,temp_min:6.5,rain:0},
+      {date:"2026-06-23",wcode:1,temp_max:25.2,temp_min:8.7,rain:0},
+      {date:"2026-06-24",wcode:1,temp_max:25.4,temp_min:8.2,rain:0},
+      {date:"2026-06-25",wcode:0,temp_max:25.1,temp_min:8.0,rain:0},
+      {date:"2026-06-26",wcode:0,temp_max:22.4,temp_min:6.9,rain:0}
+    ]
+  },
+  windmotoren: [{name:"Verrit", status:"ok", standort:"Bergseite"}],
+  fahrzeuge:   [{name:"Toyota Landcruiser 70", typ:"Bakkie", naechste_wartung:"", status_wartung:"ok"}],
+  bewaesserung:[
+    {name:"Moringa",zuletzt:""},{name:"Zitrus",zuletzt:""},{name:"Mango",zuletzt:""},
+    {name:"Avocado",zuletzt:""},{name:"Guava",zuletzt:""},{name:"Feige",zuletzt:""},
+    {name:"Granadilla",zuletzt:""},{name:"Weinrebe",zuletzt:""}
+  ],
+  hunde:[
+    {name:"Emma",  rasse:"Anatolischer Schäferhund", naechste_behandlung:"2026-10-04"},
+    {name:"Ruby",  rasse:"BGS",                      naechste_behandlung:"2026-10-04"},
+    {name:"Schiwa",rasse:"Mix",                      naechste_behandlung:"2026-10-04"}
+  ],
+  jahresplanung:{
+    juni:{
+      jahresprogramm:[{titel:"Zaun Weidewechsel"},{titel:"Winterputz"},{titel:"Reparaturliste"}],
+      rinder:[{titel:"Lecke geben (Winterlecke)"},{titel:"Bullen raus C-G→A"},{titel:"Rabies+Supervax"}],
+      weide:[{titel:"Lecke geben (Winterlecke)"},{titel:"Winterfärsen: Hiprabovis"}],
+      haus_hof:[{titel:"Schlachtraum + Büro Inspektion"},{titel:"Werkzeugkammer Werner"}]
+    },
+    juli:{
+      jahresprogramm:[{titel:"Hunde Wurm-Tabletten"},{titel:"Reparaturliste"},{titel:"Auto-Graben umbauen"}],
+      rinder:[{titel:"Kastrieren und Enthornen"},{titel:"Winterherde: BVD + Vibrin"}],
+      weide:[{titel:"Kastrieren + Enthornen"},{titel:"Winterherde BVD + Vibrin"}],
+      haus_hof:[{titel:"Werkzeugkammer Jungs"},{titel:"Spülkasten Gästehaus"},{titel:"Fitting-Raum"}]
+    }
   }
-  const saved = localStorage.getItem('eri_auth');
-  if (saved && saved === dashData.passwort_hash) showApp();
+};
+
+// ─── DATEN LADEN (echte Daten oder Demo-Fallback) ───────────
+let D = null;
+let usingDemo = false;
+
+async function loadData(){
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(()=>controller.abort(), 8000);
+    const r = await fetch(DASH_URL, {signal: controller.signal});
+    clearTimeout(timeout);
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    D = await r.json();
+    usingDemo = false;
+  } catch(e) {
+    console.warn('[Farm] Datenfetch fehlgeschlagen, Demo-Modus:', e.message);
+    D = D_DEMO;
+    usingDemo = true;
+  }
 }
 
-// ===== RENDER ALL =====
-function renderAll() {
-  renderHeader();
-  renderTasks();
+const _dataReady = loadData();
+
+// ─── UTILITY ─────────────────────────────────────────────────
+const $ = id => document.getElementById(id);
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+const TODAY = new Date().toISOString().slice(0,10);
+
+function fmtDt(s){ if(!s)return'—'; const d=new Date(s); return d.toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric'})+' '+s.slice(11,16); }
+function fmtD(s){ if(!s)return'—'; const d=new Date(s+'T12:00'); return d.getDate()+'.'+(d.getMonth()+1)+'.'; }
+const WCODE={0:'☀️',1:'🌤️',2:'⛅',3:'☁️',61:'🌧️',80:'🌦️'};
+const DAYS=['So','Mo','Di','Mi','Do','Fr','Sa'];
+
+async function sha256(msg){
+  const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(msg));
+  return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,'0')).join('');
+}
+
+// ─── LOGIN ────────────────────────────────────────────────────
+async function doLogin(){
+  const btn = $('login-btn');
+  btn.disabled = true;
+  btn.textContent = '…';
+  $('login-error').textContent = '';
+
+  // Warte bis Daten geladen (mit Hinweis wenn noch loading)
+  $('login-loading').textContent = D ? '' : 'Daten werden geladen…';
+  await _dataReady;
+  $('login-loading').textContent = '';
+
+  const hash = await sha256($('pw-input').value);
+  if(hash === D.passwort_hash){
+    $('login-screen').style.display='none';
+    $('app').style.display='block';
+    initApp();
+  } else {
+    $('login-error').textContent = 'Falsches Passwort';
+    btn.disabled = false;
+    btn.textContent = 'Anmelden';
+  }
+}
+
+function doLogout(){
+  $('login-screen').style.display='flex';
+  $('app').style.display='none';
+  $('pw-input').value='';
+  $('login-error').textContent='';
+  $('login-btn').disabled=false;
+  $('login-btn').textContent='Anmelden';
+}
+
+$('pw-input').addEventListener('keydown', e=>{ if(e.key==='Enter') doLogin(); });
+
+// ─── NAVIGATION ───────────────────────────────────────────────
+const VIEWS=['aufgaben','wetter','maschinen','wasser','hunde','jahresplanung'];
+function showHome(){ $('homescreen').style.display='block'; VIEWS.forEach(v=>$('view-'+v).style.display='none'); window.scrollTo(0,0); }
+function showView(n){ $('homescreen').style.display='none'; VIEWS.forEach(v=>$('view-'+v).style.display='none'); $('view-'+n).style.display='block'; window.scrollTo(0,0); }
+
+// ─── PRIORITÄTEN TOGGLE ───────────────────────────────────────
+let prioOpen = false;
+function togglePrio(){
+  prioOpen = !prioOpen;
+  $('prio-body').classList.toggle('open', prioOpen);
+  $('prio-arrow').classList.toggle('open', prioOpen);
+}
+function openPrio(){
+  prioOpen = true;
+  $('prio-body').classList.add('open');
+  $('prio-arrow').classList.add('open');
+}
+
+// ─── INIT ─────────────────────────────────────────────────────
+function initApp(){
+  // Header
+  $('export-time').textContent = 'Stand: '+fmtDt(D.exportiert_am)+' · '+APP_VERSION;
+
+  // Stale-Banner (nur wenn Daten >12h alt und keine Demo)
+  const diffH = (Date.now()-new Date(D.exportiert_am))/3600000;
+  if(!usingDemo && diffH>12){
+    $('stale-banner').style.display='block';
+    $('stale-h').textContent=Math.round(diffH);
+  }
+
+  // Demo-Banner
+  if(usingDemo) $('demo-banner').style.display='block';
+
+  // Hunde-Tile: dynamische Namen
+  const hundeNamen=(D.hunde||[]).map(h=>h.name).join(', ');
+  $('hunde-tile-desc').textContent = hundeNamen || 'Keine Hunde eingetragen';
+
+  renderStatuskarten();
+  renderPrioritaeten();
+  renderAufgaben();
   renderWetter();
-  renderWindmotoren();
-  renderFahrzeuge();
-  renderBewaesserung();
+  renderMaschinen();
+  renderWasser();
   renderHunde();
-  renderKalender();
   renderJahresplanung();
 }
 
-// ===== HEADER =====
-function renderHeader() {
-  const exp = dashData.exportiert_am;
-  const d = new Date(exp);
-  const fmt = d.getDate()+'.'+(d.getMonth()+1)+'.'+d.getFullYear()+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
-  document.getElementById('export-time').textContent = 'Stand: ' + fmt + ' · ' + APP_VERSION;
-  const diffH = (Date.now() - d.getTime()) / 3600000;
-  if (diffH > 24) {
-    const banner = document.getElementById('stale-banner');
-    banner.style.display = 'block';
-    banner.textContent = '⚠ Daten veraltet — letzter Stand vor ' + Math.round(diffH) + ' Stunden';
-  }
+// ─── STATUSKARTEN ─────────────────────────────────────────────
+function renderStatuskarten(){
+  const heute  = D.aufgaben?.heute||[];
+  const woche  = D.aufgaben?.naechste_7_tage||[];
+  const overdue = heute.filter(t=>t.faellig && t.faellig<TODAY).length;
+  const prio1   = [...heute,...woche].filter(t=>t.prioritaet===1).length;
+
+  // Aufgaben heute
+  $('sc-aufg-v').textContent = heute.length;
+  $('sc-aufg-s').textContent = overdue>0 ? overdue+' überfällig' : heute.length>0 ? 'aktuell' : 'nichts fällig';
+  if(overdue>0){ $('sc-aufg').classList.replace('c-green','c-red'); $('sc-aufg-v').className='sc-val v-red'; }
+  else { $('sc-aufg-v').className='sc-val v-green'; }
+
+  // Warnungen
+  $('sc-warn-v').textContent = prio1;
+  $('sc-warn-s').textContent = 'Prio 1 diese Woche';
+  if(prio1>0){ $('sc-warn-v').className='sc-val v-orange'; }
+  else { $('sc-warn').classList.replace('c-orange','c-green'); $('sc-warn-v').className='sc-val v-green'; }
+
+  // Wasser
+  const wmot = (D.windmotoren||[]).find(w=>w.status==='ok');
+  const wProblem = (D.windmotoren||[]).filter(w=>w.status!=='ok').length;
+  $('sc-wass-v').textContent = wProblem>0 ? wProblem+'!' : (D.windmotoren||[]).length>0 ? 'OK' : '—';
+  $('sc-wass-s').textContent = wmot ? wmot.name+' läuft' : wProblem>0 ? 'Windmotor prüfen' : 'Keine Daten';
+  if(wProblem>0){ $('sc-wass-v').className='sc-val v-orange'; }
+  else { $('sc-wass-v').className='sc-val v-green'; }
+
+  // Wetter
+  const wmax = D.wetter?.aktuell?.temp_max;
+  const rain  = D.wetter?.aktuell?.rainfall_24h||0;
+  $('sc-wett-v').textContent = wmax!=null ? wmax+'°' : '—';
+  $('sc-wett-s').textContent = rain>0 ? rain+'mm Regen' : 'kein Regen';
 }
 
-// ===== HELPERS =====
-function katClass(k) {
-  const m = {allgemein:'kat-allgemein',wohnhaus:'kat-wohnhaus',garten:'kat-garten'};
-  return m[k] || 'kat-default';
-}
-function katLabel(k) {
-  const m = {allgemein:'Allgemein',wohnhaus:'Haus & Hof',garten:'Garten',rinder:'Rinder',schafe:'Schafe',hunde:'Hunde',weide:'Weide',ernte:'Ernte',buschkontrolle:'Buschkontrolle',boreholes:'Boreholes',pumpen:'Pumpen',tanks:'Tanks',traenken:'Tränken',bewaesserung:'Bewässerung',fahrzeuge:'Fahrzeuge',traktoren:'Traktoren',windmotoren:'Windmotoren',generatoren:'Generatoren',sonstige_maschinen:'Sonstige',zaun:'Zaun',gebaeude:'Gebäude',elektrik:'Elektrik',solar:'Solar',werkstatt:'Werkstatt',strassen:'Straßen',haustiere:'Haustiere'};
-  return m[k] || k || '—';
-}
-function besitzerLabel(b) { return b==='werner'?'Werner':b==='wanda'?'Wanda':'Gemeinsam'; }
-function fmtDate(s) {
-  if (!s) return '—';
-  const d = new Date(s+'T00:00:00');
-  return d.getDate()+'.'+(d.getMonth()+1)+'.'+d.getFullYear();
-}
-function esc(s) {
-  if (!s) return '';
-  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+// ─── PRIORITÄTEN ─────────────────────────────────────────────
+function renderPrioritaeten(){
+  const items=[];
+  const allT=[...(D.aufgaben?.heute||[]),...(D.aufgaben?.naechste_7_tage||[])];
+
+  allT.filter(t=>t.prioritaet===1).slice(0,3).forEach(t=>{
+    items.push({dot:'crit',text:t.titel,sub:'Fällig: '+fmtD(t.faellig)+' · '+t.kategorie,tag:'aufgabe',taglbl:'Aufgabe'});
+  });
+  (D.hunde||[]).filter(h=>h.naechste_behandlung && h.naechste_behandlung<=TODAY).slice(0,1).forEach(h=>{
+    items.push({dot:'warn',text:h.name+' — Behandlung fällig',sub:h.rasse,tag:'hund',taglbl:'Hund'});
+  });
+  (D.fahrzeuge||[]).filter(f=>f.status_wartung==='overdue').slice(0,1).forEach(f=>{
+    items.push({dot:'warn',text:f.name+' — Wartung überfällig',sub:'Fahrzeug',tag:'masch',taglbl:'Maschine'});
+  });
+  (D.windmotoren||[]).filter(w=>w.status==='overdue').slice(0,1).forEach(w=>{
+    items.push({dot:'warn',text:w.name+' — Service überfällig',sub:'Windmotor',tag:'masch',taglbl:'Maschine'});
+  });
+
+  const list = items.slice(0,5);
+  const hasCrit = list.length > 0;
+
+  const badge = $('prio-badge');
+  badge.textContent = list.length===0 ? 'Alles OK' : list.length+(list.length===1?' Eintrag':' Einträge');
+  badge.className = 'prio-count-badge'+(hasCrit?'':' none');
+
+  if(hasCrit){ $('prio-toggle').classList.add('has-crit'); openPrio(); }
+
+  $('prio-list').innerHTML = list.length===0
+    ? '<div class="prio-empty">✅ Nichts Kritisches — alles in Ordnung</div>'
+    : list.map(i=>`
+      <div class="prio-item">
+        <span class="pdot ${i.dot}"></span>
+        <div class="prio-txt">${esc(i.text)}<small>${esc(i.sub)}</small></div>
+        <span class="ptag ${i.tag}">${i.taglbl}</span>
+      </div>`).join('');
+
+  const p1c=allT.filter(t=>t.prioritaet===1).length;
+  if(p1c>0){ const b=$('badge-aufg'); b.style.display='block'; b.textContent=p1c+' dringend'; }
 }
 
-// ===== TASKS =====
-function taskHtml(tasks) {
-  if (!tasks || !tasks.length) return '<div class="empty">Keine Aufgaben</div>';
-  let html = tasks.slice(0,20).map(t => `
-    <div class="task-item">
-      <div class="prio-dot prio-${t.prioritaet}"></div>
-      <div style="flex:1">
+// ─── AUFGABEN ─────────────────────────────────────────────────
+function renderAufgaben(){
+  function tHTML(t){
+    const od=t.faellig&&t.faellig<TODAY;
+    return `<div class="task-item">
+      <span class="tprio p${t.prioritaet||4}"></span>
+      <div class="task-info">
         <div class="task-title">${esc(t.titel)}</div>
-        <div class="task-meta">
-          <span class="kat-chip ${katClass(t.kategorie)}">${katLabel(t.kategorie)}</span>
-          <span>${fmtDate(t.faellig)}</span>
-          <span>${besitzerLabel(t.besitzer)}</span>
-        </div>
-        ${t.beschreibung ? `<div style="font-size:.75rem;color:var(--muted);margin-top:3px">${esc(t.beschreibung)}</div>` : ''}
+        <div class="task-meta">${od?'<span class="tag-od">Überfällig</span>':''}${fmtD(t.faellig)} · ${esc(t.kategorie)} · ${esc(t.besitzer)}</div>
       </div>
-    </div>`).join('');
-  if (tasks.length > 20) html += `<div style="text-align:center;padding:10px;font-size:.75rem;color:var(--muted)">+ ${tasks.length-20} weitere</div>`;
-  return html;
-}
-function renderTasks() {
-  document.getElementById('tasks-heute').innerHTML  = taskHtml(dashData.aufgaben.heute);
-  document.getElementById('tasks-7tage').innerHTML  = taskHtml(dashData.aufgaben.naechste_7_tage);
-}
-function switchTab(which) {
-  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',(i===0&&which==='heute')||(i===1&&which==='7tage')));
-  document.getElementById('tasks-heute').style.display  = which==='heute'  ? '' : 'none';
-  document.getElementById('tasks-7tage').style.display  = which==='7tage'  ? '' : 'none';
+    </div>`;
+  }
+  $('vt-heute').innerHTML=(D.aufgaben?.heute||[]).map(tHTML).join('')
+    ||'<p class="empty-state">Keine Aufgaben heute.</p>';
+  $('vt-woche').innerHTML=(D.aufgaben?.naechste_7_tage||[]).map(tHTML).join('')
+    ||'<p class="empty-state">Keine weiteren Aufgaben diese Woche.</p>';
 }
 
-// ===== WETTER =====
-function wIcon(wcode, rain) {
-  if (rain > 5) return '🌧'; if (rain > 0) return '🌦';
-  if (wcode >= 3) return '☁️'; if (wcode === 2) return '⛅'; return '☀️';
-}
-function wochentag(ds) { return ['So','Mo','Di','Mi','Do','Fr','Sa'][new Date(ds+'T00:00:00').getDay()]; }
-function renderWetter() {
-  const w = dashData.wetter.aktuell;
-  document.getElementById('weather-current').innerHTML = `
-    <div class="weather-stat"><div class="weather-val">${w.temp_max??'—'}°</div><div class="weather-lbl">Max °C</div></div>
-    <div class="weather-stat"><div class="weather-val">${w.temp_min??'—'}°</div><div class="weather-lbl">Min °C</div></div>
-    <div class="weather-stat"><div class="weather-val">${w.rainfall_24h??0}<span style="font-size:.9rem">mm</span></div><div class="weather-lbl">Regen 24h</div></div>
-    <div class="weather-stat"><div class="weather-val">${w.wind_speed??'—'}<span style="font-size:.9rem">km/h</span></div><div class="weather-lbl">Wind</div></div>`;
-  const fc = dashData.wetter.vorhersage || [];
-  if (!fc.length) { document.getElementById('forecast-grid').innerHTML='<div style="color:var(--muted);font-size:.8rem;grid-column:1/-1">Keine Vorhersage</div>'; return; }
-  document.getElementById('forecast-grid').innerHTML = fc.map(f=>`
-    <div class="forecast-day">
-      <div class="day-name">${wochentag(f.date)}</div>
-      <div class="day-icon">${wIcon(f.wcode,f.rain)}</div>
-      <div class="day-max">${f.temp_max}°</div>
-      <div class="day-min">${f.temp_min}°</div>
-      ${f.rain>0?`<div class="day-rain">${f.rain}mm`:''}
-    </div>`).join('');
-}
+// ─── WETTER ───────────────────────────────────────────────────
+function renderWetter(){
+  const a=D.wetter?.aktuell;
+  if(!a){
+    $('vw-aktuell').innerHTML='<p class="empty-state">Keine Wetterdaten verfügbar.</p>';
+    $('vw-forecast').innerHTML='';
+    return;
+  }
+  $('vw-aktuell').innerHTML=[
+    ['Max',(a.temp_max!=null?a.temp_max:'—')+'°C'],
+    ['Min',(a.temp_min!=null?a.temp_min:'—')+'°C'],
+    ['Regen',(a.rainfall_24h||0)+'mm'],
+    ['Wind',(a.wind_speed!=null?a.wind_speed:'—')+' km/h']
+  ].map(([l,v])=>`<div class="wstat"><div class="wsl">${l}</div><div class="wsv">${v}</div></div>`).join('');
 
-// ===== MASCHINEN =====
-function renderWindmotoren() {
-  const items = dashData.windmotoren || [];
-  if (!items.length) { document.getElementById('windmotoren-body').innerHTML='<div class="empty">Keine Windmotoren</div>'; return; }
-  document.getElementById('windmotoren-body').innerHTML = items.map(m=>`
-    <div class="machine-item">
-      <div>
-        <div class="machine-name">${esc(m.name)}</div>
-        <div class="machine-sub">${m.marke_modell||''} ${m.standort?'· '+m.standort:''}</div>
-        <div class="machine-sub">${m.naechster_service?'📅 Nächster Service: '+fmtDate(m.naechster_service):'Kein Service eingetragen'}</div>
-      </div>
-      <span class="status-chip status-${m.status}">${m.status==='ok'?'OK':m.status==='bald_faellig'?'Bald fällig':'Überfällig'}</span>
-    </div>`).join('');
-}
-function renderFahrzeuge() {
-  const items = dashData.fahrzeuge || [];
-  if (!items.length) { document.getElementById('fahrzeuge-body').innerHTML='<div class="empty">Keine Fahrzeuge</div>'; return; }
-  document.getElementById('fahrzeuge-body').innerHTML = items.map(v=>`
-    <div class="machine-item">
-      <div>
-        <div class="machine-name">${esc(v.name)}</div>
-        <div class="machine-sub">${v.typ||''}</div>
-        <div class="machine-sub">${v.naechste_wartung?'🔧 Wartung: '+fmtDate(v.naechste_wartung):'Keine Wartung eingetragen'}</div>
-      </div>
-      <span class="status-chip status-${v.status_wartung}">${v.status_wartung==='ok'?'OK':v.status_wartung==='bald_faellig'?'Bald fällig':'Überfällig'}</span>
-    </div>`).join('');
-}
-function renderBewaesserung() {
-  const items = (dashData.bewaesserung||[]).filter(p=>p.name&&!['plants','rain_today_mm','recommend_skip_irrigation'].includes(p.name));
-  if (!items.length) { document.getElementById('bewaesserung-body').innerHTML='<div class="empty">Keine Daten</div>'; return; }
-  document.getElementById('bewaesserung-body').innerHTML =
-    '<div class="irr-grid">'+items.map(p=>`
-      <div class="irr-item"><div>
-        <div class="irr-name">🌱 ${esc(p.name)}</div>
-        <div class="irr-date">${p.zuletzt_bewaessert?fmtDate(p.zuletzt_bewaessert):'Noch nie'}</div>
-      </div></div>`).join('')+'</div>';
-}
-function renderHunde() {
-  const hunde = dashData.hunde||[];
-  if (!hunde.length) { document.getElementById('hunde-body').innerHTML='<div class="empty">Keine Hunde</div>'; return; }
-  document.getElementById('hunde-body').innerHTML = hunde.map(h=>{
-    const letzte4 = (h.behandlungen||[]).slice(0,4);
-    const bHtml = letzte4.length ? `
-      <table class="behandlung-table"><thead><tr>
-        <th>Datum</th><th>Behandlung</th><th>Mittel</th><th>Gewicht</th><th>Lot-Nr</th><th>Verfallsdatum</th><th>Von</th>
-      </tr></thead><tbody>
-        ${letzte4.map(b=>`<tr>
-          <td>${fmtDate(b.datum)}</td><td>${esc(b.behandlungsart)}</td>
-          <td>${esc(b.mittel||'—')}</td><td>${b.gewicht_kg?b.gewicht_kg+' kg':'—'}</td>
-          <td>${esc(b.lot_nummer||'—')}</td><td>${fmtDate(b.verfallsdatum_mittel)}</td>
-          <td>${esc(b.durchgefuehrt_von||'—')}</td>
-        </tr>`).join('')}
-      </tbody></table>` : '<div class="no-behandlung">Keine Behandlungen gespeichert</div>';
-    return `<div class="dog-card">
-      <div class="dog-header">
-        <div class="dog-name">🐕 ${esc(h.name)}</div>
-        <span class="status-chip status-${h.status}">${h.status==='ok'?'OK':h.status==='bald_faellig'?'Bald fällig':'Überfällig'}</span>
-      </div>
-      <div class="dog-meta">${esc(h.rasse||'—')}</div>
-      ${h.naechste_behandlung?`<div class="dog-next">📅 Nächste Behandlung: ${fmtDate(h.naechste_behandlung)}</div>`:''}
-      ${h.letztes_gewicht_kg?`<div class="dog-weight">⚖ ${h.letztes_gewicht_kg} kg${h.letztes_gewicht_datum?' ('+fmtDate(h.letztes_gewicht_datum)+')':''}</div>`:''}
-      ${bHtml}</div>`;
+  const rows=(D.wetter?.vorhersage||[]).slice(0,7);
+  if(!rows.length){
+    $('vw-forecast').innerHTML='<p class="empty-state">Keine Vorhersage verfügbar.</p>';
+    return;
+  }
+  $('vw-forecast').innerHTML=rows.map(f=>{
+    const x=new Date(f.date+'T12:00');
+    return `<div class="fc-row">
+      <span class="fc-day">${DAYS[x.getDay()]} ${x.getDate()}.</span>
+      <span>${WCODE[f.wcode]||'🌡️'}</span>
+      <span class="fc-temp">${f.temp_max}° / ${f.temp_min}°</span>
+      <span class="fc-rain">${f.rain>0?f.rain+'mm':'—'}</span>
+    </div>`;
   }).join('');
 }
 
-// ===== KALENDER =====
-function renderKalender() {
-  const items = dashData.kalender||[];
-  if (!items.length) { document.getElementById('kalender-body').innerHTML='<div class="empty">Keine Einträge</div>'; return; }
-  const grouped={};
-  items.forEach(e=>{ if(!grouped[e.datum]) grouped[e.datum]=[]; grouped[e.datum].push(e); });
-  let html='<div style="columns:2;gap:24px">';
-  Object.keys(grouped).sort().forEach(datum=>{
-    html+=`<div style="break-inside:avoid;margin-bottom:16px">
-      <div style="font-size:.72rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;font-family:'IBM Plex Mono',monospace">${fmtDate(datum)}</div>`;
-    grouped[datum].forEach(e=>{
-      html+=`<div class="kal-item">
-        <span class="kat-chip ${katClass(e.kategorie)}">${katLabel(e.kategorie)}</span>
-        <span class="kal-title">${esc(e.titel)}</span>
-        <span style="font-size:.72rem;color:var(--muted)">${besitzerLabel(e.besitzer)}</span>
-      </div>`;
-    });
-    html+='</div>';
-  });
-  document.getElementById('kalender-body').innerHTML = html+'</div>';
+// ─── MASCHINEN ────────────────────────────────────────────────
+function renderMaschinen(){
+  $('vm-fzg').innerHTML=(D.fahrzeuge||[]).map(f=>`
+    <div class="list-row">
+      <div><div class="list-name">🚗 ${esc(f.name)}</div><div class="list-sub">${esc(f.typ||'—')}</div></div>
+      <span class="${f.status_wartung==='ok'?'dot-ok':'dot-warn'}"></span>
+    </div>`).join('')||'<p class="empty-state">Keine Fahrzeuge eingetragen.</p>';
+
+  $('vm-wind').innerHTML=(D.windmotoren||[]).map(w=>`
+    <div class="list-row">
+      <div><div class="list-name">💨 ${esc(w.name)}</div><div class="list-sub">${esc(w.standort||'—')}</div></div>
+      <span class="${w.status==='ok'?'dot-ok':'dot-warn'}"></span>
+    </div>`).join('')||'<p class="empty-state">Keine Windmotoren eingetragen.</p>';
+
+  const ov=(D.fahrzeuge||[]).filter(f=>f.status_wartung!=='ok').length
+          +(D.windmotoren||[]).filter(w=>w.status!=='ok').length;
+  if(ov>0){const b=$('badge-masch');b.style.display='block';b.textContent=ov+' Wartung';}
 }
 
-// ===== JAHRESPLANUNG =====
+// ─── WASSER ───────────────────────────────────────────────────
+function renderWasser(){
+  const pflanzen=D.bewaesserung||[];
+  if(!pflanzen.length){
+    $('vwa-pflanzen').innerHTML='<p class="empty-state" style="grid-column:1/-1">Keine Bewässerungsdaten eingetragen.</p>';
+    return;
+  }
+  $('vwa-pflanzen').innerHTML=pflanzen.map(p=>`
+    <div class="plant-card">
+      <div style="font-size:1.1rem">🌱</div>
+      <div class="plant-name">${esc(p.name)}</div>
+      <div class="plant-sub">${p.zuletzt?'Zuletzt: '+fmtD(p.zuletzt):'Nie bewässert'}</div>
+    </div>`).join('');
+}
 
-const MONTHS = [
-  {key:'januar',label:'Januar'},{key:'februar',label:'Februar'},{key:'maerz',label:'März'},
-  {key:'april',label:'April'},{key:'mai',label:'Mai'},{key:'juni',label:'Juni'},
-  {key:'juli',label:'Juli'},{key:'august',label:'August'},{key:'september',label:'September'},
-  {key:'oktober',label:'Oktober'},{key:'november',label:'November'},{key:'dezember',label:'Dezember'}
+// ─── HUNDE ────────────────────────────────────────────────────
+function renderHunde(){
+  const hunde=D.hunde||[];
+  if(!hunde.length){
+    $('vh-list').innerHTML='<p class="empty-state">Keine Hunde eingetragen.</p>';
+    return;
+  }
+  let ov=0;
+  $('vh-list').innerHTML=hunde.map(h=>{
+    const od=h.naechste_behandlung&&h.naechste_behandlung<=TODAY;
+    if(od)ov++;
+    return `<div class="list-row">
+      <div>
+        <div class="list-name">${esc(h.name)} <span style="font-weight:400;font-size:.78rem;color:var(--muted)">(${esc(h.rasse)})</span></div>
+        <div class="list-sub">Nächste Behandlung: ${fmtD(h.naechste_behandlung)}</div>
+      </div>
+      <span class="${od?'dot-warn':'dot-ok'}"></span>
+    </div>`;
+  }).join('');
+  if(ov>0){const b=$('badge-hunde');b.style.display='block';b.textContent=ov+' fällig';}
+}
+
+// ─── JAHRESPLANUNG v1 ─────────────────────────────────────────
+
+const JP_MONTHS = [
+  {k:'januar',l:'Jan',li:'Januar'},{k:'februar',l:'Feb',li:'Februar'},{k:'maerz',l:'Mär',li:'März'},
+  {k:'april',l:'Apr',li:'April'},{k:'mai',l:'Mai',li:'Mai'},{k:'juni',l:'Jun',li:'Juni'},
+  {k:'juli',l:'Jul',li:'Juli'},{k:'august',l:'Aug',li:'August'},{k:'september',l:'Sep',li:'September'},
+  {k:'oktober',l:'Okt',li:'Oktober'},{k:'november',l:'Nov',li:'November'},{k:'dezember',l:'Dez',li:'Dezember'}
 ];
-const MONTH_IDX = {januar:0,februar:1,maerz:2,april:3,mai:4,juni:5,juli:6,august:7,september:8,oktober:9,november:10,dezember:11};
-const DE_MONTHS_SHORT = ['Jan','Feb','März','Apr','Mai','Juni','Juli','Aug','Sept','Okt','Nov','Dez'];
+const JP_MIDX = {januar:0,februar:1,maerz:2,april:3,mai:4,juni:5,juli:6,august:7,september:8,oktober:9,november:10,dezember:11};
+const JP_MOS  = ['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'];
 
-let activeMonth = MONTHS[new Date().getMonth()].key;
+const JP_COLS = [
+  {k:'jahresprogramm', l:'Jahresprogramm', th:'th-prog',   td:'c-prog'},
+  {k:'rinder',         l:'Rinder',         th:'th-rinder', td:'c-rinder'},
+  {k:'weide',          l:'Weide',          th:'th-weide',  td:'c-weide'},
+  {k:'haus_hof',       l:'Haus & Hof',     th:'th-haus',   td:'c-haus'}
+];
+const JP_CAT_ICON = {jahresprogramm:'📋',rinder:'🐄',weide:'🌿',haus_hof:'🏠'};
+const JP_CAT_CLS  = {jahresprogramm:'ct-prog',rinder:'ct-rinder',weide:'ct-weide',haus_hof:'ct-haus'};
 
-// ISO-Kalenderwoche berechnen
-function getISOWeek(date) {
-  const d = new Date(date);
-  d.setHours(0,0,0,0);
-  d.setDate(d.getDate() + 3 - (d.getDay()+6)%7);
-  const w1 = new Date(d.getFullYear(),0,4);
-  return 1 + Math.round(((d-w1)/86400000 - 3 + (w1.getDay()+6)%7)/7);
+const TASK_JP_MAP = {
+  rinder:'rinder', schafe:'rinder', haustiere:'rinder',
+  wohnhaus:'haus_hof', gebaeude:'haus_hof', garten:'haus_hof', hunde:'haus_hof',
+  zaun:'weide', weide:'weide',
+};
+function taskToJPCol(kat){ return TASK_JP_MAP[(kat||'').toLowerCase()] || 'jahresprogramm'; }
+
+let jpActive = JP_MONTHS[new Date().getMonth()].k;
+let jpMobCat = 'rinder';
+let _jpBuilt  = null;
+
+// ── KW-Hilfsfunktionen ──────────────────────────────────────
+function getISOWeek(date){
+  const d=new Date(date); d.setHours(0,0,0,0);
+  d.setDate(d.getDate()+3-(d.getDay()+6)%7);
+  const w1=new Date(d.getFullYear(),0,4);
+  return 1+Math.round(((d-w1)/86400000-3+(w1.getDay()+6)%7)/7);
 }
-
-// Alle KWs ermitteln, die einen Monat überlappen
-function getKWsForMonth(year, monthIdx) {
-  const weeks = [];
-  const firstDay = new Date(year, monthIdx, 1);
-  const lastDay  = new Date(year, monthIdx+1, 0);
-  let cur = new Date(firstDay);
-  const dow = cur.getDay();
-  cur.setDate(cur.getDate() - (dow===0 ? 6 : dow-1));
-  while (cur <= lastDay) {
-    const start = new Date(cur);
-    const end   = new Date(cur); end.setDate(end.getDate()+6);
-    weeks.push({ kw: getISOWeek(start), start, end });
-    cur.setDate(cur.getDate()+7);
+function getKWsForMonth(year,mi){
+  const weeks=[], last=new Date(year,mi+1,0);
+  let cur=new Date(year,mi,1);
+  const dow=cur.getDay(); cur.setDate(cur.getDate()-(dow===0?6:dow-1));
+  while(cur<=last){
+    const s=new Date(cur), e=new Date(cur); e.setDate(e.getDate()+6);
+    weeks.push({kw:getISOWeek(s),start:s,end:e}); cur.setDate(cur.getDate()+7);
   }
   return weeks;
 }
-
-function fmtDateRange(start, end) {
-  return start.getDate()+'.–'+end.getDate()+'. '+DE_MONTHS_SHORT[end.getMonth()];
+// FIX: Lokale Zeit statt UTC (wichtig für Namibia UTC+2)
+function isoStr(d){
+  return d.getFullYear()+'-'
+    +String(d.getMonth()+1).padStart(2,'0')+'-'
+    +String(d.getDate()).padStart(2,'0');
 }
-function fmtCellDate(dateStr) {
-  if (!dateStr) return '';
-  const d = new Date(dateStr+'T00:00:00');
-  return String(d.getDate()).padStart(2,'0')+'.'+String(d.getMonth()+1).padStart(2,'0');
-}
-function isCurrentKW(week) {
-  const today = new Date();
-  return today >= week.start && today <= week.end;
-}
-function isoStr(d) { return d.toISOString().slice(0,10); }
+function fmtRange(s,e){ return s.getDate()+'.–'+e.getDate()+'. '+JP_MOS[e.getMonth()]; }
+function fmtCell(dateStr){ if(!dateStr)return''; const d=new Date(dateStr+'T00:00:00'); return String(d.getDate()).padStart(2,'0')+'.'+String(d.getMonth()+1).padStart(2,'0'); }
+function isThisWeek(w){ const t=new Date(); return t>=w.start&&t<=w.end; }
 
-function renderJahresplanung() {
-  const jp = dashData.jahresplanung;
-  if (!jp) {
-    document.getElementById('jp-kw-wrap').innerHTML = '<div class="empty">Keine Jahresplanung im Export vorhanden.</div>';
-    return;
-  }
+// ── JP-Daten aufbauen ────────────────────────────────────────
+function buildJPData(){
+  if(_jpBuilt) return _jpBuilt;
+  const base = JSON.parse(JSON.stringify(D.jahresplanung||{}));
+  JP_MONTHS.forEach(m=>{ if(!base[m.k]) base[m.k]={jahresprogramm:[],rinder:[],weide:[],haus_hof:{}}; });
 
-  // Kalender-Lookup: normalisierter Titel → Datum
+  // Kalender-Lookup
   const kalLookup = {};
-  function normTitel(s) { return (s || '').trim().toLowerCase(); }
-  (dashData.kalender || []).forEach(function(e) {
-    if (e.datum && e.titel) kalLookup[normTitel(e.titel)] = e.datum;
-  });
-  // Auch aus Aufgaben-Listen (heute + 7 Tage)
-  ['heute', 'naechste_7_tage'].forEach(function(key) {
-    (((dashData.aufgaben || {})[key]) || []).forEach(function(t) {
-      var d = t.faellig || t.due_date || '';
-      if (d && t.titel) kalLookup[normTitel(t.titel)] = d;
-    });
-  });
+  (D.kalender||[]).forEach(e=>{ if(e.datum&&e.titel) kalLookup[e.titel.trim().toLowerCase()]=e.datum; });
 
-  // Jahresplanung-Einträge ohne Datum anreichern
-  Object.values(jp).forEach(function(monat) {
-    ['jahresprogramm','rinder','weide','haus_hof'].forEach(function(cat) {
-      (monat[cat] || []).forEach(function(item) {
-        if (!item.datum) {
-          var found = kalLookup[normTitel(item.titel)];
-          if (found) item.datum = found;
-        }
+  // Jahresplanung ohne Datum anreichern
+  JP_MONTHS.forEach(m=>{
+    JP_COLS.forEach(c=>{
+      if(!base[m.k][c.k]) base[m.k][c.k]=[];
+      (base[m.k][c.k]||[]).forEach(item=>{
+        if(!item.datum){ const f=kalLookup[(item.titel||'').trim().toLowerCase()]; if(f) item.datum=f; }
       });
     });
   });
 
-  window._jpData = jp;
-  document.getElementById('jp-tabs').innerHTML = MONTHS.map(m =>
-    '<button class="jp-btn' + (m.key===activeMonth?' active':'') + '" onclick="selectMonth(\'' + m.key + '\')">' + m.label + '</button>'
+  // Echte Tasks injizieren
+  const allTasks=[...(D.aufgaben?.heute||[]),...(D.aufgaben?.naechste_7_tage||[])];
+  allTasks.forEach(t=>{
+    const due=t.faellig||t.due_date||'';
+    if(!due) return;
+    const mi=parseInt(due.slice(5,7),10)-1;
+    if(mi<0||mi>11) return;
+    const mKey=JP_MONTHS[mi].k;
+    const col=taskToJPCol(t.kategorie);
+    if(!base[mKey][col]) base[mKey][col]=[];
+    const exists=base[mKey][col].some(x=>(x.titel||'').trim().toLowerCase()===(t.titel||'').trim().toLowerCase());
+    if(!exists) base[mKey][col].push({titel:t.titel,datum:due,fromTask:true});
+  });
+
+  _jpBuilt=base;
+  return base;
+}
+
+// ── Render ───────────────────────────────────────────────────
+function renderJahresplanung(){
+  const jp=buildJPData();
+  $('jp-tabs').innerHTML=JP_MONTHS.map(m=>
+    `<span class="jp-tab${m.k===jpActive?' active':''}" onclick="selectJP('${m.k}')">${m.l}</span>`
   ).join('');
-  renderKWGrid(jp, activeMonth);
+  renderJPDesktop(jp,jpActive);
+  renderJPMobile(jp,jpActive,jpMobCat);
 }
 
-function selectMonth(key) {
-  activeMonth = key;
-  document.querySelectorAll('.jp-btn').forEach(b => {
-    b.classList.toggle('active', b.textContent === MONTHS.find(m=>m.key===key).label);
-  });
-  if (window._jpData) renderKWGrid(window._jpData, key);
+function selectJP(k){
+  jpActive=k;
+  document.querySelectorAll('.jp-tab').forEach((b,i)=>b.classList.toggle('active',JP_MONTHS[i].k===k));
+  const jp=buildJPData();
+  renderJPDesktop(jp,k);
+  renderJPMobile(jp,k,jpMobCat);
 }
 
-function renderKWGrid(jp, key) {
-  const m     = jp[key] || {};
-  const year  = new Date().getFullYear();
-  const weeks = getKWsForMonth(year, MONTH_IDX[key]);
-
-  const cols = [
-    {key:'jahresprogramm', label:'Jahresprogramm', cls:'col-prog'},
-    {key:'rinder',         label:'Rinder',         cls:'col-rinder'},
-    {key:'weide',          label:'Weide',           cls:'col-weide'},
-    {key:'haus_hof',       label:'Haus & Hof',      cls:'col-haus'}
-  ];
-
-  const byDate = {};
-  const noDate = {};
-  cols.forEach(c => { noDate[c.key] = []; });
-  cols.forEach(c => {
-    (m[c.key] || []).forEach(item => {
-      if (item.datum) {
-        if (!byDate[item.datum]) byDate[item.datum] = {};
-        if (!byDate[item.datum][c.key]) byDate[item.datum][c.key] = [];
-        byDate[item.datum][c.key].push(item);
-      } else {
-        noDate[c.key].push(item);
-      }
+function renderJPDesktop(jp,key){
+  const m=jp[key]||{};
+  const year=new Date().getFullYear();
+  const weeks=getKWsForMonth(year,JP_MIDX[key]);
+  const byDate={},noDate={};
+  JP_COLS.forEach(c=>{ noDate[c.k]=[]; });
+  JP_COLS.forEach(c=>{
+    (m[c.k]||[]).forEach(item=>{
+      if(item.datum){
+        if(!byDate[item.datum]) byDate[item.datum]={};
+        if(!byDate[item.datum][c.k]) byDate[item.datum][c.k]=[];
+        byDate[item.datum][c.k].push(item);
+      } else { noDate[c.k].push(item); }
     });
   });
-
-  function entriesForWeek(week, colKey, isFirst) {
-    const list = [];
-    const startS = isoStr(week.start), endS = isoStr(week.end);
-    Object.entries(byDate).forEach(function(entry) {
-      var datum = entry[0], cats = entry[1];
-      if (datum >= startS && datum <= endS && cats[colKey])
-        cats[colKey].forEach(function(i) { list.push(Object.assign({}, i, {_hasDatum:true})); });
-    });
-    if (isFirst) noDate[colKey].forEach(function(i) { list.push(Object.assign({}, i, {_hasDatum:false})); });
+  function forWeek(w,ck,isFirst){
+    const list=[],ss=isoStr(w.start),se=isoStr(w.end);
+    Object.entries(byDate).forEach(([d,cats])=>{ if(d>=ss&&d<=se&&cats[ck]) cats[ck].forEach(i=>list.push({...i,_hasDatum:true})); });
+    if(isFirst) noDate[ck].forEach(i=>list.push({...i,_hasDatum:false}));
     return list;
   }
-
-  var thCls = {col_prog:'col-prog',col_rinder:'col-rinder',col_weide:'col-weide',col_haus:'col-haus'};
-  var html = '<table class="jp-kw-table"><thead><tr><th class="jp-th-kw">Woche</th>'
-    + cols.map(function(c){ return '<th class="'+c.cls+'">'+c.label+'</th>'; }).join('')
-    + '</tr></thead><tbody>';
-
-  weeks.forEach(function(week, wi) {
-    var isCurrent = isCurrentKW(week);
-    var badge = isCurrent ? '<span class="kw-heute-badge">Heute</span>' : '';
-    html += '<tr class="jp-kw-row' + (isCurrent ? ' current-kw' : '') + '">'
-      + '<td class="jp-kw-label-td">'
-      + '<div class="jp-kw-num">KW ' + String(week.kw).padStart(2,'0') + ' ' + badge + '</div>'
-      + '<div class="jp-kw-range">' + fmtDateRange(week.start, week.end) + '</div>'
-      + '</td>';
-    cols.forEach(function(c) {
-      var entries = entriesForWeek(week, c.key, wi===0);
-      html += '<td class="jp-kw-cell ' + c.cls + '">';
-      entries.forEach(function(item) {
-        var ds = item._hasDatum ? fmtCellDate(item.datum) : '';
-        html += '<div class="jp-cell-entry">'
-          + '<span class="jp-cell-title">' + esc(item.titel) + '</span>'
-          + (ds ? '<span class="jp-cell-date">' + ds + '</span>' : '')
-          + '</div>';
+  let html=`<table class="kw-table"><thead><tr><th class="th-kw">Woche</th>`
+    +JP_COLS.map(c=>`<th class="${c.th}">${c.l}</th>`).join('')+'</tr></thead><tbody>';
+  weeks.forEach((w,wi)=>{
+    const cur=isThisWeek(w);
+    html+=`<tr${cur?' class="kw-current"':''}>`
+      +`<td class="td-kw"><div class="kw-num">KW${String(w.kw).padStart(2,'0')}${cur?' <span class="kw-badge">Heute</span>':''}</div>`
+      +`<div class="kw-range">${fmtRange(w.start,w.end)}</div></td>`;
+    JP_COLS.forEach(c=>{
+      const entries=forWeek(w,c.k,wi===0);
+      html+=`<td class="td-cell ${c.td}">`;
+      entries.forEach(i=>{
+        html+=`<div class="cell-entry">`
+          +`<span class="cell-title${i.fromTask?' from-task':''}">${esc(i.titel)}</span>`
+          +(i._hasDatum?`<span class="cell-date">${fmtCell(i.datum)}</span>`:'')
+          +'</div>';
       });
-      html += '</td>';
+      html+='</td>';
     });
-    html += '</tr>';
+    html+='</tr>';
   });
-
-  document.getElementById('jp-kw-wrap').innerHTML = html + '</tbody></table>';
+  html+='</tbody></table>';
+  $('jp-kw-table').innerHTML=html;
 }
 
-loadData();
+function renderJPMobile(jp,monthKey,catKey){
+  const m=jp[monthKey]||{};
+  $('jp-cat-tabs').innerHTML=JP_COLS.map(c=>`
+    <span class="jp-cat-tab ${JP_CAT_CLS[c.k]}${c.k===catKey?' active':''}"
+      onclick="selectJPCat('${c.k}')">${JP_CAT_ICON[c.k]} ${c.l}</span>`
+  ).join('');
+  const items=[...(m[catKey]||[])].sort((a,b)=>(a.datum||'z')>(b.datum||'z')?1:-1);
+  $('jp-mob-list').innerHTML=!items.length
+    ? '<p class="empty-state" style="padding:8px 0">Keine Einträge für diesen Monat.</p>'
+    : items.map(i=>`
+      <div class="jp-mob-item">
+        <span class="jp-mob-title${i.fromTask?' from-task':''}">${esc(i.titel)}</span>
+        ${i.datum?`<span class="jp-mob-date">${fmtCell(i.datum)}</span>`:''}
+      </div>`).join('');
+}
+
+function selectJPCat(k){
+  jpMobCat=k;
+  document.querySelectorAll('.jp-cat-tab').forEach(b=>{
+    const m=b.getAttribute('onclick').match(/'([\w]+)'/);
+    if(m) b.classList.toggle('active',m[1]===k);
+  });
+  renderJPMobile(buildJPData(),jpActive,k);
+}
 </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"8607d2a720d14b038279025b2b5a82e5","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"8607d2a720d14b038279025b2b5a82e5","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
