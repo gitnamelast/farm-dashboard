@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-06-27T06:00:12",
+  "exportiert_am": "2026-06-28T06:00:13",
   "aufgaben": {
     "heute": [
       {
@@ -164,6 +164,14 @@
         "beschreibung": ""
       },
       {
+        "titel": "Werkzeugkammer Werner aufraeumen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-06-28",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
         "titel": "Haus und Hof in Ordnung bringen",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
@@ -212,14 +220,6 @@
         "faellig": "2026-07-02",
         "besitzer": "werner",
         "beschreibung": "Rinder in die kräle"
-      },
-      {
-        "titel": "Werkzeugkammer Werner aufraeumen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-28",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
         "titel": "Orauheke Windmotor",
@@ -376,52 +376,52 @@
     },
     "vorhersage": [
       {
-        "date": "2026-06-27",
-        "wcode": 51,
-        "temp_max": 22.8,
-        "temp_min": 10.6,
-        "rain": 0.2
-      },
-      {
         "date": "2026-06-28",
-        "wcode": 2,
+        "wcode": 0,
         "temp_max": 24.7,
-        "temp_min": 9.0,
+        "temp_min": 9.5,
         "rain": 0
       },
       {
         "date": "2026-06-29",
         "wcode": 0,
-        "temp_max": 25.4,
-        "temp_min": 10.0,
+        "temp_max": 25.3,
+        "temp_min": 8.6,
         "rain": 0
       },
       {
         "date": "2026-06-30",
         "wcode": 0,
         "temp_max": 25.2,
-        "temp_min": 10.2,
+        "temp_min": 10.0,
         "rain": 0
       },
       {
         "date": "2026-07-01",
         "wcode": 0,
-        "temp_max": 20.1,
-        "temp_min": 5.9,
+        "temp_max": 24.1,
+        "temp_min": 6.4,
         "rain": 0
       },
       {
         "date": "2026-07-02",
         "wcode": 0,
-        "temp_max": 20.7,
-        "temp_min": 1.0,
+        "temp_max": 19.8,
+        "temp_min": 1.3,
         "rain": 0
       },
       {
         "date": "2026-07-03",
-        "wcode": 1,
-        "temp_max": 21.8,
-        "temp_min": 4.0,
+        "wcode": 0,
+        "temp_max": 21.6,
+        "temp_min": 4.2,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-04",
+        "wcode": 0,
+        "temp_max": 22.7,
+        "temp_min": 7.2,
         "rain": 0
       }
     ]
@@ -615,12 +615,6 @@
     }
   ],
   "kalender": [
-    {
-      "datum": "2026-06-27",
-      "titel": "Rabies-Impfung + Supervax – alle Tiere",
-      "kategorie": "rinder",
-      "besitzer": "shared"
-    },
     {
       "datum": "2026-06-28",
       "titel": "Werkzeugkammer Werner aufraeumen",
@@ -888,6 +882,12 @@
     {
       "datum": "2026-07-23",
       "titel": "cockpit von erichsfelde daen reinfüttern",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-28",
+      "titel": "wegen bipa mal fragen",
       "kategorie": "allgemein",
       "besitzer": "werner"
     }
