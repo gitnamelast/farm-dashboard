@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-06-28T06:00:13",
+  "exportiert_am": "2026-06-29T08:13:53",
   "aufgaben": {
     "heute": [
       {
@@ -92,22 +92,6 @@
         "beschreibung": ""
       },
       {
-        "titel": "Licht Strom-Raum",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-24",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Wasserhahn Okaruheke fertigmachen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-24",
-        "besitzer": "shared",
-        "beschreibung": "Woechentliche Farmaufgabe"
-      },
-      {
         "titel": "bush kappen ausarbeiten",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -172,6 +156,30 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
+        "titel": "Orauheke Windmotor",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-29",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "roladn zirsow termin machen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-29",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "brandeisen werner fertig machen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-29",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
         "titel": "Haus und Hof in Ordnung bringen",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
@@ -222,19 +230,11 @@
         "beschreibung": "Rinder in die kräle"
       },
       {
-        "titel": "Orauheke Windmotor",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-29",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "roladn zirsow termin machen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-29",
-        "besitzer": "shared",
+        "titel": "Hunde GPS Collar pruefen",
+        "prioritaet": 2,
+        "kategorie": "hunde",
+        "faellig": "2026-07-06",
+        "besitzer": "werner",
         "beschreibung": ""
       },
       {
@@ -263,6 +263,14 @@
       },
       {
         "titel": "Hackel casing erneurn",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-30",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "werner savanna schalcht rechte anbieten",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-06-30",
@@ -318,6 +326,14 @@
         "beschreibung": ""
       },
       {
+        "titel": "Licht Strom-Raum",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-02",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
         "titel": "Fleisch kühler",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
@@ -338,6 +354,14 @@
         "prioritaet": 4,
         "kategorie": "wohnhaus",
         "faellig": "2026-07-03",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Monatsbericht",
+        "prioritaet": 4,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-06",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -369,59 +393,59 @@
   },
   "wetter": {
     "aktuell": {
-      "temp_max": null,
-      "temp_min": null,
-      "rainfall_24h": null,
-      "wind_speed": null
+      "temp_max": 12.1,
+      "temp_min": 5.9,
+      "rainfall_24h": 0.0,
+      "wind_speed": 3.0
     },
     "vorhersage": [
       {
-        "date": "2026-06-28",
-        "wcode": 0,
-        "temp_max": 24.7,
-        "temp_min": 9.5,
-        "rain": 0
-      },
-      {
         "date": "2026-06-29",
         "wcode": 0,
-        "temp_max": 25.3,
+        "temp_max": 25.1,
         "temp_min": 8.6,
         "rain": 0
       },
       {
         "date": "2026-06-30",
         "wcode": 0,
-        "temp_max": 25.2,
-        "temp_min": 10.0,
+        "temp_max": 24.7,
+        "temp_min": 9.6,
         "rain": 0
       },
       {
         "date": "2026-07-01",
         "wcode": 0,
-        "temp_max": 24.1,
-        "temp_min": 6.4,
+        "temp_max": 23.1,
+        "temp_min": 5.6,
         "rain": 0
       },
       {
         "date": "2026-07-02",
         "wcode": 0,
-        "temp_max": 19.8,
-        "temp_min": 1.3,
+        "temp_max": 19.3,
+        "temp_min": 1.9,
         "rain": 0
       },
       {
         "date": "2026-07-03",
-        "wcode": 0,
-        "temp_max": 21.6,
-        "temp_min": 4.2,
+        "wcode": 1,
+        "temp_max": 21.5,
+        "temp_min": 3.4,
         "rain": 0
       },
       {
         "date": "2026-07-04",
         "wcode": 0,
-        "temp_max": 22.7,
-        "temp_min": 7.2,
+        "temp_max": 23.1,
+        "temp_min": 5.5,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-05",
+        "wcode": 0,
+        "temp_max": 23.1,
+        "temp_min": 6.2,
         "rain": 0
       }
     ]
@@ -616,12 +640,6 @@
   ],
   "kalender": [
     {
-      "datum": "2026-06-28",
-      "titel": "Werkzeugkammer Werner aufraeumen",
-      "kategorie": "wohnhaus",
-      "besitzer": "shared"
-    },
-    {
       "datum": "2026-06-29",
       "titel": "Orauheke Windmotor",
       "kategorie": "allgemein",
@@ -630,6 +648,12 @@
     {
       "datum": "2026-06-29",
       "titel": "roladn zirsow termin machen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-06-29",
+      "titel": "brandeisen werner fertig machen",
       "kategorie": "allgemein",
       "besitzer": "shared"
     },
@@ -672,6 +696,12 @@
     {
       "datum": "2026-06-30",
       "titel": "Hackel casing erneurn",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-06-30",
+      "titel": "werner savanna schalcht rechte anbieten",
       "kategorie": "allgemein",
       "besitzer": "shared"
     },
@@ -745,6 +775,12 @@
       "datum": "2026-07-02",
       "titel": "Dr Lala Inspektion am 24 Juni",
       "kategorie": "rinder",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-02",
+      "titel": "Licht Strom-Raum",
+      "kategorie": "wohnhaus",
       "besitzer": "werner"
     },
     {
