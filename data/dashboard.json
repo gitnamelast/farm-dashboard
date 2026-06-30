@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-06-29T08:13:53",
+  "exportiert_am": "2026-06-30T08:05:37",
   "aufgaben": {
     "heute": [
       {
@@ -44,20 +44,20 @@
         "beschreibung": ""
       },
       {
-        "titel": "Aircondition Buero",
+        "titel": "Windmotor neue Bergseite – Elektropumpe rein",
         "prioritaet": 2,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-25",
+        "kategorie": "boreholes",
+        "faellig": "2026-06-30",
         "besitzer": "werner",
         "beschreibung": ""
       },
       {
-        "titel": "Rabies-Impfung + Supervax – alle Tiere",
+        "titel": "Elektrozaun Windmotor und Kaelberkraal",
         "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-06-27",
-        "besitzer": "shared",
-        "beschreibung": "Zusammen impfen"
+        "kategorie": "allgemein",
+        "faellig": "2026-06-30",
+        "besitzer": "werner",
+        "beschreibung": ""
       },
       {
         "titel": "Tontauben ding abbauen",
@@ -124,14 +124,6 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
-        "titel": "Reparaturliste durchgehen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-25",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026 haus und hof"
-      },
-      {
         "titel": "Plan fuer Grasschneiden erstellen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -156,14 +148,6 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
-        "titel": "Orauheke Windmotor",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-29",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
         "titel": "roladn zirsow termin machen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -180,61 +164,19 @@
         "beschreibung": ""
       },
       {
-        "titel": "Haus und Hof in Ordnung bringen",
+        "titel": "jungfarmer LWV kursus okh schiocken",
         "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-08-26",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Werkzeugschrank Farmtools fest anbringe",
-        "prioritaet": 4,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-25",
-        "besitzer": "werner",
-        "beschreibung": ""
-      }
-    ],
-    "naechste_7_tage": [
-      {
-        "titel": "Windmotor neue Bergseite – Elektropumpe rein",
-        "prioritaet": 2,
-        "kategorie": "boreholes",
-        "faellig": "2026-06-30",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Elektrozaun Windmotor und Kaelberkraal",
-        "prioritaet": 2,
         "kategorie": "allgemein",
-        "faellig": "2026-06-30",
-        "besitzer": "werner",
+        "faellig": "2026-06-29",
+        "besitzer": "shared",
         "beschreibung": ""
       },
       {
-        "titel": "Kapp-Neger-Haus",
-        "prioritaet": 2,
+        "titel": "franzi papier feritg machen",
+        "prioritaet": 3,
         "kategorie": "allgemein",
-        "faellig": "2026-07-02",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Dr Lala Inspektion am 24 Juni",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-07-02",
-        "besitzer": "werner",
-        "beschreibung": "Rinder in die kräle"
-      },
-      {
-        "titel": "Hunde GPS Collar pruefen",
-        "prioritaet": 2,
-        "kategorie": "hunde",
-        "faellig": "2026-07-06",
-        "besitzer": "werner",
+        "faellig": "2026-06-29",
+        "besitzer": "shared",
         "beschreibung": ""
       },
       {
@@ -278,12 +220,78 @@
         "beschreibung": ""
       },
       {
+        "titel": "Haus und Hof in Ordnung bringen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-08-26",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Werkzeugschrank Farmtools fest anbringe",
+        "prioritaet": 4,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-06-25",
+        "besitzer": "werner",
+        "beschreibung": ""
+      }
+    ],
+    "naechste_7_tage": [
+      {
+        "titel": "Kapp-Neger-Haus",
+        "prioritaet": 2,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-02",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Dr Lala Inspektion am 24 Juni",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2026-07-02",
+        "besitzer": "werner",
+        "beschreibung": "Rinder in die kräle"
+      },
+      {
+        "titel": "Hunde GPS Collar pruefen",
+        "prioritaet": 2,
+        "kategorie": "hunde",
+        "faellig": "2026-07-06",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Inverter – von Jungs bauen lassen",
+        "prioritaet": 2,
+        "kategorie": "gebaeude",
+        "faellig": "2026-07-07",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Animal Health Declaration Form (Q1)",
+        "prioritaet": 2,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-07",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
         "titel": "Farmkarte drucken + Wasserstellen fuer Feuerbekaempfung markieren",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-07-01",
         "besitzer": "werner",
         "beschreibung": ""
+      },
+      {
+        "titel": "Reparaturliste durchgehen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026 haus und hof"
       },
       {
         "titel": "Werkzeugkammer Jungs aufraeumen",
@@ -326,6 +334,14 @@
         "beschreibung": ""
       },
       {
+        "titel": "kassing typ nachfragen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-01",
+        "besitzer": "shared",
+        "beschreibung": "am montag mit kaps dealers telefoniert wollte quote schicken"
+      },
+      {
         "titel": "Licht Strom-Raum",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
@@ -340,6 +356,22 @@
         "faellig": "2026-07-03",
         "besitzer": "werner",
         "beschreibung": "wiegen und austrennen"
+      },
+      {
+        "titel": "Hund Versicherung abschliessen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-07",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Kiesdamm Zaun pruefen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-07",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
         "titel": "SIM-Karten  aufladen",
@@ -393,59 +425,59 @@
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 12.1,
-      "temp_min": 5.9,
+      "temp_max": 13.3,
+      "temp_min": 8.3,
       "rainfall_24h": 0.0,
-      "wind_speed": 3.0
+      "wind_speed": 3.6
     },
     "vorhersage": [
       {
-        "date": "2026-06-29",
-        "wcode": 0,
-        "temp_max": 25.1,
-        "temp_min": 8.6,
-        "rain": 0
-      },
-      {
         "date": "2026-06-30",
         "wcode": 0,
-        "temp_max": 24.7,
-        "temp_min": 9.6,
+        "temp_max": 25.1,
+        "temp_min": 10.0,
         "rain": 0
       },
       {
         "date": "2026-07-01",
         "wcode": 0,
-        "temp_max": 23.1,
-        "temp_min": 5.6,
+        "temp_max": 23.7,
+        "temp_min": 5.8,
         "rain": 0
       },
       {
         "date": "2026-07-02",
         "wcode": 0,
-        "temp_max": 19.3,
-        "temp_min": 1.9,
+        "temp_max": 19.8,
+        "temp_min": 1.7,
         "rain": 0
       },
       {
         "date": "2026-07-03",
         "wcode": 1,
-        "temp_max": 21.5,
-        "temp_min": 3.4,
+        "temp_max": 22.3,
+        "temp_min": 4.6,
         "rain": 0
       },
       {
         "date": "2026-07-04",
-        "wcode": 0,
-        "temp_max": 23.1,
-        "temp_min": 5.5,
+        "wcode": 1,
+        "temp_max": 24.2,
+        "temp_min": 6.4,
         "rain": 0
       },
       {
         "date": "2026-07-05",
         "wcode": 0,
-        "temp_max": 23.1,
-        "temp_min": 6.2,
+        "temp_max": 23.6,
+        "temp_min": 7.7,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-06",
+        "wcode": 0,
+        "temp_max": 22.9,
+        "temp_min": 7.4,
         "rain": 0
       }
     ]
@@ -640,24 +672,6 @@
   ],
   "kalender": [
     {
-      "datum": "2026-06-29",
-      "titel": "Orauheke Windmotor",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-06-29",
-      "titel": "roladn zirsow termin machen",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-06-29",
-      "titel": "brandeisen werner fertig machen",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
       "datum": "2026-06-30",
       "titel": "Windmotor neue Bergseite – Elektropumpe rein",
       "kategorie": "boreholes",
@@ -725,6 +739,12 @@
     },
     {
       "datum": "2026-07-01",
+      "titel": "Reparaturliste durchgehen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-01",
       "titel": "Werkzeugkammer Jungs aufraeumen",
       "kategorie": "wohnhaus",
       "besitzer": "shared"
@@ -752,6 +772,12 @@
       "titel": "Rinder für EU inspektion zusammen bekomme",
       "kategorie": "allgemein",
       "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-01",
+      "titel": "kassing typ nachfragen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-07-01",
@@ -845,6 +871,12 @@
     },
     {
       "datum": "2026-07-08",
+      "titel": "Aircondition Buero",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-08",
       "titel": "Fitting-Raum aufraeumen",
       "kategorie": "wohnhaus",
       "besitzer": "shared"
@@ -925,6 +957,18 @@
       "datum": "2026-07-28",
       "titel": "wegen bipa mal fragen",
       "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-30",
+      "titel": "Wasser testen lassen",
+      "kategorie": "boreholes",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-30",
+      "titel": "BIPA nachfragen – Folgetermin nach 10/04/2025 pruefen",
+      "kategorie": "rinder",
       "besitzer": "werner"
     }
   ],
@@ -1015,21 +1059,9 @@
           "kategorie": "sonstige_maschinen",
           "source": "task",
           "datum": "2026-06-22"
-        },
-        {
-          "titel": "Reparaturliste durchgehen",
-          "kategorie": "allgemein",
-          "source": "task",
-          "datum": "2026-06-25"
         }
       ],
       "rinder": [
-        {
-          "titel": "Rabies-Impfung + Supervax – alle Tiere",
-          "kategorie": "rinder",
-          "source": "task",
-          "datum": "2026-06-27"
-        },
         {
           "titel": "Winterlecke geben (Phosphat/Salz)",
           "kategorie": "rinder",
@@ -1084,6 +1116,12 @@
           "kategorie": "allgemein",
           "source": "task",
           "datum": "2026-07-15"
+        },
+        {
+          "titel": "Reparaturliste durchgehen",
+          "kategorie": "allgemein",
+          "source": "task",
+          "datum": "2026-07-01"
         },
         {
           "titel": "Reparaturliste durchgehen",
@@ -1149,6 +1187,12 @@
           "kategorie": "rinder",
           "source": "task",
           "datum": "2026-08-20"
+        },
+        {
+          "titel": "Rabies-Impfung + Supervax – alle Tiere",
+          "kategorie": "rinder",
+          "source": "task",
+          "datum": "2026-08-26"
         }
       ],
       "weide": [],
