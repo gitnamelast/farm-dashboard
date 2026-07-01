@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-06-30T08:05:37",
+  "exportiert_am": "2026-07-01T08:00:59",
   "aufgaben": {
     "heute": [
       {
@@ -124,14 +124,6 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
-        "titel": "Plan fuer Grasschneiden erstellen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-26",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "Andrew WhatsApp Repeater Lizenz",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -204,76 +196,10 @@
         "beschreibung": ""
       },
       {
-        "titel": "Hackel casing erneurn",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-30",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
         "titel": "werner savanna schalcht rechte anbieten",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-06-30",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Haus und Hof in Ordnung bringen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-08-26",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Werkzeugschrank Farmtools fest anbringe",
-        "prioritaet": 4,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-25",
-        "besitzer": "werner",
-        "beschreibung": ""
-      }
-    ],
-    "naechste_7_tage": [
-      {
-        "titel": "Kapp-Neger-Haus",
-        "prioritaet": 2,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-02",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Dr Lala Inspektion am 24 Juni",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-07-02",
-        "besitzer": "werner",
-        "beschreibung": "Rinder in die kräle"
-      },
-      {
-        "titel": "Hunde GPS Collar pruefen",
-        "prioritaet": 2,
-        "kategorie": "hunde",
-        "faellig": "2026-07-06",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Inverter – von Jungs bauen lassen",
-        "prioritaet": 2,
-        "kategorie": "gebaeude",
-        "faellig": "2026-07-07",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Animal Health Declaration Form (Q1)",
-        "prioritaet": 2,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-07",
         "besitzer": "shared",
         "beschreibung": ""
       },
@@ -326,11 +252,11 @@
         "beschreibung": "Koos Brand für Strom fragen, strom raum und generator. contact details auf handy gespeichert"
       },
       {
-        "titel": "Rinder für EU inspektion zusammen bekomme",
+        "titel": "Hackel casing erneurn",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-07-01",
-        "besitzer": "werner",
+        "besitzer": "shared",
         "beschreibung": ""
       },
       {
@@ -340,6 +266,80 @@
         "faellig": "2026-07-01",
         "besitzer": "shared",
         "beschreibung": "am montag mit kaps dealers telefoniert wollte quote schicken"
+      },
+      {
+        "titel": "Haus und Hof in Ordnung bringen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-08-26",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Werkzeugschrank Farmtools fest anbringe",
+        "prioritaet": 4,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-06-25",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "SIM-Karten  aufladen",
+        "prioritaet": 4,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-01",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Radio Lizenz Klub",
+        "prioritaet": 5,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-01",
+        "besitzer": "werner",
+        "beschreibung": ""
+      }
+    ],
+    "naechste_7_tage": [
+      {
+        "titel": "Kapp-Neger-Haus",
+        "prioritaet": 2,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-02",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Hunde GPS Collar pruefen",
+        "prioritaet": 2,
+        "kategorie": "hunde",
+        "faellig": "2026-07-06",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Inverter – von Jungs bauen lassen",
+        "prioritaet": 2,
+        "kategorie": "gebaeude",
+        "faellig": "2026-07-07",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Animal Health Declaration Form (Q1)",
+        "prioritaet": 2,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-07",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Aircondition Buero",
+        "prioritaet": 2,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-08",
+        "besitzer": "werner",
+        "beschreibung": ""
       },
       {
         "titel": "Licht Strom-Raum",
@@ -358,6 +358,14 @@
         "beschreibung": "wiegen und austrennen"
       },
       {
+        "titel": "Plan fuer Grasschneiden erstellen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-07",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
         "titel": "Hund Versicherung abschliessen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -374,12 +382,12 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
-        "titel": "SIM-Karten  aufladen",
-        "prioritaet": 4,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-01",
-        "besitzer": "werner",
-        "beschreibung": ""
+        "titel": "Fitting-Raum aufraeumen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-08",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
         "titel": "LC Sitzbank bauen",
@@ -394,14 +402,6 @@
         "prioritaet": 4,
         "kategorie": "allgemein",
         "faellig": "2026-07-06",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Radio Lizenz Klub",
-        "prioritaet": 5,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-01",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -425,59 +425,59 @@
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 13.3,
-      "temp_min": 8.3,
+      "temp_max": 13.1,
+      "temp_min": 9.8,
       "rainfall_24h": 0.0,
-      "wind_speed": 3.6
+      "wind_speed": 2.0
     },
     "vorhersage": [
       {
-        "date": "2026-06-30",
-        "wcode": 0,
-        "temp_max": 25.1,
-        "temp_min": 10.0,
-        "rain": 0
-      },
-      {
         "date": "2026-07-01",
         "wcode": 0,
-        "temp_max": 23.7,
-        "temp_min": 5.8,
+        "temp_max": 22.7,
+        "temp_min": 5.9,
         "rain": 0
       },
       {
         "date": "2026-07-02",
         "wcode": 0,
-        "temp_max": 19.8,
-        "temp_min": 1.7,
+        "temp_max": 20.7,
+        "temp_min": 2.2,
         "rain": 0
       },
       {
         "date": "2026-07-03",
-        "wcode": 1,
-        "temp_max": 22.3,
-        "temp_min": 4.6,
+        "wcode": 0,
+        "temp_max": 23.1,
+        "temp_min": 6.5,
         "rain": 0
       },
       {
         "date": "2026-07-04",
         "wcode": 1,
-        "temp_max": 24.2,
-        "temp_min": 6.4,
+        "temp_max": 24.9,
+        "temp_min": 7.6,
         "rain": 0
       },
       {
         "date": "2026-07-05",
         "wcode": 0,
-        "temp_max": 23.6,
-        "temp_min": 7.7,
+        "temp_max": 24.3,
+        "temp_min": 8.9,
         "rain": 0
       },
       {
         "date": "2026-07-06",
         "wcode": 0,
-        "temp_max": 22.9,
-        "temp_min": 7.4,
+        "temp_max": 23.1,
+        "temp_min": 7.9,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-07",
+        "wcode": 0,
+        "temp_max": 21.4,
+        "temp_min": 7.2,
         "rain": 0
       }
     ]
@@ -672,66 +672,6 @@
   ],
   "kalender": [
     {
-      "datum": "2026-06-30",
-      "titel": "Windmotor neue Bergseite – Elektropumpe rein",
-      "kategorie": "boreholes",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-06-30",
-      "titel": "Elektrozaun Windmotor und Kaelberkraal",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-06-30",
-      "titel": "Dr Lala Inspektion am 24 Juni",
-      "kategorie": "rinder",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-06-30",
-      "titel": "WiFi aussortieren",
-      "kategorie": "wohnhaus",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-06-30",
-      "titel": "Solar Licht",
-      "kategorie": "wohnhaus",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-06-30",
-      "titel": "Wasserpumpe Schlangenkamp fest installieren",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-06-30",
-      "titel": "Hackel casing erneurn",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-06-30",
-      "titel": "werner savanna schalcht rechte anbieten",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-06-30",
-      "titel": "Rinder für EU inspektion zusammen bekomme",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-01",
-      "titel": "Dr Lala Inspektion am 24 Juni",
-      "kategorie": "rinder",
-      "besitzer": "werner"
-    },
-    {
       "datum": "2026-07-01",
       "titel": "Farmkarte drucken + Wasserstellen fuer Feuerbekaempfung markieren",
       "kategorie": "allgemein",
@@ -769,9 +709,9 @@
     },
     {
       "datum": "2026-07-01",
-      "titel": "Rinder für EU inspektion zusammen bekomme",
+      "titel": "Hackel casing erneurn",
       "kategorie": "allgemein",
-      "besitzer": "werner"
+      "besitzer": "shared"
     },
     {
       "datum": "2026-07-01",
@@ -795,12 +735,6 @@
       "datum": "2026-07-02",
       "titel": "Kapp-Neger-Haus",
       "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-02",
-      "titel": "Dr Lala Inspektion am 24 Juni",
-      "kategorie": "rinder",
       "besitzer": "werner"
     },
     {
@@ -856,6 +790,12 @@
       "titel": "Animal Health Declaration Form (Q1)",
       "kategorie": "allgemein",
       "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-07",
+      "titel": "Plan fuer Grasschneiden erstellen",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
     },
     {
       "datum": "2026-07-07",
@@ -969,6 +909,12 @@
       "datum": "2026-07-30",
       "titel": "BIPA nachfragen – Folgetermin nach 10/04/2025 pruefen",
       "kategorie": "rinder",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-31",
+      "titel": "Muellverbrennungsanlage bauen",
+      "kategorie": "gebaeude",
       "besitzer": "werner"
     }
   ],
