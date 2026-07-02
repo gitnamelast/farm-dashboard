@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-02T08:38:02",
+  "exportiert_am": "2026-07-02T10:07:07",
   "aufgaben": {
     "heute": [
       {
@@ -90,14 +90,6 @@
         "faellig": "2026-06-25",
         "besitzer": "werner",
         "beschreibung": ""
-      },
-      {
-        "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-25",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
         "titel": "Andrew WhatsApp Repeater Lizenz",
@@ -318,6 +310,14 @@
         "beschreibung": ""
       },
       {
+        "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-03",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
         "titel": "Fleisch kühler",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
@@ -436,7 +436,7 @@
       "temp_max": 2.3,
       "temp_min": -3.0,
       "rainfall_24h": 0.0,
-      "wind_speed": 2.8
+      "wind_speed": 2.7
     },
     "vorhersage": [
       {
@@ -684,6 +684,12 @@
       "titel": "Kapp-Neger-Haus",
       "kategorie": "allgemein",
       "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-03",
+      "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
+      "kategorie": "wohnhaus",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-07-03",
@@ -1038,12 +1044,6 @@
       "weide": [],
       "haus_hof": [
         {
-          "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
-          "kategorie": "wohnhaus",
-          "source": "task",
-          "datum": "2026-06-25"
-        },
-        {
           "titel": "Werkzeugkammer Werner aufraeumen",
           "kategorie": "wohnhaus",
           "source": "task",
@@ -1117,6 +1117,12 @@
           "kategorie": "wohnhaus",
           "source": "task",
           "datum": "2026-07-01"
+        },
+        {
+          "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
+          "kategorie": "wohnhaus",
+          "source": "task",
+          "datum": "2026-07-03"
         },
         {
           "titel": "Fitting-Raum aufraeumen",
