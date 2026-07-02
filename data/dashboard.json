@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-02T08:00:06",
+  "exportiert_am": "2026-07-02T08:37:08",
   "aufgaben": {
     "heute": [
       {
@@ -25,22 +25,6 @@
         "kategorie": "allgemein",
         "faellig": "2026-06-24",
         "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
-        "prioritaet": 2,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-25",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Windmotor neue Bergseite – Elektropumpe rein",
-        "prioritaet": 2,
-        "kategorie": "boreholes",
-        "faellig": "2026-06-30",
-        "besitzer": "werner",
         "beschreibung": ""
       },
       {
@@ -88,14 +72,6 @@
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-06-23",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "bush kappen ausarbeiten",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-24",
         "besitzer": "shared",
         "beschreibung": ""
       },
@@ -172,14 +148,6 @@
         "beschreibung": ""
       },
       {
-        "titel": "WiFi aussortieren",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-30",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "Solar Licht",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
@@ -188,7 +156,7 @@
         "beschreibung": "Lichter im hof gucken und kaufen und dann installieren"
       },
       {
-        "titel": "Wasserpumpe Schlangenkamp fest installieren",
+        "titel": "Solenoid, schlangkamp, haustank instalieren",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-06-30",
@@ -244,36 +212,12 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
-        "titel": "Koos Brand Strom",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-01",
-        "besitzer": "werner",
-        "beschreibung": "Koos Brand für Strom fragen, strom raum und generator. contact details auf handy gespeichert"
-      },
-      {
-        "titel": "Hackel casing erneurn",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-01",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
         "titel": "kassing typ nachfragen",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-07-01",
         "besitzer": "shared",
         "beschreibung": "am montag mit kaps dealers telefoniert wollte quote schicken"
-      },
-      {
-        "titel": "Licht Strom-Raum",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-02",
-        "besitzer": "werner",
-        "beschreibung": ""
       },
       {
         "titel": "Haus und Hof in Ordnung bringen",
@@ -318,10 +262,26 @@
         "beschreibung": ""
       },
       {
+        "titel": "Windmotor neue Bergseite – Elektropumpe rein",
+        "prioritaet": 2,
+        "kategorie": "boreholes",
+        "faellig": "2026-07-06",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
         "titel": "Hunde GPS Collar pruefen",
         "prioritaet": 2,
         "kategorie": "hunde",
         "faellig": "2026-07-06",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
+        "prioritaet": 2,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-07",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -366,6 +326,22 @@
         "beschreibung": "wiegen und austrennen"
       },
       {
+        "titel": "bush kappen ausarbeiten",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-03",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Hackel casing erneurn",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-03",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
         "titel": "Plan fuer Grasschneiden erstellen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -390,12 +366,28 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
+        "titel": "Licht Strom-Raum",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-08",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
         "titel": "Fitting-Raum aufraeumen",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
         "faellig": "2026-07-08",
         "besitzer": "shared",
         "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Koos Brand Strom",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-08",
+        "besitzer": "werner",
+        "beschreibung": "Koos Brand für Strom fragen, strom raum und generator. contact details auf handy gespeichert"
       },
       {
         "titel": "Rinder aus Ombotozu kamp",
@@ -442,9 +434,9 @@
   "wetter": {
     "aktuell": {
       "temp_max": 2.3,
-      "temp_min": -1.0,
+      "temp_min": -3.0,
       "rainfall_24h": 0.0,
-      "wind_speed": 3.0
+      "wind_speed": 2.8
     },
     "vorhersage": [
       {
@@ -694,16 +686,22 @@
       "besitzer": "werner"
     },
     {
-      "datum": "2026-07-02",
-      "titel": "Licht Strom-Raum",
+      "datum": "2026-07-03",
+      "titel": "Fleisch kühler",
       "kategorie": "wohnhaus",
       "besitzer": "werner"
     },
     {
       "datum": "2026-07-03",
-      "titel": "Fleisch kühler",
-      "kategorie": "wohnhaus",
-      "besitzer": "werner"
+      "titel": "bush kappen ausarbeiten",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-03",
+      "titel": "Hackel casing erneurn",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-07-03",
@@ -725,6 +723,12 @@
     },
     {
       "datum": "2026-07-06",
+      "titel": "Windmotor neue Bergseite – Elektropumpe rein",
+      "kategorie": "boreholes",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-06",
       "titel": "Hunde GPS Collar pruefen",
       "kategorie": "hunde",
       "besitzer": "werner"
@@ -739,6 +743,12 @@
       "datum": "2026-07-07",
       "titel": "Driver License CE machen",
       "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-07",
+      "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
+      "kategorie": "wohnhaus",
       "besitzer": "werner"
     },
     {
@@ -779,9 +789,21 @@
     },
     {
       "datum": "2026-07-08",
+      "titel": "Licht Strom-Raum",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-08",
       "titel": "Fitting-Raum aufraeumen",
       "kategorie": "wohnhaus",
       "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-08",
+      "titel": "Koos Brand Strom",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
     },
     {
       "datum": "2026-07-09",
