@@ -1,16 +1,8 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-01T08:00:59",
+  "exportiert_am": "2026-07-02T08:00:06",
   "aufgaben": {
     "heute": [
-      {
-        "titel": "Driver License CE machen",
-        "prioritaet": 1,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-23",
-        "besitzer": "werner",
-        "beschreibung": "Prüfen wann lerns machen"
-      },
       {
         "titel": "Feuerspritze + andere Feuerloeschgeraete pruefen",
         "prioritaet": 2,
@@ -56,6 +48,14 @@
         "prioritaet": 2,
         "kategorie": "allgemein",
         "faellig": "2026-06-30",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Kapp-Neger-Haus",
+        "prioritaet": 2,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-02",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -268,6 +268,14 @@
         "beschreibung": "am montag mit kaps dealers telefoniert wollte quote schicken"
       },
       {
+        "titel": "Licht Strom-Raum",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-02",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
         "titel": "Haus und Hof in Ordnung bringen",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
@@ -302,10 +310,10 @@
     ],
     "naechste_7_tage": [
       {
-        "titel": "Kapp-Neger-Haus",
-        "prioritaet": 2,
+        "titel": "Driver License CE machen",
+        "prioritaet": 1,
         "kategorie": "allgemein",
-        "faellig": "2026-07-02",
+        "faellig": "2026-07-07",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -342,10 +350,10 @@
         "beschreibung": ""
       },
       {
-        "titel": "Licht Strom-Raum",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-02",
+        "titel": "Auto-Graben anlegen",
+        "prioritaet": 2,
+        "kategorie": "garten",
+        "faellig": "2026-07-09",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -390,6 +398,14 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
+        "titel": "Rinder aus Ombotozu kamp",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-09",
+        "besitzer": "shared",
+        "beschreibung": "Martin will am wochenende laden"
+      },
+      {
         "titel": "LC Sitzbank bauen",
         "prioritaet": 4,
         "kategorie": "wohnhaus",
@@ -425,59 +441,59 @@
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 13.1,
-      "temp_min": 9.8,
+      "temp_max": 2.3,
+      "temp_min": -1.0,
       "rainfall_24h": 0.0,
-      "wind_speed": 2.0
+      "wind_speed": 3.0
     },
     "vorhersage": [
-      {
-        "date": "2026-07-01",
-        "wcode": 0,
-        "temp_max": 22.7,
-        "temp_min": 5.9,
-        "rain": 0
-      },
       {
         "date": "2026-07-02",
         "wcode": 0,
         "temp_max": 20.7,
-        "temp_min": 2.2,
+        "temp_min": 1.9,
         "rain": 0
       },
       {
         "date": "2026-07-03",
         "wcode": 0,
-        "temp_max": 23.1,
-        "temp_min": 6.5,
+        "temp_max": 23.0,
+        "temp_min": 6.3,
         "rain": 0
       },
       {
         "date": "2026-07-04",
-        "wcode": 1,
-        "temp_max": 24.9,
-        "temp_min": 7.6,
+        "wcode": 2,
+        "temp_max": 24.3,
+        "temp_min": 7.5,
         "rain": 0
       },
       {
         "date": "2026-07-05",
         "wcode": 0,
-        "temp_max": 24.3,
-        "temp_min": 8.9,
+        "temp_max": 23.6,
+        "temp_min": 9.3,
         "rain": 0
       },
       {
         "date": "2026-07-06",
         "wcode": 0,
-        "temp_max": 23.1,
-        "temp_min": 7.9,
+        "temp_max": 22.7,
+        "temp_min": 7.3,
         "rain": 0
       },
       {
         "date": "2026-07-07",
         "wcode": 0,
-        "temp_max": 21.4,
-        "temp_min": 7.2,
+        "temp_max": 22.8,
+        "temp_min": 7.5,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-08",
+        "wcode": 0,
+        "temp_max": 21.1,
+        "temp_min": 7.3,
         "rain": 0
       }
     ]
@@ -672,66 +688,6 @@
   ],
   "kalender": [
     {
-      "datum": "2026-07-01",
-      "titel": "Farmkarte drucken + Wasserstellen fuer Feuerbekaempfung markieren",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-01",
-      "titel": "Reparaturliste durchgehen",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-07-01",
-      "titel": "Werkzeugkammer Jungs aufraeumen",
-      "kategorie": "wohnhaus",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-07-01",
-      "titel": "Reparaturliste durchgehen",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-07-01",
-      "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
-      "kategorie": "wohnhaus",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-07-01",
-      "titel": "Koos Brand Strom",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-01",
-      "titel": "Hackel casing erneurn",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-07-01",
-      "titel": "kassing typ nachfragen",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-07-01",
-      "titel": "SIM-Karten  aufladen",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-01",
-      "titel": "Radio Lizenz Klub",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
       "datum": "2026-07-02",
       "titel": "Kapp-Neger-Haus",
       "kategorie": "allgemein",
@@ -776,6 +732,12 @@
     {
       "datum": "2026-07-06",
       "titel": "Monatsbericht",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-07",
+      "titel": "Driver License CE machen",
       "kategorie": "allgemein",
       "besitzer": "werner"
     },
@@ -916,6 +878,30 @@
       "titel": "Muellverbrennungsanlage bauen",
       "kategorie": "gebaeude",
       "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-01",
+      "titel": "Gift Obstbaeume",
+      "kategorie": "garten",
+      "besitzer": "wanda"
+    },
+    {
+      "datum": "2026-08-01",
+      "titel": "Muell: Sortier-/Lageranlage",
+      "kategorie": "wohnhaus",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-08-01",
+      "titel": "Badtuer Gastehaus streichen",
+      "kategorie": "wohnhaus",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-08-01",
+      "titel": "Vogelschutznetze unter Dach Gastehaus anbringen",
+      "kategorie": "wohnhaus",
+      "besitzer": "shared"
     }
   ],
   "jahresplanung": {
