@@ -1,4 +1,5 @@
-<!-- index_v3_RC1.html — Dashboard v3 RC1 — 22.06.2026 -->
+<!-- index_v3_RC1.html — Dashboard v3 RC1 — 03.07.2026 -->
+<!-- CF-1: Erledigungen-Tile + Placeholder-View + export.py-Daten -->
 <!-- Änderungen gegenüber test_dashboard_v3c v1.1:
      - Echter Datenfetch von GitHub (Fallback: Demo-Daten)
      - CSS Fix: Mobile Kategorie-Tabs inaktiv/aktiv unterscheidbar
@@ -358,6 +359,13 @@
           <div class="tile-desc">Monatsübersicht & Kalender</div>
         </div>
 
+        <div class="app-tile" onclick="showView('erledigungen')">
+          <span class="tile-badge b-orange" id="badge-erl" style="display:none"></span>
+          <div class="tile-icon">📍</div>
+          <div class="tile-title">Erledigungen</div>
+          <div class="tile-desc" id="erl-tile-desc">Orte &amp; Stationen</div>
+        </div>
+
       </div><!-- /app-grid -->
     </div><!-- /main-wrap -->
   </div><!-- /homescreen -->
@@ -436,6 +444,21 @@
     </div>
   </div>
 
+  <!-- CF-1: Erledigungen Placeholder (CF-2 folgt) -->
+  <div id="view-erledigungen" class="sub-view">
+    <div class="main-wrap">
+      <div class="back-nav">
+        <button class="back-btn" onclick="showHome()">&#8592; Zur&#252;ck</button>
+        <span class="view-title">Erledigungen</span>
+      </div>
+      <div class="card">
+        <div class="card-title">&#128205; Erledigungen</div>
+        <div id="erl-summary" style="margin-bottom:12px"></div>
+        <p class="empty-state">Die Erledigungen-&#220;bersicht wird in CF-2 entwickelt.</p>
+      </div>
+    </div>
+  </div>
+
 </div><!-- /app -->
 
 <script>
@@ -489,6 +512,7 @@ const D_DEMO = {
     {name:"Ruby",  rasse:"BGS",                      naechste_behandlung:"2026-10-04"},
     {name:"Schiwa",rasse:"Mix",                      naechste_behandlung:"2026-10-04"}
   ],
+  erledigungen:{offen_gesamt:2, orte_count:2},
   jahresplanung:{
     juni:{
       jahresprogramm:[{titel:"Zaun Weidewechsel"},{titel:"Winterputz"},{titel:"Reparaturliste"}],
@@ -578,7 +602,7 @@ function doLogout(){
 $('pw-input').addEventListener('keydown', e=>{ if(e.key==='Enter') doLogin(); });
 
 // ─── NAVIGATION ───────────────────────────────────────────────
-const VIEWS=['aufgaben','wetter','maschinen','wasser','hunde','jahresplanung'];
+const VIEWS=['aufgaben','wetter','maschinen','wasser','hunde','jahresplanung','erledigungen'];
 function showHome(){ $('homescreen').style.display='block'; VIEWS.forEach(v=>$('view-'+v).style.display='none'); window.scrollTo(0,0); }
 function showView(n){ $('homescreen').style.display='none'; VIEWS.forEach(v=>$('view-'+v).style.display='none'); $('view-'+n).style.display='block'; window.scrollTo(0,0); }
 
@@ -622,6 +646,7 @@ function initApp(){
   renderWasser();
   renderHunde();
   renderJahresplanung();
+  renderErledigungen();
 }
 
 // ─── STATUSKARTEN ─────────────────────────────────────────────
@@ -985,6 +1010,38 @@ function selectJPCat(k){
     if(m) b.classList.toggle('active',m[1]===k);
   });
   renderJPMobile(buildJPData(),jpActive,k);
+}
+
+// ─── ERLEDIGUNGEN (CF-1: Tile + Placeholder) ──────────────────
+function renderErledigungen(){
+  const erl   = D.erledigungen || {};
+  const offen = erl.offen_gesamt != null ? erl.offen_gesamt : null;
+  const orte  = erl.orte_count  != null ? erl.orte_count  : null;
+
+  // Tile-Beschreibung: dynamisch
+  const desc = $('erl-tile-desc');
+  if(desc){
+    if(offen === null)      desc.textContent = 'Orte & Stationen';
+    else if(offen === 0)    desc.textContent = 'Alles erledigt';
+    else                    desc.textContent = offen + (offen === 1 ? ' offen' : ' offene');
+  }
+
+  // Badge: nur wenn offen > 0 (kein Badge bei 0 — konsistent mit Wetter/Wasser/JP)
+  const badge = $('badge-erl');
+  if(badge){
+    if(offen > 0){ badge.style.display='block'; badge.textContent=offen+' offen'; }
+    else           badge.style.display='none';
+  }
+
+  // Placeholder-View Summary (Vorbereitung CF-2)
+  const sum = $('erl-summary');
+  if(sum){
+    if(offen === null){ sum.innerHTML=''; return; }
+    sum.innerHTML = offen === 0
+      ? '<p style="color:var(--accent);font-weight:600">&#9989; Keine offenen Erledigungen</p>'
+      : '<p style="color:var(--orange);font-weight:600">'+offen+' offene Erledigung'+(offen===1?'':'en')
+        +(orte?' in '+orte+' Ort'+(orte===1?'':'en'):'')+'</p>';
+  }
 }
 </script>
 </body>
