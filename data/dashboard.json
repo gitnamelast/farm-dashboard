@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-02T10:07:07",
+  "exportiert_am": "2026-07-03T08:00:12",
   "aufgaben": {
     "heute": [
       {
@@ -212,6 +212,38 @@
         "beschreibung": "am montag mit kaps dealers telefoniert wollte quote schicken"
       },
       {
+        "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-03",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Fleisch kühler",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-03",
+        "besitzer": "werner",
+        "beschreibung": "wiegen und austrennen"
+      },
+      {
+        "titel": "bush kappen ausarbeiten",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-03",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Hackel casing erneurn",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-03",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
         "titel": "Haus und Hof in Ordnung bringen",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
@@ -236,10 +268,26 @@
         "beschreibung": ""
       },
       {
+        "titel": "LC Sitzbank bauen",
+        "prioritaet": 4,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-03",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
         "titel": "Radio Lizenz Klub",
         "prioritaet": 5,
         "kategorie": "allgemein",
         "faellig": "2026-07-01",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Ernst Lerch Trailer – Design erstellen",
+        "prioritaet": 5,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-03",
         "besitzer": "werner",
         "beschreibung": ""
       }
@@ -310,38 +358,6 @@
         "beschreibung": ""
       },
       {
-        "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-03",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Fleisch kühler",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-03",
-        "besitzer": "werner",
-        "beschreibung": "wiegen und austrennen"
-      },
-      {
-        "titel": "bush kappen ausarbeiten",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-03",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Hackel casing erneurn",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-03",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
         "titel": "Plan fuer Grasschneiden erstellen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -398,14 +414,6 @@
         "beschreibung": "Martin will am wochenende laden"
       },
       {
-        "titel": "LC Sitzbank bauen",
-        "prioritaet": 4,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-03",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "Monatsbericht",
         "prioritaet": 4,
         "kategorie": "allgemein",
@@ -414,10 +422,10 @@
         "beschreibung": ""
       },
       {
-        "titel": "Ernst Lerch Trailer – Design erstellen",
-        "prioritaet": 5,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-03",
+        "titel": "Tools aufraeumen",
+        "prioritaet": 4,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-10",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -433,59 +441,59 @@
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 2.3,
-      "temp_min": -3.0,
+      "temp_max": 7.1,
+      "temp_min": 4.6,
       "rainfall_24h": 0.0,
-      "wind_speed": 2.7
+      "wind_speed": 2.0
     },
     "vorhersage": [
       {
-        "date": "2026-07-02",
-        "wcode": 0,
-        "temp_max": 20.7,
-        "temp_min": 1.9,
-        "rain": 0
-      },
-      {
         "date": "2026-07-03",
         "wcode": 0,
-        "temp_max": 23.0,
-        "temp_min": 6.3,
+        "temp_max": 22.7,
+        "temp_min": 5.7,
         "rain": 0
       },
       {
         "date": "2026-07-04",
         "wcode": 2,
         "temp_max": 24.3,
-        "temp_min": 7.5,
+        "temp_min": 7.0,
         "rain": 0
       },
       {
         "date": "2026-07-05",
         "wcode": 0,
-        "temp_max": 23.6,
-        "temp_min": 9.3,
+        "temp_max": 23.3,
+        "temp_min": 8.9,
         "rain": 0
       },
       {
         "date": "2026-07-06",
         "wcode": 0,
-        "temp_max": 22.7,
-        "temp_min": 7.3,
+        "temp_max": 22.0,
+        "temp_min": 7.2,
         "rain": 0
       },
       {
         "date": "2026-07-07",
         "wcode": 0,
-        "temp_max": 22.8,
-        "temp_min": 7.5,
+        "temp_max": 22.4,
+        "temp_min": 7.3,
         "rain": 0
       },
       {
         "date": "2026-07-08",
         "wcode": 0,
-        "temp_max": 21.1,
-        "temp_min": 7.3,
+        "temp_max": 21.2,
+        "temp_min": 7.2,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-09",
+        "wcode": 0,
+        "temp_max": 21.2,
+        "temp_min": 6.4,
         "rain": 0
       }
     ]
@@ -679,12 +687,6 @@
     }
   ],
   "kalender": [
-    {
-      "datum": "2026-07-02",
-      "titel": "Kapp-Neger-Haus",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
     {
       "datum": "2026-07-03",
       "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
