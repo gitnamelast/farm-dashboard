@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-03T20:47:45",
+  "exportiert_am": "2026-07-04T19:59:44",
   "aufgaben": {
     "heute": [
       {
@@ -282,6 +282,14 @@
         "faellig": "2026-07-03",
         "besitzer": "werner",
         "beschreibung": ""
+      },
+      {
+        "titel": "Radio Klub – Mitglieder organisieren",
+        "prioritaet": 5,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-04",
+        "besitzer": "werner",
+        "beschreibung": ""
       }
     ],
     "naechste_7_tage": [
@@ -428,72 +436,64 @@
         "faellig": "2026-07-10",
         "besitzer": "werner",
         "beschreibung": ""
-      },
-      {
-        "titel": "Radio Klub – Mitglieder organisieren",
-        "prioritaet": 5,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-04",
-        "besitzer": "werner",
-        "beschreibung": ""
       }
     ]
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 24.7,
-      "temp_min": 4.3,
+      "temp_max": 27.1,
+      "temp_min": 6.7,
       "rainfall_24h": 0.0,
-      "wind_speed": 2.6
+      "wind_speed": 2.8
     },
     "vorhersage": [
       {
-        "date": "2026-07-03",
-        "wcode": 0,
-        "temp_max": 22.7,
-        "temp_min": 5.7,
-        "rain": 0
-      },
-      {
         "date": "2026-07-04",
-        "wcode": 1,
-        "temp_max": 24.2,
+        "wcode": 3,
+        "temp_max": 24.8,
         "temp_min": 7.0,
         "rain": 0
       },
       {
         "date": "2026-07-05",
         "wcode": 0,
-        "temp_max": 23.2,
-        "temp_min": 8.6,
+        "temp_max": 23.5,
+        "temp_min": 9.3,
         "rain": 0
       },
       {
         "date": "2026-07-06",
         "wcode": 0,
-        "temp_max": 21.9,
+        "temp_max": 22.1,
         "temp_min": 7.3,
         "rain": 0
       },
       {
         "date": "2026-07-07",
         "wcode": 0,
-        "temp_max": 22.0,
-        "temp_min": 7.4,
+        "temp_max": 22.2,
+        "temp_min": 8.2,
         "rain": 0
       },
       {
         "date": "2026-07-08",
         "wcode": 0,
-        "temp_max": 21.3,
-        "temp_min": 7.5,
+        "temp_max": 21.2,
+        "temp_min": 7.2,
         "rain": 0
       },
       {
         "date": "2026-07-09",
         "wcode": 0,
-        "temp_max": 21.7,
-        "temp_min": 6.9,
+        "temp_max": 21.8,
+        "temp_min": 6.2,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-10",
+        "wcode": 0,
+        "temp_max": 22.0,
+        "temp_min": 7.8,
         "rain": 0
       }
     ]
@@ -687,36 +687,6 @@
     }
   ],
   "kalender": [
-    {
-      "datum": "2026-07-03",
-      "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
-      "kategorie": "wohnhaus",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-07-03",
-      "titel": "Fleisch kühler",
-      "kategorie": "wohnhaus",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-03",
-      "titel": "bush kappen ausarbeiten",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-07-03",
-      "titel": "LC Sitzbank bauen",
-      "kategorie": "wohnhaus",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-03",
-      "titel": "Ernst Lerch Trailer – Design erstellen",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
     {
       "datum": "2026-07-04",
       "titel": "Radio Klub – Mitglieder organisieren",
