@@ -245,6 +245,50 @@
   .jp-mob-title { flex: 1; color: var(--text); }
   .jp-mob-title.from-task { font-style: italic; }
   .jp-mob-date  { font-size: .72rem; color: var(--muted); font-family: 'IBM Plex Mono', monospace; white-space: nowrap; margin-left: 8px; }
+
+  /* ════════════════════════════════
+     CF-2: ERLEDIGUNGEN — 3-Ebenen-Navigation (Read Only)
+  ════════════════════════════════ */
+  .erl-ort-card {
+    background: var(--surface); border: 1.5px solid var(--border);
+    border-radius: var(--radius); padding: 14px 16px; margin-bottom: 10px;
+    box-shadow: var(--shadow-sm); cursor: pointer;
+    -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+    transition: transform .12s, box-shadow .12s;
+  }
+  .erl-ort-card:active { transform: scale(.98); box-shadow: none; }
+  .erl-ort-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .erl-ort-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--text); }
+  .erl-ort-meta { font-size: .78rem; color: var(--muted); margin-top: 5px; }
+  .erl-chevron { font-size: 1.3rem; color: var(--muted); flex-shrink: 0; }
+
+  .erl-stat-card {
+    background: var(--surface); border: 1.5px solid var(--border);
+    border-radius: var(--radius); padding: 14px 16px; margin-bottom: 10px;
+    box-shadow: var(--shadow-sm); cursor: pointer;
+    display: flex; align-items: center; gap: 12px; min-height: 60px;
+    -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+    transition: transform .12s, box-shadow .12s;
+  }
+  .erl-stat-card:active { transform: scale(.98); box-shadow: none; }
+  .erl-stat-icon { font-size: 1.4rem; flex-shrink: 0; }
+  .erl-stat-info { flex: 1; min-width: 0; }
+  .erl-stat-name { font-weight: 600; font-size: .92rem; color: var(--text); display: block; }
+  .erl-stat-count { font-size: .75rem; color: var(--muted); display: block; margin-top: 2px; }
+  .erl-stat-count.s-offen { color: var(--orange); font-weight: 600; }
+  .erl-stat-count.s-done  { color: var(--accent);  font-weight: 600; }
+
+  .erl-item { display: flex; align-items: flex-start; gap: 10px; padding: 12px 0; border-bottom: 1px solid var(--bg); }
+  .erl-item:last-child { border-bottom: none; }
+  .erl-cb { font-size: 1rem; color: var(--muted); flex-shrink: 0; margin-top: 1px; user-select: none; -webkit-user-select: none; }
+  .erl-pdot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+  .erl-pdot.ph { background: var(--red); }
+  .erl-pdot.pn { background: var(--orange); }
+  .erl-pdot.pl { background: var(--muted); }
+  .erl-item-txt { flex: 1; min-width: 0; }
+  .erl-item-titel { font-size: .88rem; font-weight: 500; color: var(--text); display: block; }
+  .erl-item-notiz { font-size: .73rem; color: var(--muted); display: block; margin-top: 2px; font-style: italic; }
+  .erl-leer { color: var(--accent); font-weight: 600; text-align: center; padding: 20px 0; font-size: .9rem; }
 </style>
 </head>
 <body>
@@ -359,7 +403,7 @@
           <div class="tile-desc">Monatsübersicht & Kalender</div>
         </div>
 
-        <div class="app-tile" onclick="showView('erledigungen')">
+        <div class="app-tile" onclick="erlShow()">
           <span class="tile-badge b-orange" id="badge-erl" style="display:none"></span>
           <div class="tile-icon">📍</div>
           <div class="tile-title">Erledigungen</div>
@@ -444,17 +488,38 @@
     </div>
   </div>
 
-  <!-- CF-1: Erledigungen Placeholder (CF-2 folgt) -->
+  <!-- CF-2: Erledigungen (Read Only) — 3 Ebenen: Orte → Stationen → Erledigungen -->
   <div id="view-erledigungen" class="sub-view">
-    <div class="main-wrap">
-      <div class="back-nav">
-        <button class="back-btn" onclick="showHome()">&#8592; Zur&#252;ck</button>
-        <span class="view-title">Erledigungen</span>
+    <!-- Ebene 1: Orte-Übersicht -->
+    <div id="erl-l1">
+      <div class="main-wrap">
+        <div class="back-nav">
+          <button class="back-btn" onclick="showHome()">&#8592; Zur&#252;ck</button>
+          <span class="view-title">&#128205; Erledigungen</span>
+        </div>
+        <div id="erl-orte-list"></div>
       </div>
-      <div class="card">
-        <div class="card-title">&#128205; Erledigungen</div>
-        <div id="erl-summary" style="margin-bottom:12px"></div>
-        <p class="empty-state">Die Erledigungen-&#220;bersicht wird in CF-2 entwickelt.</p>
+    </div>
+    <!-- Ebene 2: Stationen eines Ortes -->
+    <div id="erl-l2" style="display:none">
+      <div class="main-wrap">
+        <div class="back-nav">
+          <button class="back-btn" onclick="erlGoBack()">&#8592; Zur&#252;ck</button>
+          <span class="view-title" id="erl-l2-title">Ort</span>
+        </div>
+        <div id="erl-stat-list"></div>
+      </div>
+    </div>
+    <!-- Ebene 3: Erledigungen einer Station -->
+    <div id="erl-l3" style="display:none">
+      <div class="main-wrap">
+        <div class="back-nav">
+          <button class="back-btn" onclick="erlGoBack()">&#8592; Zur&#252;ck</button>
+          <span class="view-title" id="erl-l3-title">Station</span>
+        </div>
+        <div class="card">
+          <div id="erl-items-list"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -512,7 +577,51 @@ const D_DEMO = {
     {name:"Ruby",  rasse:"BGS",                      naechste_behandlung:"2026-10-04"},
     {name:"Schiwa",rasse:"Mix",                      naechste_behandlung:"2026-10-04"}
   ],
-  erledigungen:{offen_gesamt:2, orte_count:2},
+  erledigungen:{
+    offen_gesamt:20, orte_count:3,
+    orte:[
+      {id:1, name:"Windhoek", offen:12, stationen_count:5, stationen:[
+        {id:1, name:"Pupkewitz",    kategorie:"einkauf",  offen:5, eintraege:[
+          {id:1,  titel:"PVC Winkel 90°",         beschreibung:"",               prioritaet:"normal"},
+          {id:2,  titel:"Kabelbinder 30cm",         beschreibung:"Beutel 100 Stk.", prioritaet:"normal"},
+          {id:3,  titel:"Farbe weiss 5L",           beschreibung:"für Küche",         prioritaet:"hoch"},
+          {id:4,  titel:"Gartenschlauch 20m",       beschreibung:"",               prioritaet:"normal"},
+          {id:5,  titel:"Silikon weiss",            beschreibung:"",               prioritaet:"niedrig"}
+        ]},
+        {id:2, name:"Sinclair",     kategorie:"werkstatt", offen:4, eintraege:[
+          {id:6,  titel:"Öldichtung Frontachse",     beschreibung:"DRINGEND",       prioritaet:"hoch"},
+          {id:7,  titel:"Hydraulikschlauch",        beschreibung:"",               prioritaet:"hoch"},
+          {id:8,  titel:"Luftfilter LDV",           beschreibung:"",               prioritaet:"normal"},
+          {id:9,  titel:"Batterieäure",              beschreibung:"",               prioritaet:"normal"}
+        ]},
+        {id:3, name:"NSX",          kategorie:"behoerde",  offen:2, eintraege:[
+          {id:10, titel:"Passnummer erneuern",      beschreibung:"",               prioritaet:"hoch"},
+          {id:11, titel:"SSNIT-Beitrag",            beschreibung:"",               prioritaet:"normal"}
+        ]},
+        {id:4, name:"City Centre",  kategorie:"bank",      offen:1, eintraege:[
+          {id:12, titel:"FNB Überweisungsformular",  beschreibung:"",               prioritaet:"normal"}
+        ]},
+        {id:5, name:"Checkers",     kategorie:"einkauf",   offen:0, eintraege:[]}
+      ]},
+      {id:2, name:"Okahandja", offen:3, stationen_count:2, stationen:[
+        {id:6, name:"Agra",     kategorie:"landwirt", offen:3, eintraege:[
+          {id:13, titel:"Schafmischung 25kg",       beschreibung:"",               prioritaet:"normal"},
+          {id:14, titel:"Weizenstroh 10 Ballen",    beschreibung:"",               prioritaet:"normal"},
+          {id:15, titel:"Vet-Spray",                beschreibung:"Klauenpflege",   prioritaet:"hoch"}
+        ]},
+        {id:7, name:"Apotheke", kategorie:"arzt",     offen:0, eintraege:[]}
+      ]},
+      {id:3, name:"Zuhause", offen:5, stationen_count:1, stationen:[
+        {id:8, name:"Zuhause", kategorie:"privat",   offen:5, eintraege:[
+          {id:16, titel:"Aussenleuchte reparieren",       beschreibung:"",           prioritaet:"hoch"},
+          {id:17, titel:"Kühlschrank-Dichtung bestellen", beschreibung:"",           prioritaet:"normal"},
+          {id:18, titel:"Schlafzimmer-Vorhang nähen",     beschreibung:"",           prioritaet:"normal"},
+          {id:19, titel:"Badezimmer-Spiegel befestigen", beschreibung:"",           prioritaet:"niedrig"},
+          {id:20, titel:"Garten aufräumen",               beschreibung:"",           prioritaet:"niedrig"}
+        ]}
+      ]}
+    ]
+  },
   jahresplanung:{
     juni:{
       jahresprogramm:[{titel:"Zaun Weidewechsel"},{titel:"Winterputz"},{titel:"Reparaturliste"}],
@@ -1012,35 +1121,174 @@ function selectJPCat(k){
   renderJPMobile(buildJPData(),jpActive,k);
 }
 
-// ─── ERLEDIGUNGEN (CF-1: Tile + Placeholder) ──────────────────
+// ─── ERLEDIGUNGEN (CF-2: Tile + 3-Ebenen-Navigation, Read Only) ──
+
+// Kategorie-Icons — identisch mit lokalem app.js v2.3
+const ERL_KAT_ICON = {
+  'einkauf':   '&#128722;',
+  'behoerde':  '&#127963;',
+  'werkstatt': '&#128295;',
+  'landwirt':  '&#128668;',
+  'privat':    '&#127968;',
+  'arzt':      '&#127973;',
+  'bank':      '&#127974;',
+  'sonstiges': '&#128205;',
+};
+function erlKatIcon(kat){ return ERL_KAT_ICON[kat] || ERL_KAT_ICON['sonstiges']; }
+
+// State
+const ERL = { level: 'orte', currentOrt: null, currentStation: null };
+let ERL_ORTE_MAP = {};
+let ERL_STAT_MAP = {};
+
+// ── Navigation ─────────────────────────────────────────────────
+function erlShow(){
+  ERL.level = 'orte'; ERL.currentOrt = null; ERL.currentStation = null;
+  showView('erledigungen');
+  erlRenderOrte();
+  erlShowLevel();
+}
+
+function erlShowLevel(){
+  $('erl-l1').style.display = ERL.level === 'orte'    ? '' : 'none';
+  $('erl-l2').style.display = ERL.level === 'ort'     ? '' : 'none';
+  $('erl-l3').style.display = ERL.level === 'station' ? '' : 'none';
+}
+
+function erlGoBack(){
+  if(ERL.level === 'station'){
+    ERL.level = 'ort'; ERL.currentStation = null;
+  } else {
+    ERL.level = 'orte'; ERL.currentOrt = null;
+  }
+  erlShowLevel();
+  window.scrollTo(0,0);
+}
+
+function erlOpenOrt(id){
+  ERL.currentOrt = ERL_ORTE_MAP[id];
+  if(!ERL.currentOrt) return;
+  ERL.level = 'ort';
+  $('erl-l2-title').innerHTML = '&#128205; ' + esc(ERL.currentOrt.name);
+  erlRenderOrt();
+  erlShowLevel();
+  window.scrollTo(0,0);
+}
+
+function erlOpenStation(id){
+  ERL.currentStation = ERL_STAT_MAP[id];
+  if(!ERL.currentStation) return;
+  ERL.level = 'station';
+  $('erl-l3-title').innerHTML = erlKatIcon(ERL.currentStation.kategorie) + ' ' + esc(ERL.currentStation.name);
+  erlRenderStation();
+  erlShowLevel();
+  window.scrollTo(0,0);
+}
+
+// ── Render: Ebene 1 — Orte-Übersicht ──────────────────────────
+function erlRenderOrte(){
+  const erl  = D.erledigungen || {};
+  const orte = erl.orte || [];
+  ERL_ORTE_MAP = {};
+  orte.forEach(o=>{ ERL_ORTE_MAP[o.id] = o; });
+
+  if(!orte.length){
+    $('erl-orte-list').innerHTML = '<p class="empty-state">Keine Erledigungen eingetragen.</p>';
+    return;
+  }
+  $('erl-orte-list').innerHTML = orte.map(o=>{
+    const offen = o.offen || 0;
+    const stCnt = o.stationen ? o.stationen.length : (o.stationen_count || 0);
+    const stLbl = stCnt + ' ' + (stCnt===1 ? 'Station' : 'Stationen');
+    let offenHtml;
+    if(offen === 0 && stCnt > 0){
+      offenHtml = '<span style="color:var(--accent);font-weight:600">&#9989; Alles erledigt</span>';
+    } else if(offen > 0){
+      offenHtml = '<span style="color:var(--orange);font-weight:600">'+offen+' offene Erledigungen</span>';
+    } else {
+      offenHtml = '<span style="color:var(--muted)">Keine Erledigungen</span>';
+    }
+    return '<div class="erl-ort-card" onclick="erlOpenOrt('+o.id+')">'
+      +'<div class="erl-ort-top">'
+        +'<span class="erl-ort-name">&#128205; '+esc(o.name)+'</span>'
+        +'<span class="erl-chevron">&#8250;</span>'
+      +'</div>'
+      +'<div class="erl-ort-meta">'+offenHtml+' &middot; '+stLbl+'</div>'
+      +'</div>';
+  }).join('');
+}
+
+// ── Render: Ebene 2 — Stationen eines Ortes ───────────────────
+function erlRenderOrt(){
+  const ort = ERL.currentOrt;
+  const stationen = (ort && ort.stationen) || [];
+  ERL_STAT_MAP = {};
+  stationen.forEach(s=>{ ERL_STAT_MAP[s.id] = s; });
+
+  if(!stationen.length){
+    $('erl-stat-list').innerHTML = '<p class="empty-state">Keine Stationen vorhanden.</p>';
+    return;
+  }
+  $('erl-stat-list').innerHTML = stationen.map(s=>{
+    const offen = s.offen != null ? s.offen : (s.eintraege ? s.eintraege.length : 0);
+    const icon  = erlKatIcon(s.kategorie);
+    let countHtml;
+    if(offen === 0){
+      countHtml = '<span class="erl-stat-count s-done">&#9989; Alle erledigt</span>';
+    } else {
+      countHtml = '<span class="erl-stat-count s-offen">'+offen+' offen</span>';
+    }
+    return '<div class="erl-stat-card" onclick="erlOpenStation('+s.id+')">'
+      +'<span class="erl-stat-icon">'+icon+'</span>'
+      +'<div class="erl-stat-info">'
+        +'<span class="erl-stat-name">'+esc(s.name)+'</span>'
+        +countHtml
+      +'</div>'
+      +'<span class="erl-chevron">&#8250;</span>'
+      +'</div>';
+  }).join('');
+}
+
+// ── Render: Ebene 3 — Erledigungen einer Station ──────────────
+function erlRenderStation(){
+  const st    = ERL.currentStation;
+  const items = (st && st.eintraege) || [];
+
+  if(!items.length){
+    $('erl-items-list').innerHTML = '<div class="erl-leer">&#9989; Alle Erledigungen erledigt</div>';
+    return;
+  }
+  $('erl-items-list').innerHTML = items.map(e=>{
+    const prio = (e.prioritaet||'normal').toLowerCase();
+    const pdot = prio==='hoch' ? 'ph' : (prio==='niedrig' ? 'pl' : 'pn');
+    const notiz = (e.beschreibung||'').trim();
+    return '<div class="erl-item">'
+      +'<span class="erl-cb">&#9633;</span>'
+      +'<span class="erl-pdot '+pdot+'"></span>'
+      +'<div class="erl-item-txt">'
+        +'<span class="erl-item-titel">'+esc(e.titel)+'</span>'
+        +(notiz?'<span class="erl-item-notiz">'+esc(notiz)+'</span>':'')
+      +'</div>'
+      +'</div>';
+  }).join('');
+}
+
+// ── Tile + Badge (initApp) ─────────────────────────────────────
 function renderErledigungen(){
   const erl   = D.erledigungen || {};
   const offen = erl.offen_gesamt != null ? erl.offen_gesamt : null;
-  const orte  = erl.orte_count  != null ? erl.orte_count  : null;
 
-  // Tile-Beschreibung: dynamisch
   const desc = $('erl-tile-desc');
   if(desc){
-    if(offen === null)      desc.textContent = 'Orte & Stationen';
-    else if(offen === 0)    desc.textContent = 'Alles erledigt';
-    else                    desc.textContent = offen + (offen === 1 ? ' offen' : ' offene');
+    if(offen === null)   desc.textContent = 'Orte & Stationen';
+    else if(offen === 0) desc.textContent = 'Alles erledigt';
+    else                 desc.textContent = offen + (offen === 1 ? ' offen' : ' offene');
   }
 
-  // Badge: nur wenn offen > 0 (kein Badge bei 0 — konsistent mit Wetter/Wasser/JP)
   const badge = $('badge-erl');
   if(badge){
     if(offen > 0){ badge.style.display='block'; badge.textContent=offen+' offen'; }
     else           badge.style.display='none';
-  }
-
-  // Placeholder-View Summary (Vorbereitung CF-2)
-  const sum = $('erl-summary');
-  if(sum){
-    if(offen === null){ sum.innerHTML=''; return; }
-    sum.innerHTML = offen === 0
-      ? '<p style="color:var(--accent);font-weight:600">&#9989; Keine offenen Erledigungen</p>'
-      : '<p style="color:var(--orange);font-weight:600">'+offen+' offene Erledigung'+(offen===1?'':'en')
-        +(orte?' in '+orte+' Ort'+(orte===1?'':'en'):'')+'</p>';
   }
 }
 </script>
