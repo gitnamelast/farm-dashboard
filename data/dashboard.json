@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-07T07:20:22",
+  "exportiert_am": "2026-07-07T07:27:55",
   "aufgaben": {
     "heute": [
       {
@@ -28,26 +28,10 @@
         "beschreibung": ""
       },
       {
-        "titel": "Kapp-Neger-Haus",
-        "prioritaet": 2,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-02",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "Windmotor neue Bergseite – Elektropumpe rein",
         "prioritaet": 2,
         "kategorie": "boreholes",
         "faellig": "2026-07-06",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
-        "prioritaet": 2,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-07",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -116,22 +100,6 @@
         "beschreibung": ""
       },
       {
-        "titel": "Reparaturliste durchgehen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026 haus und hof"
-      },
-      {
-        "titel": "Reparaturliste durchgehen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
         "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
@@ -161,14 +129,6 @@
         "kategorie": "allgemein",
         "faellig": "2026-07-06",
         "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Plan fuer Grasschneiden erstellen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-07",
-        "besitzer": "werner",
         "beschreibung": ""
       },
       {
@@ -229,6 +189,14 @@
       }
     ],
     "naechste_7_tage": [
+      {
+        "titel": "Kapp-Neger-Haus",
+        "prioritaet": 2,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-08",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
       {
         "titel": "Aircondition Buero",
         "prioritaet": 2,
@@ -364,6 +332,14 @@
         "faellig": "2026-07-13",
         "besitzer": "shared",
         "beschreibung": ""
+      },
+      {
+        "titel": "Reparaturliste durchgehen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-14",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
         "titel": "Werkzeugschrank Farmtools fest anbringe",
@@ -688,12 +664,6 @@
     },
     {
       "datum": "2026-07-07",
-      "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
-      "kategorie": "wohnhaus",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-07",
       "titel": "Inverter – von Jungs bauen lassen",
       "kategorie": "gebaeude",
       "besitzer": "werner"
@@ -706,15 +676,15 @@
     },
     {
       "datum": "2026-07-07",
-      "titel": "Plan fuer Grasschneiden erstellen",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-07",
       "titel": "Ce lizens anfragen driving school",
       "kategorie": "allgemein",
       "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-08",
+      "titel": "Kapp-Neger-Haus",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
     },
     {
       "datum": "2026-07-08",
@@ -837,6 +807,12 @@
       "besitzer": "werner"
     },
     {
+      "datum": "2026-07-14",
+      "titel": "Reparaturliste durchgehen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
       "datum": "2026-07-15",
       "titel": "Land Tax pruefen",
       "kategorie": "allgemein",
@@ -862,6 +838,12 @@
     },
     {
       "datum": "2026-07-15",
+      "titel": "Reparaturliste durchgehen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-15",
       "titel": "Bohrlochkamera bauen",
       "kategorie": "allgemein",
       "besitzer": "werner"
@@ -877,6 +859,12 @@
       "titel": "Winterherde: BVD Hiprabovis + Vibrin spritzen",
       "kategorie": "rinder",
       "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-20",
+      "titel": "Plan fuer Grasschneiden erstellen",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
     },
     {
       "datum": "2026-07-21",
@@ -895,6 +883,12 @@
       "titel": "bush kappen ausarbeiten",
       "kategorie": "allgemein",
       "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-22",
+      "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
     },
     {
       "datum": "2026-07-23",
@@ -1118,13 +1112,13 @@
           "titel": "Reparaturliste durchgehen",
           "kategorie": "allgemein",
           "source": "task",
-          "datum": "2026-07-01"
+          "datum": "2026-07-14"
         },
         {
           "titel": "Reparaturliste durchgehen",
           "kategorie": "allgemein",
           "source": "task",
-          "datum": "2026-07-01"
+          "datum": "2026-07-15"
         },
         {
           "titel": "Kiesdamm Zaun pruefen",
