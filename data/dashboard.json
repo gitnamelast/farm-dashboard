@@ -1,8 +1,16 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-04T19:59:44",
+  "exportiert_am": "2026-07-07T07:20:22",
   "aufgaben": {
     "heute": [
+      {
+        "titel": "Driver License CE machen",
+        "prioritaet": 1,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-07",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
       {
         "titel": "Feuerspritze + andere Feuerloeschgeraete pruefen",
         "prioritaet": 2,
@@ -12,27 +20,11 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
-        "titel": "Schafe chipen",
-        "prioritaet": 2,
-        "kategorie": "schafe",
-        "faellig": "2026-06-23",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "schlachtermin prüfen wieviel und wann",
         "prioritaet": 2,
         "kategorie": "allgemein",
         "faellig": "2026-06-24",
         "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Elektrozaun Windmotor und Kaelberkraal",
-        "prioritaet": 2,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-30",
-        "besitzer": "werner",
         "beschreibung": ""
       },
       {
@@ -44,275 +36,9 @@
         "beschreibung": ""
       },
       {
-        "titel": "Tontauben ding abbauen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-19",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Faninazen werner pettycahs jagd etc fertig machen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-22",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "John Hollow bricks",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-23",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Sim karte in sigmotec turm reinbauen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-23",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Jungs PPE-Kasten fest anbringen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-25",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Licht Schlachteplatz",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-25",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Andrew WhatsApp Repeater Lizenz",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-26",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Werkzeugkammer Werner aufraeumen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-28",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "roladn zirsow termin machen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-29",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "brandeisen werner fertig machen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-29",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "jungfarmer LWV kursus okh schiocken",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-29",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "franzi papier feritg machen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-29",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Solar Licht",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-30",
-        "besitzer": "werner",
-        "beschreibung": "Lichter im hof gucken und kaufen und dann installieren"
-      },
-      {
-        "titel": "Solenoid, schlangkamp, haustank instalieren",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-30",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "werner savanna schalcht rechte anbieten",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-30",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Farmkarte drucken + Wasserstellen fuer Feuerbekaempfung markieren",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-01",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Reparaturliste durchgehen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026 haus und hof"
-      },
-      {
-        "titel": "Werkzeugkammer Jungs aufraeumen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Reparaturliste durchgehen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "kassing typ nachfragen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-01",
-        "besitzer": "shared",
-        "beschreibung": "am montag mit kaps dealers telefoniert wollte quote schicken"
-      },
-      {
-        "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-03",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Fleisch kühler",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-03",
-        "besitzer": "werner",
-        "beschreibung": "wiegen und austrennen"
-      },
-      {
-        "titel": "bush kappen ausarbeiten",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-03",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Haus und Hof in Ordnung bringen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-08-26",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Werkzeugschrank Farmtools fest anbringe",
-        "prioritaet": 4,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-06-25",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "SIM-Karten  aufladen",
-        "prioritaet": 4,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-01",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "LC Sitzbank bauen",
-        "prioritaet": 4,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-03",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Radio Lizenz Klub",
-        "prioritaet": 5,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-01",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Ernst Lerch Trailer – Design erstellen",
-        "prioritaet": 5,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-03",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Radio Klub – Mitglieder organisieren",
-        "prioritaet": 5,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-04",
-        "besitzer": "werner",
-        "beschreibung": ""
-      }
-    ],
-    "naechste_7_tage": [
-      {
-        "titel": "Driver License CE machen",
-        "prioritaet": 1,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-07",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "Windmotor neue Bergseite – Elektropumpe rein",
         "prioritaet": 2,
         "kategorie": "boreholes",
-        "faellig": "2026-07-06",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Hunde GPS Collar pruefen",
-        "prioritaet": 2,
-        "kategorie": "hunde",
         "faellig": "2026-07-06",
         "besitzer": "werner",
         "beschreibung": ""
@@ -342,20 +68,92 @@
         "beschreibung": ""
       },
       {
-        "titel": "Aircondition Buero",
-        "prioritaet": 2,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-08",
+        "titel": "Tontauben ding abbauen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-19",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Faninazen werner pettycahs jagd etc fertig machen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-22",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Andrew WhatsApp Repeater Lizenz",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-26",
         "besitzer": "werner",
         "beschreibung": ""
       },
       {
-        "titel": "Auto-Graben anlegen",
-        "prioritaet": 2,
-        "kategorie": "garten",
-        "faellig": "2026-07-09",
+        "titel": "roladn zirsow termin machen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-29",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "franzi papier feritg machen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-29",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Solenoid, schlangkamp, haustank instalieren",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-06-30",
         "besitzer": "werner",
         "beschreibung": ""
+      },
+      {
+        "titel": "Reparaturliste durchgehen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026 haus und hof"
+      },
+      {
+        "titel": "Reparaturliste durchgehen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "kassing typ nachfragen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-01",
+        "besitzer": "shared",
+        "beschreibung": "am montag mit kaps dealers telefoniert wollte quote schicken"
+      },
+      {
+        "titel": "Fleisch kühler",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-03",
+        "besitzer": "werner",
+        "beschreibung": "wiegen und austrennen"
       },
       {
         "titel": "Hackel casing erneurn",
@@ -374,20 +172,102 @@
         "beschreibung": ""
       },
       {
-        "titel": "Hund Versicherung abschliessen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-07",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Kiesdamm Zaun pruefen",
+        "titel": "Ce lizens anfragen driving school",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-07-07",
         "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
+        "beschreibung": ""
+      },
+      {
+        "titel": "Haus und Hof in Ordnung bringen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-08-26",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "SIM-Karten  aufladen",
+        "prioritaet": 4,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-01",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "LC Sitzbank bauen",
+        "prioritaet": 4,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-03",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Monatsbericht",
+        "prioritaet": 4,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-06",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Radio Lizenz Klub",
+        "prioritaet": 5,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-01",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Radio Klub – Mitglieder organisieren",
+        "prioritaet": 5,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-04",
+        "besitzer": "werner",
+        "beschreibung": ""
+      }
+    ],
+    "naechste_7_tage": [
+      {
+        "titel": "Aircondition Buero",
+        "prioritaet": 2,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-08",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Schafe chipen",
+        "prioritaet": 2,
+        "kategorie": "schafe",
+        "faellig": "2026-07-08",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Elektrozaun Windmotor und Kaelberkraal",
+        "prioritaet": 2,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-09",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Auto-Graben anlegen",
+        "prioritaet": 2,
+        "kategorie": "garten",
+        "faellig": "2026-07-09",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Strom aussortieren – Box mit Voltmeter",
+        "prioritaet": 2,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-14",
+        "besitzer": "werner",
+        "beschreibung": ""
       },
       {
         "titel": "Licht Strom-Raum",
@@ -414,6 +294,54 @@
         "beschreibung": "Koos Brand für Strom fragen, strom raum und generator. contact details auf handy gespeichert"
       },
       {
+        "titel": "John Hollow bricks",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-08",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Sim karte in sigmotec turm reinbauen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-08",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "brandeisen werner fertig machen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-08",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Solar Licht",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-09",
+        "besitzer": "werner",
+        "beschreibung": "Lichter im hof gucken und kaufen und dann installieren"
+      },
+      {
+        "titel": "Jungs PPE-Kasten fest anbringen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-09",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Werkzeugkammer Werner aufraeumen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-09",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
         "titel": "Rinder aus Ombotozu kamp",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -422,10 +350,26 @@
         "beschreibung": "Martin will am wochenende laden"
       },
       {
-        "titel": "Monatsbericht",
-        "prioritaet": 4,
+        "titel": "Licht Schlachteplatz",
+        "prioritaet": 3,
         "kategorie": "allgemein",
-        "faellig": "2026-07-06",
+        "faellig": "2026-07-10",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "werner savanna schalcht rechte anbieten",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-13",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Werkzeugschrank Farmtools fest anbringe",
+        "prioritaet": 4,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-09",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -441,59 +385,59 @@
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 27.1,
-      "temp_min": 6.7,
+      "temp_max": 12.6,
+      "temp_min": 8.7,
       "rainfall_24h": 0.0,
-      "wind_speed": 2.8
+      "wind_speed": 1.3
     },
     "vorhersage": [
       {
-        "date": "2026-07-04",
-        "wcode": 3,
-        "temp_max": 24.8,
-        "temp_min": 7.0,
-        "rain": 0
-      },
-      {
-        "date": "2026-07-05",
-        "wcode": 0,
-        "temp_max": 23.5,
-        "temp_min": 9.3,
-        "rain": 0
-      },
-      {
-        "date": "2026-07-06",
-        "wcode": 0,
-        "temp_max": 22.1,
-        "temp_min": 7.3,
-        "rain": 0
-      },
-      {
         "date": "2026-07-07",
         "wcode": 0,
-        "temp_max": 22.2,
-        "temp_min": 8.2,
+        "temp_max": 23.1,
+        "temp_min": 8.0,
         "rain": 0
       },
       {
         "date": "2026-07-08",
         "wcode": 0,
         "temp_max": 21.2,
-        "temp_min": 7.2,
+        "temp_min": 8.1,
         "rain": 0
       },
       {
         "date": "2026-07-09",
         "wcode": 0,
-        "temp_max": 21.8,
-        "temp_min": 6.2,
+        "temp_max": 21.2,
+        "temp_min": 7.0,
         "rain": 0
       },
       {
         "date": "2026-07-10",
         "wcode": 0,
-        "temp_max": 22.0,
-        "temp_min": 7.8,
+        "temp_max": 22.7,
+        "temp_min": 7.6,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-11",
+        "wcode": 0,
+        "temp_max": 23.8,
+        "temp_min": 7.6,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-12",
+        "wcode": 0,
+        "temp_max": 23.7,
+        "temp_min": 6.8,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-13",
+        "wcode": 0,
+        "temp_max": 21.9,
+        "temp_min": 6.6,
         "rain": 0
       }
     ]
@@ -686,37 +630,56 @@
       ]
     }
   ],
+  "erledigungen": {
+    "offen_gesamt": 2,
+    "orte_count": 2,
+    "orte": [
+      {
+        "id": 2,
+        "name": "Okahandja",
+        "offen": 0,
+        "stationen_count": 0,
+        "stationen": []
+      },
+      {
+        "id": 1,
+        "name": "Windhoek",
+        "offen": 2,
+        "stationen_count": 2,
+        "stationen": [
+          {
+            "id": 1,
+            "name": "Namibian Stock exchange",
+            "kategorie": "sonstiges",
+            "offen": 1,
+            "eintraege": [
+              {
+                "id": 1,
+                "titel": "Slaugher certificate abholen",
+                "beschreibung": "",
+                "prioritaet": "normal"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Pupkewitz",
+            "kategorie": "sonstiges",
+            "offen": 1,
+            "eintraege": [
+              {
+                "id": 2,
+                "titel": "Regale für turm kaufen ca 1m länge",
+                "beschreibung": "",
+                "prioritaet": "normal"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "kalender": [
-    {
-      "datum": "2026-07-04",
-      "titel": "Radio Klub – Mitglieder organisieren",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-06",
-      "titel": "Windmotor neue Bergseite – Elektropumpe rein",
-      "kategorie": "boreholes",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-06",
-      "titel": "Hunde GPS Collar pruefen",
-      "kategorie": "hunde",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-06",
-      "titel": "Hackel casing erneurn",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-07-06",
-      "titel": "Monatsbericht",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
     {
       "datum": "2026-07-07",
       "titel": "Driver License CE machen",
@@ -749,13 +712,7 @@
     },
     {
       "datum": "2026-07-07",
-      "titel": "Hund Versicherung abschliessen",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-07",
-      "titel": "Kiesdamm Zaun pruefen",
+      "titel": "Ce lizens anfragen driving school",
       "kategorie": "allgemein",
       "besitzer": "shared"
     },
@@ -763,6 +720,12 @@
       "datum": "2026-07-08",
       "titel": "Aircondition Buero",
       "kategorie": "wohnhaus",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-08",
+      "titel": "Schafe chipen",
+      "kategorie": "schafe",
       "besitzer": "werner"
     },
     {
@@ -784,10 +747,52 @@
       "besitzer": "werner"
     },
     {
+      "datum": "2026-07-08",
+      "titel": "John Hollow bricks",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-08",
+      "titel": "Sim karte in sigmotec turm reinbauen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-08",
+      "titel": "brandeisen werner fertig machen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-09",
+      "titel": "Elektrozaun Windmotor und Kaelberkraal",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
       "datum": "2026-07-09",
       "titel": "Auto-Graben anlegen",
       "kategorie": "garten",
       "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-09",
+      "titel": "Solar Licht",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-09",
+      "titel": "Jungs PPE-Kasten fest anbringen",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-09",
+      "titel": "Werkzeugkammer Werner aufraeumen",
+      "kategorie": "wohnhaus",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-07-09",
@@ -796,10 +801,28 @@
       "besitzer": "shared"
     },
     {
+      "datum": "2026-07-09",
+      "titel": "Werkzeugschrank Farmtools fest anbringe",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-10",
+      "titel": "Licht Schlachteplatz",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
       "datum": "2026-07-10",
       "titel": "Tools aufraeumen",
       "kategorie": "wohnhaus",
       "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-13",
+      "titel": "werner savanna schalcht rechte anbieten",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-07-14",
@@ -833,6 +856,12 @@
     },
     {
       "datum": "2026-07-15",
+      "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
+      "kategorie": "wohnhaus",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-15",
       "titel": "Bohrlochkamera bauen",
       "kategorie": "allgemein",
       "besitzer": "werner"
@@ -850,6 +879,24 @@
       "besitzer": "shared"
     },
     {
+      "datum": "2026-07-21",
+      "titel": "Farmkarte drucken + Wasserstellen fuer Feuerbekaempfung markieren",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-21",
+      "titel": "Kiesdamm Zaun pruefen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-21",
+      "titel": "bush kappen ausarbeiten",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
       "datum": "2026-07-23",
       "titel": "cockpit von erichsfelde daen reinfüttern",
       "kategorie": "allgemein",
@@ -859,6 +906,12 @@
       "datum": "2026-07-28",
       "titel": "wegen bipa mal fragen",
       "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-30",
+      "titel": "Hunde GPS Collar pruefen",
+      "kategorie": "hunde",
       "besitzer": "werner"
     },
     {
@@ -874,9 +927,21 @@
       "besitzer": "werner"
     },
     {
+      "datum": "2026-07-30",
+      "titel": "Hund Versicherung abschliessen",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
       "datum": "2026-07-31",
       "titel": "Muellverbrennungsanlage bauen",
       "kategorie": "gebaeude",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-31",
+      "titel": "Ernst Lerch Trailer – Design erstellen",
+      "kategorie": "allgemein",
       "besitzer": "werner"
     },
     {
@@ -902,6 +967,18 @@
       "titel": "Vogelschutznetze unter Dach Gastehaus anbringen",
       "kategorie": "wohnhaus",
       "besitzer": "shared"
+    },
+    {
+      "datum": "2026-08-06",
+      "titel": "Headboard fuer Bett design und bauen",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-06",
+      "titel": "Solar-Dach  saeubern",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
     }
   ],
   "jahresplanung": {
@@ -1016,12 +1093,6 @@
       "weide": [],
       "haus_hof": [
         {
-          "titel": "Werkzeugkammer Werner aufraeumen",
-          "kategorie": "wohnhaus",
-          "source": "task",
-          "datum": "2026-06-28"
-        },
-        {
           "titel": "Winterputz",
           "kategorie": "wohnhaus",
           "source": "task",
@@ -1059,7 +1130,7 @@
           "titel": "Kiesdamm Zaun pruefen",
           "kategorie": "allgemein",
           "source": "task",
-          "datum": "2026-07-07"
+          "datum": "2026-07-21"
         }
       ],
       "rinder": [
@@ -1079,28 +1150,34 @@
       "weide": [],
       "haus_hof": [
         {
-          "titel": "Werkzeugkammer Jungs aufraeumen",
-          "kategorie": "wohnhaus",
-          "source": "task",
-          "datum": "2026-07-01"
-        },
-        {
           "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
           "kategorie": "wohnhaus",
           "source": "task",
           "datum": "2026-07-01"
         },
         {
-          "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
-          "kategorie": "wohnhaus",
-          "source": "task",
-          "datum": "2026-07-03"
-        },
-        {
           "titel": "Fitting-Raum aufraeumen",
           "kategorie": "wohnhaus",
           "source": "task",
           "datum": "2026-07-08"
+        },
+        {
+          "titel": "Werkzeugkammer Werner aufraeumen",
+          "kategorie": "wohnhaus",
+          "source": "task",
+          "datum": "2026-07-09"
+        },
+        {
+          "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
+          "kategorie": "wohnhaus",
+          "source": "task",
+          "datum": "2026-07-15"
+        },
+        {
+          "titel": "Werkzeugkammer Jungs aufraeumen",
+          "kategorie": "wohnhaus",
+          "source": "task",
+          "datum": "2027-07-01"
         }
       ]
     },
