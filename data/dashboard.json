@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-08T20:20:09",
+  "exportiert_am": "2026-07-08T20:51:09",
   "aufgaben": {
     "heute": [
       {
@@ -199,6 +199,14 @@
       },
       {
         "titel": "brandeisen werner fertig machen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-09",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Boxen weg packen",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-07-09",
@@ -655,6 +663,12 @@
     {
       "datum": "2026-07-09",
       "titel": "brandeisen werner fertig machen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-09",
+      "titel": "Boxen weg packen",
       "kategorie": "allgemein",
       "besitzer": "shared"
     },
