@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-07T08:00:20",
+  "exportiert_am": "2026-07-08T08:00:41",
   "aufgaben": {
     "heute": [
       {
@@ -49,6 +49,30 @@
         "kategorie": "allgemein",
         "faellig": "2026-07-07",
         "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Kapp-Neger-Haus",
+        "prioritaet": 2,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-08",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Aircondition Buero",
+        "prioritaet": 2,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-08",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Schafe chipen",
+        "prioritaet": 2,
+        "kategorie": "schafe",
+        "faellig": "2026-07-08",
+        "besitzer": "werner",
         "beschreibung": ""
       },
       {
@@ -140,6 +164,62 @@
         "beschreibung": ""
       },
       {
+        "titel": "Licht Strom-Raum",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-08",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Fitting-Raum aufraeumen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-08",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Koos Brand Strom",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-08",
+        "besitzer": "werner",
+        "beschreibung": "Koos Brand für Strom fragen, strom raum und generator. contact details auf handy gespeichert"
+      },
+      {
+        "titel": "John Hollow bricks",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-08",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Sim karte in sigmotec turm reinbauen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-08",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "brandeisen werner fertig machen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-08",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Borg anrufen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-08",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
         "titel": "Haus und Hof in Ordnung bringen",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
@@ -190,30 +270,6 @@
     ],
     "naechste_7_tage": [
       {
-        "titel": "Kapp-Neger-Haus",
-        "prioritaet": 2,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-08",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Aircondition Buero",
-        "prioritaet": 2,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-08",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Schafe chipen",
-        "prioritaet": 2,
-        "kategorie": "schafe",
-        "faellig": "2026-07-08",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "Elektrozaun Windmotor und Kaelberkraal",
         "prioritaet": 2,
         "kategorie": "allgemein",
@@ -238,50 +294,18 @@
         "beschreibung": ""
       },
       {
-        "titel": "Licht Strom-Raum",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-08",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Fitting-Raum aufraeumen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-08",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Koos Brand Strom",
-        "prioritaet": 3,
+        "titel": "Land Tax pruefen",
+        "prioritaet": 2,
         "kategorie": "allgemein",
-        "faellig": "2026-07-08",
-        "besitzer": "werner",
-        "beschreibung": "Koos Brand für Strom fragen, strom raum und generator. contact details auf handy gespeichert"
-      },
-      {
-        "titel": "John Hollow bricks",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-08",
+        "faellig": "2026-07-15",
         "besitzer": "shared",
         "beschreibung": ""
       },
       {
-        "titel": "Sim karte in sigmotec turm reinbauen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-08",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "brandeisen werner fertig machen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-08",
+        "titel": "Kastrieren und Enthornen",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2026-07-15",
         "besitzer": "shared",
         "beschreibung": ""
       },
@@ -342,6 +366,22 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
+        "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-15",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Reparaturliste durchgehen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-15",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026 haus und hof"
+      },
+      {
         "titel": "Werkzeugschrank Farmtools fest anbringe",
         "prioritaet": 4,
         "kategorie": "wohnhaus",
@@ -356,64 +396,72 @@
         "faellig": "2026-07-10",
         "besitzer": "werner",
         "beschreibung": ""
+      },
+      {
+        "titel": "Bohrlochkamera bauen",
+        "prioritaet": 5,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-15",
+        "besitzer": "werner",
+        "beschreibung": ""
       }
     ]
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 12.6,
-      "temp_min": 8.2,
+      "temp_max": 12.3,
+      "temp_min": 8.6,
       "rainfall_24h": 0.0,
-      "wind_speed": 1.3
+      "wind_speed": 2.6
     },
     "vorhersage": [
       {
-        "date": "2026-07-07",
-        "wcode": 0,
-        "temp_max": 23.1,
-        "temp_min": 8.0,
-        "rain": 0
-      },
-      {
         "date": "2026-07-08",
         "wcode": 0,
-        "temp_max": 21.2,
-        "temp_min": 8.1,
+        "temp_max": 21.6,
+        "temp_min": 8.2,
         "rain": 0
       },
       {
         "date": "2026-07-09",
         "wcode": 0,
-        "temp_max": 21.2,
-        "temp_min": 7.0,
+        "temp_max": 21.1,
+        "temp_min": 7.1,
         "rain": 0
       },
       {
         "date": "2026-07-10",
         "wcode": 0,
-        "temp_max": 22.7,
-        "temp_min": 7.6,
+        "temp_max": 21.9,
+        "temp_min": 8.1,
         "rain": 0
       },
       {
         "date": "2026-07-11",
         "wcode": 0,
-        "temp_max": 23.8,
-        "temp_min": 7.6,
+        "temp_max": 23.5,
+        "temp_min": 7.9,
         "rain": 0
       },
       {
         "date": "2026-07-12",
         "wcode": 0,
-        "temp_max": 23.7,
-        "temp_min": 6.8,
+        "temp_max": 23.4,
+        "temp_min": 7.0,
         "rain": 0
       },
       {
         "date": "2026-07-13",
         "wcode": 0,
-        "temp_max": 21.9,
-        "temp_min": 6.6,
+        "temp_max": 22.9,
+        "temp_min": 6.7,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-14",
+        "wcode": 0,
+        "temp_max": 23.3,
+        "temp_min": 8.4,
         "rain": 0
       }
     ]
@@ -657,30 +705,6 @@
   },
   "kalender": [
     {
-      "datum": "2026-07-07",
-      "titel": "Driver License CE machen",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-07",
-      "titel": "Inverter – von Jungs bauen lassen",
-      "kategorie": "gebaeude",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-07",
-      "titel": "Animal Health Declaration Form (Q1)",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-07-07",
-      "titel": "Ce lizens anfragen driving school",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
       "datum": "2026-07-08",
       "titel": "Kapp-Neger-Haus",
       "kategorie": "allgemein",
@@ -731,6 +755,12 @@
     {
       "datum": "2026-07-08",
       "titel": "brandeisen werner fertig machen",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-08",
+      "titel": "Borg anrufen",
       "kategorie": "allgemein",
       "besitzer": "shared"
     },
