@@ -1,13 +1,20 @@
-<!-- index_v3_RC1.html — Dashboard v3 RC1 — 03.07.2026 -->
-<!-- CF-1: Erledigungen-Tile + Placeholder-View + export.py-Daten -->
-<!-- Änderungen gegenüber test_dashboard_v3c v1.1:
-     - Echter Datenfetch von GitHub (Fallback: Demo-Daten)
-     - CSS Fix: Mobile Kategorie-Tabs inaktiv/aktiv unterscheidbar
-     - Fix: isoStr() UTC-Timezone Bug (Namibia UTC+2)
-     - Dynamische Hunde-Namen im App-Launcher
-     - Empty-States für Wetter, Wasser, alle Module
-     - Demo-Banner wenn Offline-Fallback aktiv
-     - Version RC1 sichtbar -->
+<!--
+==============================================================
+Farm Manager Erichsfelde
+Cloudflare Dashboard
+
+Datei........: index_v3_RC1.html
+Version......: CF-Login Phase 1
+Stand........: 09.07.2026
+Status.......: Active
+
+Beschreibung.:
+Mobiles Cloudflare Dashboard für den Farm Manager.
+
+Historie......:
+Siehe dashboard/CHANGELOG.md
+==============================================================
+-->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -675,6 +682,34 @@ async function sha256(msg){
   return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,'0')).join('');
 }
 
+// ─── SESSION (CF-Login Phase 1) ───────────────────────────────
+const SESSION_COOKIE = 'farm_session';
+const SESSION_DAYS   = 30;
+
+function setSessionCookie(){
+  const bytes = crypto.getRandomValues(new Uint8Array(24));
+  const token = Array.from(bytes).map(b=>b.toString(16).padStart(2,'0')).join('');
+  const exp   = new Date(Date.now() + SESSION_DAYS * 86400000).toUTCString();
+  document.cookie = SESSION_COOKIE+'='+token
+    +'; expires='+exp
+    +'; path=/'
+    +'; SameSite=Strict'
+    +'; Secure';
+}
+
+function hasValidSession(){
+  return document.cookie.split(';').some(c=>c.trim().startsWith(SESSION_COOKIE+'='));
+}
+
+// Auto-Login: Session-Cookie prüfen sobald Daten geladen
+_dataReady.then(()=>{
+  if(hasValidSession()){
+    $('login-screen').style.display='none';
+    $('app').style.display='block';
+    initApp();
+  }
+});
+
 // ─── LOGIN ────────────────────────────────────────────────────
 async function doLogin(){
   const btn = $('login-btn');
@@ -689,6 +724,7 @@ async function doLogin(){
 
   const hash = await sha256($('pw-input').value);
   if(hash === D.passwort_hash){
+    setSessionCookie();
     $('login-screen').style.display='none';
     $('app').style.display='block';
     initApp();
