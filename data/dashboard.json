@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-09T15:50:56",
+  "exportiert_am": "2026-07-09T16:20:51",
   "aufgaben": {
     "heute": [
       {
@@ -60,14 +60,6 @@
         "beschreibung": ""
       },
       {
-        "titel": "Fitting-Raum aufraeumen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-08",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
         "titel": "John Hollow bricks",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -100,14 +92,6 @@
         "beschreibung": ""
       },
       {
-        "titel": "Koos Brand Strom",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-09",
-        "besitzer": "werner",
-        "beschreibung": "Koos Brand für Strom fragen, strom raum und generator. contact details auf handy gespeichert"
-      },
-      {
         "titel": "Sim karte in sigmotec turm reinbauen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -117,14 +101,6 @@
       },
       {
         "titel": "brandeisen werner fertig machen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-09",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Boxen weg packen",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-07-09",
@@ -276,6 +252,22 @@
         "faellig": "2026-07-15",
         "besitzer": "shared",
         "beschreibung": "Aus Jahresprogramm 2026 haus und hof"
+      },
+      {
+        "titel": "Fitting-Raum aufraeumen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-16",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Koos Brand Strom",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-16",
+        "besitzer": "werner",
+        "beschreibung": "Koos Brand für Strom fragen, strom raum und generator. contact details auf handy gespeichert"
       },
       {
         "titel": "Tools aufraeumen",
@@ -614,12 +606,6 @@
     },
     {
       "datum": "2026-07-09",
-      "titel": "Koos Brand Strom",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-09",
       "titel": "Sim karte in sigmotec turm reinbauen",
       "kategorie": "allgemein",
       "besitzer": "shared"
@@ -627,12 +613,6 @@
     {
       "datum": "2026-07-09",
       "titel": "brandeisen werner fertig machen",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-07-09",
-      "titel": "Boxen weg packen",
       "kategorie": "allgemein",
       "besitzer": "shared"
     },
@@ -754,6 +734,18 @@
       "datum": "2026-07-16",
       "titel": "Strom zum Braai-Platz legen",
       "kategorie": "wohnhaus",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-16",
+      "titel": "Fitting-Raum aufraeumen",
+      "kategorie": "wohnhaus",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-16",
+      "titel": "Koos Brand Strom",
+      "kategorie": "allgemein",
       "besitzer": "werner"
     },
     {
@@ -1088,16 +1080,16 @@
       "weide": [],
       "haus_hof": [
         {
-          "titel": "Fitting-Raum aufraeumen",
-          "kategorie": "wohnhaus",
-          "source": "task",
-          "datum": "2026-07-08"
-        },
-        {
           "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
           "kategorie": "wohnhaus",
           "source": "task",
           "datum": "2026-07-15"
+        },
+        {
+          "titel": "Fitting-Raum aufraeumen",
+          "kategorie": "wohnhaus",
+          "source": "task",
+          "datum": "2026-07-16"
         },
         {
           "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
