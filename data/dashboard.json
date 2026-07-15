@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-15T08:30:35",
+  "exportiert_am": "2026-07-15T16:28:12",
   "aufgaben": {
     "heute": [
       {
@@ -76,22 +76,6 @@
         "beschreibung": ""
       },
       {
-        "titel": "John Hollow bricks",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-08",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Faninazen werner pettycahs jagd etc fertig machen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-08",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
         "titel": "Jungs PPE-Kasten fest anbringen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -132,36 +116,12 @@
         "beschreibung": ""
       },
       {
-        "titel": "Fleisch kühler",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-10",
-        "besitzer": "werner",
-        "beschreibung": "wiegen und austrennen"
-      },
-      {
-        "titel": "Hackel casing erneurn",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-10",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
         "titel": "werner savanna schalcht rechte anbieten",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-07-13",
         "besitzer": "shared",
         "beschreibung": ""
-      },
-      {
-        "titel": "Reparaturliste durchgehen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-14",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
         "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
@@ -181,14 +141,6 @@
       },
       {
         "titel": "pettycash",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-15",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "stuhlgeld",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-07-15",
@@ -254,14 +206,6 @@
     ],
     "naechste_7_tage": [
       {
-        "titel": "Strom zum Braai-Platz legen",
-        "prioritaet": 2,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-16",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "Winterherde: BVD Hiprabovis + Vibrin spritzen",
         "prioritaet": 2,
         "kategorie": "rinder",
@@ -310,12 +254,36 @@
         "beschreibung": "Koos Brand für Strom fragen, strom raum und generator. contact details auf handy gespeichert"
       },
       {
+        "titel": "John Hollow bricks",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-16",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
         "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
         "faellig": "2026-07-17",
         "besitzer": "shared",
         "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Fleisch kühler",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-17",
+        "besitzer": "werner",
+        "beschreibung": "wiegen und austrennen"
+      },
+      {
+        "titel": "Hackel casing erneurn",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-17",
+        "besitzer": "shared",
+        "beschreibung": ""
       },
       {
         "titel": "Plan fuer Grasschneiden erstellen",
@@ -369,59 +337,59 @@
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 13.1,
+      "temp_max": 24.7,
       "temp_min": 7.9,
       "rainfall_24h": 0.0,
-      "wind_speed": 3.5
+      "wind_speed": 3.7
     },
     "vorhersage": [
       {
         "date": "2026-07-15",
         "wcode": 0,
-        "temp_max": 24.2,
-        "temp_min": 10.1,
+        "temp_max": 24.4,
+        "temp_min": 9.6,
         "rain": 0
       },
       {
         "date": "2026-07-16",
         "wcode": 0,
-        "temp_max": 23.0,
-        "temp_min": 8.5,
+        "temp_max": 23.4,
+        "temp_min": 8.1,
         "rain": 0
       },
       {
         "date": "2026-07-17",
         "wcode": 0,
-        "temp_max": 22.4,
-        "temp_min": 6.8,
+        "temp_max": 22.2,
+        "temp_min": 7.4,
         "rain": 0
       },
       {
         "date": "2026-07-18",
         "wcode": 0,
-        "temp_max": 23.3,
-        "temp_min": 6.9,
+        "temp_max": 22.7,
+        "temp_min": 6.8,
         "rain": 0
       },
       {
         "date": "2026-07-19",
         "wcode": 0,
-        "temp_max": 22.4,
-        "temp_min": 5.6,
+        "temp_max": 22.7,
+        "temp_min": 5.7,
         "rain": 0
       },
       {
         "date": "2026-07-20",
         "wcode": 0,
         "temp_max": 22.5,
-        "temp_min": 6.3,
+        "temp_min": 5.8,
         "rain": 0
       },
       {
         "date": "2026-07-21",
-        "wcode": 0,
-        "temp_max": 24.1,
-        "temp_min": 6.7,
+        "wcode": 3,
+        "temp_max": 23.0,
+        "temp_min": 8.2,
         "rain": 0
       }
     ]
@@ -678,12 +646,6 @@
     },
     {
       "datum": "2026-07-15",
-      "titel": "Strom zum Braai-Platz legen",
-      "kategorie": "wohnhaus",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-15",
       "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
       "kategorie": "wohnhaus",
       "besitzer": "shared"
@@ -702,12 +664,6 @@
     },
     {
       "datum": "2026-07-15",
-      "titel": "stuhlgeld",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-07-15",
       "titel": "Bohrlochkamera bauen",
       "kategorie": "allgemein",
       "besitzer": "werner"
@@ -716,12 +672,6 @@
       "datum": "2026-07-15",
       "titel": "Radio Lizenz Klub",
       "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-16",
-      "titel": "Strom zum Braai-Platz legen",
-      "kategorie": "wohnhaus",
       "besitzer": "werner"
     },
     {
@@ -743,9 +693,27 @@
       "besitzer": "werner"
     },
     {
+      "datum": "2026-07-16",
+      "titel": "John Hollow bricks",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
       "datum": "2026-07-17",
       "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
       "kategorie": "wohnhaus",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-17",
+      "titel": "Fleisch kühler",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-17",
+      "titel": "Hackel casing erneurn",
+      "kategorie": "allgemein",
       "besitzer": "shared"
     },
     {
@@ -1060,12 +1028,6 @@
           "titel": "Reparaturliste durchgehen",
           "kategorie": "allgemein",
           "source": "task",
-          "datum": "2026-07-14"
-        },
-        {
-          "titel": "Reparaturliste durchgehen",
-          "kategorie": "allgemein",
-          "source": "task",
           "datum": "2026-07-15"
         },
         {
@@ -1073,6 +1035,12 @@
           "kategorie": "allgemein",
           "source": "task",
           "datum": "2026-07-21"
+        },
+        {
+          "titel": "Reparaturliste durchgehen",
+          "kategorie": "allgemein",
+          "source": "task",
+          "datum": "2027-07-14"
         }
       ],
       "rinder": [
