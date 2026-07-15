@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-13T08:00:32",
+  "exportiert_am": "2026-07-15T08:00:28",
   "aufgaben": {
     "heute": [
       {
@@ -41,6 +41,38 @@
         "kategorie": "allgemein",
         "faellig": "2026-07-10",
         "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Strom aussortieren – Box mit Voltmeter",
+        "prioritaet": 2,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-14",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Aircondition Buero",
+        "prioritaet": 2,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-14",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Land Tax pruefen",
+        "prioritaet": 2,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-15",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Kastrieren und Enthornen",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2026-07-15",
+        "besitzer": "shared",
         "beschreibung": ""
       },
       {
@@ -156,6 +188,30 @@
         "beschreibung": ""
       },
       {
+        "titel": "Reparaturliste durchgehen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-14",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-15",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Reparaturliste durchgehen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-15",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026 haus und hof"
+      },
+      {
         "titel": "Haus und Hof in Ordnung bringen",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
@@ -202,41 +258,17 @@
         "faellig": "2026-07-01",
         "besitzer": "werner",
         "beschreibung": ""
+      },
+      {
+        "titel": "Bohrlochkamera bauen",
+        "prioritaet": 5,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-15",
+        "besitzer": "werner",
+        "beschreibung": ""
       }
     ],
     "naechste_7_tage": [
-      {
-        "titel": "Strom aussortieren – Box mit Voltmeter",
-        "prioritaet": 2,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-14",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Aircondition Buero",
-        "prioritaet": 2,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-14",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Land Tax pruefen",
-        "prioritaet": 2,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-15",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Kastrieren und Enthornen",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-07-15",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
       {
         "titel": "Strom zum Braai-Platz legen",
         "prioritaet": 2,
@@ -254,28 +286,20 @@
         "beschreibung": "Alle Tiere"
       },
       {
-        "titel": "Reparaturliste durchgehen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-14",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
+        "titel": "Windmotor neue Bergseite – Elektropumpe rein",
+        "prioritaet": 2,
+        "kategorie": "boreholes",
+        "faellig": "2026-07-21",
+        "besitzer": "werner",
+        "beschreibung": ""
       },
       {
-        "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
-        "prioritaet": 3,
+        "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
+        "prioritaet": 2,
         "kategorie": "wohnhaus",
-        "faellig": "2026-07-15",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Reparaturliste durchgehen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-15",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026 haus und hof"
+        "faellig": "2026-07-22",
+        "besitzer": "werner",
+        "beschreibung": ""
       },
       {
         "titel": "Fitting-Raum aufraeumen",
@@ -310,18 +334,42 @@
         "beschreibung": ""
       },
       {
-        "titel": "SIM-Karten  aufladen",
-        "prioritaet": 4,
+        "titel": "Farmkarte drucken + Wasserstellen fuer Feuerbekaempfung markieren",
+        "prioritaet": 3,
         "kategorie": "allgemein",
-        "faellig": "2026-07-20",
+        "faellig": "2026-07-21",
         "besitzer": "werner",
         "beschreibung": ""
       },
       {
-        "titel": "Bohrlochkamera bauen",
-        "prioritaet": 5,
+        "titel": "Werkzeugkammer Werner aufraeumen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-21",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Kiesdamm Zaun pruefen",
+        "prioritaet": 3,
         "kategorie": "allgemein",
-        "faellig": "2026-07-15",
+        "faellig": "2026-07-21",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "bush kappen ausarbeiten",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-21",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "SIM-Karten  aufladen",
+        "prioritaet": 4,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-20",
         "besitzer": "werner",
         "beschreibung": ""
       }
@@ -330,58 +378,58 @@
   "wetter": {
     "aktuell": {
       "temp_max": 13.1,
-      "temp_min": 7.8,
+      "temp_min": 7.9,
       "rainfall_24h": 0.0,
-      "wind_speed": 4.0
+      "wind_speed": 3.5
     },
     "vorhersage": [
       {
-        "date": "2026-07-13",
-        "wcode": 0,
-        "temp_max": 24.2,
-        "temp_min": 8.3,
-        "rain": 0
-      },
-      {
-        "date": "2026-07-14",
-        "wcode": 0,
-        "temp_max": 23.6,
-        "temp_min": 8.1,
-        "rain": 0
-      },
-      {
         "date": "2026-07-15",
         "wcode": 0,
-        "temp_max": 23.3,
-        "temp_min": 8.6,
+        "temp_max": 24.2,
+        "temp_min": 10.1,
         "rain": 0
       },
       {
         "date": "2026-07-16",
         "wcode": 0,
-        "temp_max": 22.5,
-        "temp_min": 8.2,
+        "temp_max": 23.0,
+        "temp_min": 8.5,
         "rain": 0
       },
       {
         "date": "2026-07-17",
         "wcode": 0,
-        "temp_max": 22.2,
-        "temp_min": 6.5,
+        "temp_max": 22.4,
+        "temp_min": 6.8,
         "rain": 0
       },
       {
         "date": "2026-07-18",
         "wcode": 0,
-        "temp_max": 23.5,
-        "temp_min": 6.8,
+        "temp_max": 23.3,
+        "temp_min": 6.9,
         "rain": 0
       },
       {
         "date": "2026-07-19",
         "wcode": 0,
-        "temp_max": 23.5,
-        "temp_min": 6.8,
+        "temp_max": 22.4,
+        "temp_min": 5.6,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-20",
+        "wcode": 0,
+        "temp_max": 22.5,
+        "temp_min": 6.3,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-21",
+        "wcode": 0,
+        "temp_max": 24.1,
+        "temp_min": 6.7,
         "rain": 0
       }
     ]
@@ -624,42 +672,6 @@
     ]
   },
   "kalender": [
-    {
-      "datum": "2026-07-13",
-      "titel": "Driver License CE machen",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-13",
-      "titel": "werner savanna schalcht rechte anbieten",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-07-14",
-      "titel": "Strom aussortieren – Box mit Voltmeter",
-      "kategorie": "wohnhaus",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-14",
-      "titel": "Aircondition Buero",
-      "kategorie": "wohnhaus",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-14",
-      "titel": "Strom zum Braai-Platz legen",
-      "kategorie": "wohnhaus",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-14",
-      "titel": "Reparaturliste durchgehen",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
     {
       "datum": "2026-07-15",
       "titel": "Land Tax pruefen",
