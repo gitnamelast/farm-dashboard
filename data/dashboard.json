@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-15T16:28:12",
+  "exportiert_am": "2026-07-15T20:29:31",
   "aufgaben": {
     "heute": [
       {
@@ -105,14 +105,6 @@
         "kategorie": "allgemein",
         "faellig": "2026-07-09",
         "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Licht Schlachteplatz",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-10",
-        "besitzer": "werner",
         "beschreibung": ""
       },
       {
@@ -230,6 +222,14 @@
         "beschreibung": ""
       },
       {
+        "titel": "Licht Schlachteplatz",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-16",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
         "titel": "Solenoid, schlangkamp, haustank instalieren",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -255,6 +255,14 @@
       },
       {
         "titel": "John Hollow bricks",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-16",
+        "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Versicherungs papier lesen und die mängel beheben",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-07-16",
@@ -337,7 +345,7 @@
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 24.7,
+      "temp_max": 25.3,
       "temp_min": 7.9,
       "rainfall_24h": 0.0,
       "wind_speed": 3.7
@@ -676,6 +684,12 @@
     },
     {
       "datum": "2026-07-16",
+      "titel": "Licht Schlachteplatz",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-07-16",
       "titel": "Solenoid, schlangkamp, haustank instalieren",
       "kategorie": "allgemein",
       "besitzer": "werner"
@@ -695,6 +709,12 @@
     {
       "datum": "2026-07-16",
       "titel": "John Hollow bricks",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-07-16",
+      "titel": "Versicherungs papier lesen und die mängel beheben",
       "kategorie": "allgemein",
       "besitzer": "shared"
     },
