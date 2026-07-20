@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-19T15:29:39",
+  "exportiert_am": "2026-07-20T08:00:42",
   "aufgaben": {
     "heute": [
       {
@@ -58,6 +58,14 @@
         "faellig": "2026-07-15",
         "besitzer": "shared",
         "beschreibung": ""
+      },
+      {
+        "titel": "Winterherde: BVD Hiprabovis + Vibrin spritzen",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2026-07-20",
+        "besitzer": "shared",
+        "beschreibung": "Alle Tiere"
       },
       {
         "titel": "Tontauben ding abbauen",
@@ -220,6 +228,14 @@
         "beschreibung": ""
       },
       {
+        "titel": "Plan fuer Grasschneiden erstellen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-20",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
         "titel": "Haus und Hof in Ordnung bringen",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
@@ -260,6 +276,14 @@
         "beschreibung": ""
       },
       {
+        "titel": "SIM-Karten  aufladen",
+        "prioritaet": 4,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-20",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
         "titel": "Bohrlochkamera bauen",
         "prioritaet": 5,
         "kategorie": "allgemein",
@@ -278,14 +302,6 @@
     ],
     "naechste_7_tage": [
       {
-        "titel": "Winterherde: BVD Hiprabovis + Vibrin spritzen",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-07-20",
-        "besitzer": "shared",
-        "beschreibung": "Alle Tiere"
-      },
-      {
         "titel": "Windmotor neue Bergseite – Elektropumpe rein",
         "prioritaet": 2,
         "kategorie": "boreholes",
@@ -298,14 +314,6 @@
         "prioritaet": 2,
         "kategorie": "wohnhaus",
         "faellig": "2026-07-22",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Plan fuer Grasschneiden erstellen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-20",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -342,14 +350,6 @@
         "beschreibung": ""
       },
       {
-        "titel": "SIM-Karten  aufladen",
-        "prioritaet": 4,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-20",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "cockpit von erichsfelde daen reinfüttern",
         "prioritaet": 4,
         "kategorie": "allgemein",
@@ -376,52 +376,52 @@
     },
     "vorhersage": [
       {
-        "date": "2026-07-19",
-        "wcode": 0,
-        "temp_max": 23.6,
-        "temp_min": 7.2,
-        "rain": 0
-      },
-      {
         "date": "2026-07-20",
         "wcode": 0,
-        "temp_max": 23.2,
-        "temp_min": 7.0,
+        "temp_max": 23.8,
+        "temp_min": 8.4,
         "rain": 0
       },
       {
         "date": "2026-07-21",
         "wcode": 0,
-        "temp_max": 24.3,
-        "temp_min": 6.4,
+        "temp_max": 24.6,
+        "temp_min": 7.4,
         "rain": 0
       },
       {
         "date": "2026-07-22",
         "wcode": 1,
-        "temp_max": 25.7,
-        "temp_min": 8.5,
+        "temp_max": 24.8,
+        "temp_min": 8.6,
         "rain": 0
       },
       {
         "date": "2026-07-23",
         "wcode": 0,
         "temp_max": 23.3,
-        "temp_min": 7.1,
+        "temp_min": 6.7,
         "rain": 0
       },
       {
         "date": "2026-07-24",
         "wcode": 0,
-        "temp_max": 24.9,
-        "temp_min": 7.5,
+        "temp_max": 25.1,
+        "temp_min": 8.7,
         "rain": 0
       },
       {
         "date": "2026-07-25",
         "wcode": 0,
-        "temp_max": 24.3,
-        "temp_min": 10.3,
+        "temp_max": 23.9,
+        "temp_min": 8.1,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-26",
+        "wcode": 0,
+        "temp_max": 22.5,
+        "temp_min": 9.3,
         "rain": 0
       }
     ]
