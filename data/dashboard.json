@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-21T08:00:24",
+  "exportiert_am": "2026-07-22T08:00:17",
   "aufgaben": {
     "heute": [
       {
@@ -72,6 +72,14 @@
         "prioritaet": 2,
         "kategorie": "boreholes",
         "faellig": "2026-07-21",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
+        "prioritaet": 2,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-07-22",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -342,10 +350,10 @@
     ],
     "naechste_7_tage": [
       {
-        "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
-        "prioritaet": 2,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-22",
+        "titel": "Privat Budget Monat",
+        "prioritaet": 1,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-29",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -384,52 +392,52 @@
     },
     "vorhersage": [
       {
-        "date": "2026-07-21",
-        "wcode": 0,
-        "temp_max": 24.8,
-        "temp_min": 8.4,
-        "rain": 0
-      },
-      {
         "date": "2026-07-22",
         "wcode": 0,
-        "temp_max": 25.7,
-        "temp_min": 8.2,
+        "temp_max": 25.5,
+        "temp_min": 9.7,
         "rain": 0
       },
       {
         "date": "2026-07-23",
         "wcode": 0,
-        "temp_max": 24.8,
-        "temp_min": 8.3,
+        "temp_max": 24.6,
+        "temp_min": 7.4,
         "rain": 0
       },
       {
         "date": "2026-07-24",
         "wcode": 0,
-        "temp_max": 25.7,
-        "temp_min": 10.6,
+        "temp_max": 25.3,
+        "temp_min": 9.9,
         "rain": 0
       },
       {
         "date": "2026-07-25",
         "wcode": 0,
         "temp_max": 24.2,
-        "temp_min": 9.5,
+        "temp_min": 9.2,
         "rain": 0
       },
       {
         "date": "2026-07-26",
         "wcode": 0,
         "temp_max": 22.8,
-        "temp_min": 7.9,
+        "temp_min": 8.8,
         "rain": 0
       },
       {
         "date": "2026-07-27",
         "wcode": 0,
-        "temp_max": 21.1,
-        "temp_min": 7.7,
+        "temp_max": 22.5,
+        "temp_min": 7.8,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-28",
+        "wcode": 0,
+        "temp_max": 23.0,
+        "temp_min": 8.4,
         "rain": 0
       }
     ]
@@ -672,36 +680,6 @@
     ]
   },
   "kalender": [
-    {
-      "datum": "2026-07-21",
-      "titel": "Windmotor neue Bergseite – Elektropumpe rein",
-      "kategorie": "boreholes",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-21",
-      "titel": "Farmkarte drucken + Wasserstellen fuer Feuerbekaempfung markieren",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-21",
-      "titel": "Werkzeugkammer Werner aufraeumen",
-      "kategorie": "wohnhaus",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-07-21",
-      "titel": "Kiesdamm Zaun pruefen",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-07-21",
-      "titel": "bush kappen ausarbeiten",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
     {
       "datum": "2026-07-22",
       "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
