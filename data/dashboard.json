@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-22T08:00:17",
+  "exportiert_am": "2026-07-23T07:03:19",
   "aufgaben": {
     "heute": [
       {
@@ -236,14 +236,6 @@
         "beschreibung": "wiegen und austrennen"
       },
       {
-        "titel": "Hackel casing erneurn",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-17",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
         "titel": "Plan fuer Grasschneiden erstellen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -292,14 +284,6 @@
         "beschreibung": ""
       },
       {
-        "titel": "Monatsbericht",
-        "prioritaet": 4,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-06",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "Werkzeugschrank Farmtools fest anbringe",
         "prioritaet": 4,
         "kategorie": "wohnhaus",
@@ -332,6 +316,14 @@
         "beschreibung": ""
       },
       {
+        "titel": "cockpit von erichsfelde daen reinfüttern",
+        "prioritaet": 4,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-23",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
         "titel": "Bohrlochkamera bauen",
         "prioritaet": 5,
         "kategorie": "allgemein",
@@ -346,6 +338,14 @@
         "faellig": "2026-07-15",
         "besitzer": "werner",
         "beschreibung": ""
+      },
+      {
+        "titel": "Radio Klub – Mitglieder organisieren",
+        "prioritaet": 5,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-23",
+        "besitzer": "werner",
+        "beschreibung": ""
       }
     ],
     "naechste_7_tage": [
@@ -358,6 +358,30 @@
         "beschreibung": ""
       },
       {
+        "titel": "Hunde GPS Collar pruefen",
+        "prioritaet": 2,
+        "kategorie": "hunde",
+        "faellig": "2026-07-30",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Wasser testen lassen",
+        "prioritaet": 2,
+        "kategorie": "boreholes",
+        "faellig": "2026-07-30",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "BIPA nachfragen – Folgetermin nach 10/04/2025 pruefen",
+        "prioritaet": 2,
+        "kategorie": "rinder",
+        "faellig": "2026-07-30",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
         "titel": "wegen bipa mal fragen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -366,19 +390,19 @@
         "beschreibung": "Salome <salome@salna.na>  mail am 22/06/26 an wjacobi@gmail"
       },
       {
-        "titel": "cockpit von erichsfelde daen reinfüttern",
-        "prioritaet": 4,
+        "titel": "Hund Versicherung abschliessen",
+        "prioritaet": 3,
         "kategorie": "allgemein",
-        "faellig": "2026-07-23",
+        "faellig": "2026-07-30",
         "besitzer": "werner",
         "beschreibung": ""
       },
       {
-        "titel": "Radio Klub – Mitglieder organisieren",
-        "prioritaet": 5,
+        "titel": "franzi papier feritg machen",
+        "prioritaet": 3,
         "kategorie": "allgemein",
-        "faellig": "2026-07-23",
-        "besitzer": "werner",
+        "faellig": "2026-07-30",
+        "besitzer": "shared",
         "beschreibung": ""
       }
     ]
@@ -392,52 +416,52 @@
     },
     "vorhersage": [
       {
-        "date": "2026-07-22",
-        "wcode": 0,
-        "temp_max": 25.5,
-        "temp_min": 9.7,
-        "rain": 0
-      },
-      {
         "date": "2026-07-23",
         "wcode": 0,
         "temp_max": 24.6,
-        "temp_min": 7.4,
+        "temp_min": 6.7,
         "rain": 0
       },
       {
         "date": "2026-07-24",
         "wcode": 0,
-        "temp_max": 25.3,
-        "temp_min": 9.9,
+        "temp_max": 25.1,
+        "temp_min": 9.6,
         "rain": 0
       },
       {
         "date": "2026-07-25",
         "wcode": 0,
-        "temp_max": 24.2,
-        "temp_min": 9.2,
+        "temp_max": 23.5,
+        "temp_min": 9.1,
         "rain": 0
       },
       {
         "date": "2026-07-26",
         "wcode": 0,
-        "temp_max": 22.8,
-        "temp_min": 8.8,
+        "temp_max": 22.6,
+        "temp_min": 8.7,
         "rain": 0
       },
       {
         "date": "2026-07-27",
         "wcode": 0,
         "temp_max": 22.5,
-        "temp_min": 7.8,
+        "temp_min": 8.2,
         "rain": 0
       },
       {
         "date": "2026-07-28",
         "wcode": 0,
-        "temp_max": 23.0,
-        "temp_min": 8.4,
+        "temp_max": 22.5,
+        "temp_min": 7.7,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-29",
+        "wcode": 0,
+        "temp_max": 21.9,
+        "temp_min": 8.7,
         "rain": 0
       }
     ]
@@ -681,12 +705,6 @@
   },
   "kalender": [
     {
-      "datum": "2026-07-22",
-      "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
-      "kategorie": "wohnhaus",
-      "besitzer": "werner"
-    },
-    {
       "datum": "2026-07-23",
       "titel": "cockpit von erichsfelde daen reinfüttern",
       "kategorie": "allgemein",
@@ -790,9 +808,21 @@
     },
     {
       "datum": "2026-08-06",
+      "titel": "Monatsbericht",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-06",
       "titel": "Solar-Dach  saeubern",
       "kategorie": "wohnhaus",
       "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-11",
+      "titel": "Hackel casing erneurn",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-08-11",
@@ -805,6 +835,18 @@
       "titel": "Inverter – von Jungs bauen lassen",
       "kategorie": "gebaeude",
       "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-12",
+      "titel": "Hackel casing erneurn",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-08-13",
+      "titel": "Hackel casing erneurn",
+      "kategorie": "allgemein",
+      "besitzer": "shared"
     },
     {
       "datum": "2026-08-15",
