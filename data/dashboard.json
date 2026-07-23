@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-23T07:03:19",
+  "exportiert_am": "2026-07-23T07:46:06",
   "aufgaben": {
     "heute": [
       {
@@ -280,6 +280,14 @@
         "prioritaet": 3,
         "kategorie": "wohnhaus",
         "faellig": "2026-08-26",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Monatsbericht",
+        "prioritaet": 4,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-06",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -803,12 +811,6 @@
     {
       "datum": "2026-08-06",
       "titel": "Headboard fuer Bett design und bauen",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-08-06",
-      "titel": "Monatsbericht",
       "kategorie": "allgemein",
       "besitzer": "werner"
     },
