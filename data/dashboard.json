@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-23T08:00:21",
+  "exportiert_am": "2026-07-24T08:00:24",
   "aufgaben": {
     "heute": [
       {
@@ -382,6 +382,14 @@
         "beschreibung": ""
       },
       {
+        "titel": "Muellverbrennungsanlage bauen",
+        "prioritaet": 2,
+        "kategorie": "gebaeude",
+        "faellig": "2026-07-31",
+        "besitzer": "werner",
+        "beschreibung": ""
+      },
+      {
         "titel": "wegen bipa mal fragen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -404,6 +412,14 @@
         "faellig": "2026-07-30",
         "besitzer": "shared",
         "beschreibung": ""
+      },
+      {
+        "titel": "Ernst Lerch Trailer – Design erstellen",
+        "prioritaet": 5,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-31",
+        "besitzer": "werner",
+        "beschreibung": ""
       }
     ]
   },
@@ -416,52 +432,52 @@
     },
     "vorhersage": [
       {
-        "date": "2026-07-23",
-        "wcode": 0,
-        "temp_max": 24.6,
-        "temp_min": 6.7,
-        "rain": 0
-      },
-      {
         "date": "2026-07-24",
         "wcode": 0,
-        "temp_max": 25.1,
-        "temp_min": 9.6,
+        "temp_max": 24.9,
+        "temp_min": 9.2,
         "rain": 0
       },
       {
         "date": "2026-07-25",
         "wcode": 0,
-        "temp_max": 23.5,
-        "temp_min": 9.1,
+        "temp_max": 23.6,
+        "temp_min": 8.9,
         "rain": 0
       },
       {
         "date": "2026-07-26",
         "wcode": 0,
-        "temp_max": 22.6,
-        "temp_min": 8.7,
+        "temp_max": 22.8,
+        "temp_min": 8.0,
         "rain": 0
       },
       {
         "date": "2026-07-27",
         "wcode": 0,
-        "temp_max": 22.5,
-        "temp_min": 8.2,
+        "temp_max": 22.9,
+        "temp_min": 7.9,
         "rain": 0
       },
       {
         "date": "2026-07-28",
         "wcode": 0,
-        "temp_max": 22.5,
-        "temp_min": 7.7,
+        "temp_max": 23.0,
+        "temp_min": 7.5,
         "rain": 0
       },
       {
         "date": "2026-07-29",
         "wcode": 0,
-        "temp_max": 21.9,
-        "temp_min": 8.7,
+        "temp_max": 22.5,
+        "temp_min": 8.4,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-30",
+        "wcode": 0,
+        "temp_max": 20.1,
+        "temp_min": 8.8,
         "rain": 0
       }
     ]
@@ -704,18 +720,6 @@
     ]
   },
   "kalender": [
-    {
-      "datum": "2026-07-23",
-      "titel": "cockpit von erichsfelde daen reinfüttern",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-23",
-      "titel": "Radio Klub – Mitglieder organisieren",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
     {
       "datum": "2026-07-28",
       "titel": "wegen bipa mal fragen",
