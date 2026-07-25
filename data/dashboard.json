@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-24T08:00:24",
+  "exportiert_am": "2026-07-25T08:00:28",
   "aufgaben": {
     "heute": [
       {
@@ -414,6 +414,38 @@
         "beschreibung": ""
       },
       {
+        "titel": "Gift Obstbaeume",
+        "prioritaet": 3,
+        "kategorie": "garten",
+        "faellig": "2026-08-01",
+        "besitzer": "wanda",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Muell: Sortier-/Lageranlage",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-08-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Badtuer Gastehaus streichen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-08-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Vogelschutznetze unter Dach Gastehaus anbringen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-08-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
         "titel": "Ernst Lerch Trailer – Design erstellen",
         "prioritaet": 5,
         "kategorie": "allgemein",
@@ -432,52 +464,52 @@
     },
     "vorhersage": [
       {
-        "date": "2026-07-24",
-        "wcode": 0,
-        "temp_max": 24.9,
-        "temp_min": 9.2,
-        "rain": 0
-      },
-      {
         "date": "2026-07-25",
         "wcode": 0,
-        "temp_max": 23.6,
-        "temp_min": 8.9,
+        "temp_max": 24.2,
+        "temp_min": 8.6,
         "rain": 0
       },
       {
         "date": "2026-07-26",
         "wcode": 0,
-        "temp_max": 22.8,
-        "temp_min": 8.0,
+        "temp_max": 23.1,
+        "temp_min": 8.8,
         "rain": 0
       },
       {
         "date": "2026-07-27",
         "wcode": 0,
-        "temp_max": 22.9,
-        "temp_min": 7.9,
+        "temp_max": 23.4,
+        "temp_min": 7.7,
         "rain": 0
       },
       {
         "date": "2026-07-28",
         "wcode": 0,
-        "temp_max": 23.0,
-        "temp_min": 7.5,
+        "temp_max": 23.6,
+        "temp_min": 8.0,
         "rain": 0
       },
       {
         "date": "2026-07-29",
         "wcode": 0,
-        "temp_max": 22.5,
-        "temp_min": 8.4,
+        "temp_max": 23.3,
+        "temp_min": 8.3,
         "rain": 0
       },
       {
         "date": "2026-07-30",
         "wcode": 0,
-        "temp_max": 20.1,
-        "temp_min": 8.8,
+        "temp_max": 22.9,
+        "temp_min": 7.4,
+        "rain": 0
+      },
+      {
+        "date": "2026-07-31",
+        "wcode": 0,
+        "temp_max": 21.9,
+        "temp_min": 7.7,
         "rain": 0
       }
     ]
