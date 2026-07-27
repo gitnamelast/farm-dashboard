@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-26T08:00:32",
+  "exportiert_am": "2026-07-27T08:00:35",
   "aufgaben": {
     "heute": [
       {
@@ -464,52 +464,52 @@
     },
     "vorhersage": [
       {
-        "date": "2026-07-26",
-        "wcode": 0,
-        "temp_max": 23.7,
-        "temp_min": 9.6,
-        "rain": 0
-      },
-      {
         "date": "2026-07-27",
         "wcode": 1,
-        "temp_max": 23.4,
-        "temp_min": 8.5,
+        "temp_max": 24.3,
+        "temp_min": 9.3,
         "rain": 0
       },
       {
         "date": "2026-07-28",
         "wcode": 3,
-        "temp_max": 23.6,
-        "temp_min": 8.6,
+        "temp_max": 25.0,
+        "temp_min": 9.1,
         "rain": 0
       },
       {
         "date": "2026-07-29",
-        "wcode": 0,
-        "temp_max": 23.6,
-        "temp_min": 7.8,
+        "wcode": 2,
+        "temp_max": 24.7,
+        "temp_min": 10.0,
         "rain": 0
       },
       {
         "date": "2026-07-30",
         "wcode": 0,
-        "temp_max": 23.7,
-        "temp_min": 7.9,
+        "temp_max": 24.6,
+        "temp_min": 9.0,
         "rain": 0
       },
       {
         "date": "2026-07-31",
         "wcode": 0,
-        "temp_max": 23.3,
-        "temp_min": 7.5,
+        "temp_max": 24.3,
+        "temp_min": 10.0,
         "rain": 0
       },
       {
         "date": "2026-08-01",
         "wcode": 0,
-        "temp_max": 22.5,
-        "temp_min": 7.8,
+        "temp_max": 23.2,
+        "temp_min": 8.5,
+        "rain": 0
+      },
+      {
+        "date": "2026-08-02",
+        "wcode": 0,
+        "temp_max": 22.7,
+        "temp_min": 8.2,
         "rain": 0
       }
     ]
@@ -901,6 +901,24 @@
       "titel": "12 Mon. Winterfaersen: 1. Chlamydia + abgekalbt: 3. Spritze",
       "kategorie": "rinder",
       "besitzer": "shared"
+    },
+    {
+      "datum": "2026-08-26",
+      "titel": "Kapp-Neger-Haus",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-26",
+      "titel": "Rabies-Impfung + Supervax – alle Tiere",
+      "kategorie": "rinder",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-08-26",
+      "titel": "Haus und Hof in Ordnung bringen",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
     }
   ],
   "jahresplanung": {
