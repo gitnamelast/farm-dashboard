@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-27T08:00:35",
+  "exportiert_am": "2026-07-28T08:00:40",
   "aufgaben": {
     "heute": [
       {
@@ -276,6 +276,14 @@
         "beschreibung": ""
       },
       {
+        "titel": "wegen bipa mal fragen",
+        "prioritaet": 3,
+        "kategorie": "allgemein",
+        "faellig": "2026-07-28",
+        "besitzer": "werner",
+        "beschreibung": "Salome <salome@salna.na>  mail am 22/06/26 an wjacobi@gmail"
+      },
+      {
         "titel": "Haus und Hof in Ordnung bringen",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
@@ -390,14 +398,6 @@
         "beschreibung": ""
       },
       {
-        "titel": "wegen bipa mal fragen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-28",
-        "besitzer": "werner",
-        "beschreibung": "Salome <salome@salna.na>  mail am 22/06/26 an wjacobi@gmail"
-      },
-      {
         "titel": "Hund Versicherung abschliessen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -464,52 +464,52 @@
     },
     "vorhersage": [
       {
-        "date": "2026-07-27",
-        "wcode": 1,
-        "temp_max": 24.3,
-        "temp_min": 9.3,
-        "rain": 0
-      },
-      {
         "date": "2026-07-28",
         "wcode": 3,
-        "temp_max": 25.0,
-        "temp_min": 9.1,
+        "temp_max": 25.7,
+        "temp_min": 10.2,
         "rain": 0
       },
       {
         "date": "2026-07-29",
-        "wcode": 2,
-        "temp_max": 24.7,
-        "temp_min": 10.0,
+        "wcode": 3,
+        "temp_max": 25.0,
+        "temp_min": 10.6,
         "rain": 0
       },
       {
         "date": "2026-07-30",
         "wcode": 0,
-        "temp_max": 24.6,
-        "temp_min": 9.0,
+        "temp_max": 24.9,
+        "temp_min": 10.6,
         "rain": 0
       },
       {
         "date": "2026-07-31",
         "wcode": 0,
-        "temp_max": 24.3,
-        "temp_min": 10.0,
+        "temp_max": 24.6,
+        "temp_min": 11.2,
         "rain": 0
       },
       {
         "date": "2026-08-01",
         "wcode": 0,
-        "temp_max": 23.2,
-        "temp_min": 8.5,
+        "temp_max": 23.7,
+        "temp_min": 8.8,
         "rain": 0
       },
       {
         "date": "2026-08-02",
         "wcode": 0,
-        "temp_max": 22.7,
-        "temp_min": 8.2,
+        "temp_max": 23.4,
+        "temp_min": 8.5,
+        "rain": 0
+      },
+      {
+        "date": "2026-08-03",
+        "wcode": 0,
+        "temp_max": 21.7,
+        "temp_min": 8.8,
         "rain": 0
       }
     ]
