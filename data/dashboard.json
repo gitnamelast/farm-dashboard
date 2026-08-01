@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-07-31T08:00:14",
+  "exportiert_am": "2026-08-01T08:00:17",
   "aufgaben": {
     "heute": [
       {
@@ -340,6 +340,38 @@
         "beschreibung": ""
       },
       {
+        "titel": "Gift Obstbaeume",
+        "prioritaet": 3,
+        "kategorie": "garten",
+        "faellig": "2026-08-01",
+        "besitzer": "wanda",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Muell: Sortier-/Lageranlage",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-08-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Badtuer Gastehaus streichen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-08-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
+        "titel": "Vogelschutznetze unter Dach Gastehaus anbringen",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-08-01",
+        "besitzer": "shared",
+        "beschreibung": "Aus Jahresprogramm 2026"
+      },
+      {
         "titel": "Haus und Hof in Ordnung bringen",
         "prioritaet": 3,
         "kategorie": "wohnhaus",
@@ -430,38 +462,6 @@
         "beschreibung": ""
       },
       {
-        "titel": "Gift Obstbaeume",
-        "prioritaet": 3,
-        "kategorie": "garten",
-        "faellig": "2026-08-01",
-        "besitzer": "wanda",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Muell: Sortier-/Lageranlage",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-08-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Badtuer Gastehaus streichen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-08-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Vogelschutznetze unter Dach Gastehaus anbringen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-08-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
         "titel": "Headboard fuer Bett design und bauen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -489,59 +489,59 @@
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 15.4,
-      "temp_min": 12.0,
+      "temp_max": 16.6,
+      "temp_min": 10.5,
       "rainfall_24h": 0.0,
-      "wind_speed": 4.2
+      "wind_speed": 3.9
     },
     "vorhersage": [
       {
-        "date": "2026-07-31",
-        "wcode": 0,
-        "temp_max": 25.9,
-        "temp_min": 11.3,
-        "rain": 0
-      },
-      {
         "date": "2026-08-01",
         "wcode": 3,
-        "temp_max": 24.4,
-        "temp_min": 9.9,
+        "temp_max": 25.9,
+        "temp_min": 9.7,
         "rain": 0
       },
       {
         "date": "2026-08-02",
-        "wcode": 1,
-        "temp_max": 23.6,
-        "temp_min": 10.7,
+        "wcode": 0,
+        "temp_max": 24.1,
+        "temp_min": 9.7,
         "rain": 0
       },
       {
         "date": "2026-08-03",
         "wcode": 0,
-        "temp_max": 23.3,
-        "temp_min": 9.1,
+        "temp_max": 23.7,
+        "temp_min": 8.9,
         "rain": 0
       },
       {
         "date": "2026-08-04",
-        "wcode": 1,
-        "temp_max": 23.9,
-        "temp_min": 8.7,
+        "wcode": 0,
+        "temp_max": 24.7,
+        "temp_min": 8.8,
         "rain": 0
       },
       {
         "date": "2026-08-05",
         "wcode": 0,
-        "temp_max": 25.2,
-        "temp_min": 8.3,
+        "temp_max": 25.6,
+        "temp_min": 8.4,
         "rain": 0
       },
       {
         "date": "2026-08-06",
         "wcode": 0,
-        "temp_max": 25.6,
-        "temp_min": 9.9,
+        "temp_max": 25.9,
+        "temp_min": 11.7,
+        "rain": 0
+      },
+      {
+        "date": "2026-08-07",
+        "wcode": 0,
+        "temp_max": 24.6,
+        "temp_min": 11.3,
         "rain": 0
       }
     ]
@@ -784,18 +784,6 @@
     ]
   },
   "kalender": [
-    {
-      "datum": "2026-07-31",
-      "titel": "Muellverbrennungsanlage bauen",
-      "kategorie": "gebaeude",
-      "besitzer": "werner"
-    },
-    {
-      "datum": "2026-07-31",
-      "titel": "Ernst Lerch Trailer – Design erstellen",
-      "kategorie": "allgemein",
-      "besitzer": "werner"
-    },
     {
       "datum": "2026-08-01",
       "titel": "Gift Obstbaeume",
