@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-08-05T16:49:11",
+  "exportiert_am": "2026-08-05T21:04:24",
   "aufgaben": {
     "heute": [
       {
@@ -60,14 +60,6 @@
         "beschreibung": ""
       },
       {
-        "titel": "Tontauben ding abbauen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-19",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
         "titel": "Jungs PPE-Kasten fest anbringen",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -84,26 +76,10 @@
         "beschreibung": ""
       },
       {
-        "titel": "Sim karte in sigmotec turm reinbauen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-09",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
         "titel": "brandeisen werner fertig machen",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-07-09",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "werner savanna schalcht rechte anbieten",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-13",
         "besitzer": "shared",
         "beschreibung": ""
       },
@@ -116,22 +92,6 @@
         "beschreibung": "Aus Jahresprogramm 2026 haus und hof"
       },
       {
-        "titel": "pettycash",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-15",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Licht Schlachteplatz",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-16",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "Solenoid, schlangkamp, haustank instalieren",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -140,31 +100,7 @@
         "beschreibung": ""
       },
       {
-        "titel": "Koos Brand Strom",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-16",
-        "besitzer": "werner",
-        "beschreibung": "Koos Brand für Strom fragen, strom raum und generator. contact details auf handy gespeichert"
-      },
-      {
         "titel": "John Hollow bricks",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-16",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Versicherungs papier lesen und die mängel beheben",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-16",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "invoice von timo für diane",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-07-16",
@@ -260,14 +196,6 @@
         "beschreibung": ""
       },
       {
-        "titel": "SIM-Karten  aufladen",
-        "prioritaet": 4,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-20",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "cockpit von erichsfelde daen reinfüttern",
         "prioritaet": 4,
         "kategorie": "allgemein",
@@ -296,14 +224,6 @@
         "prioritaet": 5,
         "kategorie": "allgemein",
         "faellig": "2026-07-23",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Ernst Lerch Trailer – Design erstellen",
-        "prioritaet": 5,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-31",
         "besitzer": "werner",
         "beschreibung": ""
       }
@@ -369,10 +289,10 @@
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 26.2,
+      "temp_max": 26.8,
       "temp_min": 5.6,
       "rainfall_24h": 0.0,
-      "wind_speed": 2.8
+      "wind_speed": 2.9
     },
     "vorhersage": [
       {
@@ -763,6 +683,12 @@
     {
       "datum": "2026-08-20",
       "titel": "Elektrozaun Windmotor",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-20",
+      "titel": "SIM-Karten  aufladen",
       "kategorie": "allgemein",
       "besitzer": "werner"
     },
