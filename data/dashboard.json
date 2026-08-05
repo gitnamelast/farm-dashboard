@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-08-05T16:18:07",
+  "exportiert_am": "2026-08-05T16:49:11",
   "aufgaben": {
     "heute": [
       {
@@ -170,14 +170,6 @@
         "faellig": "2026-07-16",
         "besitzer": "shared",
         "beschreibung": ""
-      },
-      {
-        "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-17",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
         "titel": "Plan fuer Grasschneiden erstellen",
@@ -377,10 +369,10 @@
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 15.2,
+      "temp_max": 26.2,
       "temp_min": 5.6,
       "rainfall_24h": 0.0,
-      "wind_speed": 2.5
+      "wind_speed": 2.8
     },
     "vorhersage": [
       {
@@ -739,6 +731,12 @@
       "besitzer": "shared"
     },
     {
+      "datum": "2026-08-17",
+      "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
+      "kategorie": "wohnhaus",
+      "besitzer": "shared"
+    },
+    {
       "datum": "2026-08-18",
       "titel": "Elektrozaun Windmotor",
       "kategorie": "allgemein",
@@ -973,6 +971,12 @@
     "juni": {
       "jahresprogramm": [
         {
+          "titel": "Bullen raus – Deckzeit",
+          "kategorie": "weide",
+          "source": "task",
+          "datum": "2027-06-15"
+        },
+        {
           "titel": "Feuerspritze + andere Feuerloeschgeraete pruefen",
           "kategorie": "sonstige_maschinen",
           "source": "task",
@@ -1059,12 +1063,6 @@
       "weide": [],
       "haus_hof": [
         {
-          "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
-          "kategorie": "wohnhaus",
-          "source": "task",
-          "datum": "2026-07-17"
-        },
-        {
           "titel": "Werkzeugkammer Jungs aufraeumen",
           "kategorie": "wohnhaus",
           "source": "task",
@@ -1102,6 +1100,12 @@
           "kategorie": "garten",
           "source": "task",
           "datum": "2026-08-01"
+        },
+        {
+          "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
+          "kategorie": "wohnhaus",
+          "source": "task",
+          "datum": "2026-08-17"
         },
         {
           "titel": "Solar-Dach  saeubern",
@@ -1220,14 +1224,7 @@
       ]
     },
     "november": {
-      "jahresprogramm": [
-        {
-          "titel": "Bullen raus – Ende Winterdeckzeit",
-          "kategorie": "weide",
-          "source": "task",
-          "datum": "2026-11-15"
-        }
-      ],
+      "jahresprogramm": [],
       "rinder": [
         {
           "titel": "Supervax alle Kuethe + evtl. Vit A",
