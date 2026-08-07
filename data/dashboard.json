@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-08-07T08:00:49",
+  "exportiert_am": "2026-08-07T11:46:48",
   "aufgaben": {
     "heute": [
       {
@@ -20,26 +20,10 @@
         "beschreibung": ""
       },
       {
-        "titel": "Winterherde: BVD Hiprabovis + Vibrin spritzen",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-07-20",
-        "besitzer": "shared",
-        "beschreibung": "Alle Tiere"
-      },
-      {
         "titel": "Windmotor neue Bergseite – Elektropumpe rein",
         "prioritaet": 2,
         "kategorie": "boreholes",
         "faellig": "2026-07-21",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Hunde GPS Collar pruefen",
-        "prioritaet": 2,
-        "kategorie": "hunde",
-        "faellig": "2026-07-30",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -281,59 +265,59 @@
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 15.7,
-      "temp_min": 11.4,
+      "temp_max": 18.1,
+      "temp_min": 9.4,
       "rainfall_24h": 0.0,
-      "wind_speed": 1.7
+      "wind_speed": 2.1
     },
     "vorhersage": [
       {
         "date": "2026-08-07",
         "wcode": 0,
-        "temp_max": 25.6,
-        "temp_min": 11.4,
+        "temp_max": 25.7,
+        "temp_min": 12.0,
         "rain": 0
       },
       {
         "date": "2026-08-08",
         "wcode": 0,
-        "temp_max": 24.6,
-        "temp_min": 9.9,
+        "temp_max": 24.5,
+        "temp_min": 10.1,
         "rain": 0
       },
       {
         "date": "2026-08-09",
         "wcode": 0,
-        "temp_max": 25.5,
-        "temp_min": 9.5,
+        "temp_max": 25.7,
+        "temp_min": 9.3,
         "rain": 0
       },
       {
         "date": "2026-08-10",
         "wcode": 0,
-        "temp_max": 21.5,
-        "temp_min": 7.6,
+        "temp_max": 20.6,
+        "temp_min": 7.3,
         "rain": 0
       },
       {
         "date": "2026-08-11",
         "wcode": 0,
-        "temp_max": 18.7,
-        "temp_min": 1.7,
+        "temp_max": 18.6,
+        "temp_min": 2.6,
         "rain": 0
       },
       {
         "date": "2026-08-12",
         "wcode": 0,
-        "temp_max": 19.5,
-        "temp_min": 5.0,
+        "temp_max": 20.2,
+        "temp_min": 4.8,
         "rain": 0
       },
       {
         "date": "2026-08-13",
         "wcode": 0,
-        "temp_max": 21.2,
-        "temp_min": 4.4,
+        "temp_max": 21.4,
+        "temp_min": 5.1,
         "rain": 0
       }
     ]
@@ -953,12 +937,6 @@
         }
       ],
       "rinder": [
-        {
-          "titel": "Winterherde: BVD Hiprabovis + Vibrin spritzen",
-          "kategorie": "rinder",
-          "source": "task",
-          "datum": "2026-07-20"
-        },
         {
           "titel": "Kastrieren und Enthornen",
           "kategorie": "rinder",
