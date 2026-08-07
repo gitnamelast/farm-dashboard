@@ -1,48 +1,8 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-08-07T08:00:36",
+  "exportiert_am": "2026-08-07T08:00:49",
   "aufgaben": {
     "heute": [
-      {
-        "titel": "Driver License CE machen",
-        "prioritaet": 1,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-13",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Privat Budget Monat",
-        "prioritaet": 1,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-29",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Animal Health Declaration Form (Q1)",
-        "prioritaet": 2,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-07",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Elektrozaun Windmotor und Kaelberkraal",
-        "prioritaet": 2,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-10",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Strom aussortieren – Box mit Voltmeter",
-        "prioritaet": 2,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-14",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
       {
         "titel": "Aircondition Buero",
         "prioritaet": 2,
@@ -60,14 +20,6 @@
         "beschreibung": ""
       },
       {
-        "titel": "Kastrieren und Enthornen",
-        "prioritaet": 2,
-        "kategorie": "rinder",
-        "faellig": "2026-07-15",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
         "titel": "Winterherde: BVD Hiprabovis + Vibrin spritzen",
         "prioritaet": 2,
         "kategorie": "rinder",
@@ -80,14 +32,6 @@
         "prioritaet": 2,
         "kategorie": "boreholes",
         "faellig": "2026-07-21",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Paratus Internet auf MTC Router testen, dann Antenne",
-        "prioritaet": 2,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-22",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -116,36 +60,12 @@
         "beschreibung": ""
       },
       {
-        "titel": "Muellverbrennungsanlage bauen",
+        "titel": "Strom aussortieren",
         "prioritaet": 2,
-        "kategorie": "gebaeude",
-        "faellig": "2026-07-31",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Auto-Graben anlegen",
-        "prioritaet": 2,
-        "kategorie": "garten",
-        "faellig": "2026-08-05",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Tontauben ding abbauen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-06-19",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Licht Strom-Raum",
-        "prioritaet": 3,
         "kategorie": "wohnhaus",
-        "faellig": "2026-07-08",
+        "faellig": "2026-08-07",
         "besitzer": "werner",
-        "beschreibung": ""
+        "beschreibung": "Voltect macht das\nVersicherungs beanstandung\nDen raum richten-box aufhängen lichter für die 3 phasen von nam power\nstrom kabel zum wasserturm\nstrom zum braais"
       },
       {
         "titel": "Jungs PPE-Kasten fest anbringen",
@@ -164,36 +84,12 @@
         "beschreibung": ""
       },
       {
-        "titel": "Sim karte in sigmotec turm reinbauen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-09",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
         "titel": "brandeisen werner fertig machen",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-07-09",
         "besitzer": "shared",
         "beschreibung": ""
-      },
-      {
-        "titel": "werner savanna schalcht rechte anbieten",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-13",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-15",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
         "titel": "Reparaturliste durchgehen",
@@ -204,22 +100,6 @@
         "beschreibung": "Aus Jahresprogramm 2026 haus und hof"
       },
       {
-        "titel": "pettycash",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-15",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Licht Schlachteplatz",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-16",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "Solenoid, schlangkamp, haustank instalieren",
         "prioritaet": 3,
         "kategorie": "allgemein",
@@ -228,60 +108,12 @@
         "beschreibung": ""
       },
       {
-        "titel": "Fitting-Raum aufraeumen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-16",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Koos Brand Strom",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-16",
-        "besitzer": "werner",
-        "beschreibung": "Koos Brand für Strom fragen, strom raum und generator. contact details auf handy gespeichert"
-      },
-      {
         "titel": "John Hollow bricks",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-07-16",
         "besitzer": "shared",
         "beschreibung": ""
-      },
-      {
-        "titel": "Versicherungs papier lesen und die mängel beheben",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-16",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "invoice von timo für diane",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-16",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-17",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Fleisch kühler",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-17",
-        "besitzer": "werner",
-        "beschreibung": "wiegen und austrennen"
       },
       {
         "titel": "Plan fuer Grasschneiden erstellen",
@@ -300,36 +132,12 @@
         "beschreibung": ""
       },
       {
-        "titel": "Werkzeugkammer Werner aufraeumen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-21",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
         "titel": "Kiesdamm Zaun pruefen",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-07-21",
         "besitzer": "shared",
         "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "bush kappen ausarbeiten",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-21",
-        "besitzer": "shared",
-        "beschreibung": ""
-      },
-      {
-        "titel": "wegen bipa mal fragen",
-        "prioritaet": 3,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-28",
-        "besitzer": "werner",
-        "beschreibung": "Salome <salome@salna.na>  mail am 22/06/26 an wjacobi@gmail"
       },
       {
         "titel": "Hund Versicherung abschliessen",
@@ -356,36 +164,20 @@
         "beschreibung": "Aus Jahresprogramm 2026"
       },
       {
-        "titel": "Muell: Sortier-/Lageranlage",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-08-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Badtuer Gastehaus streichen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-08-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
-        "titel": "Vogelschutznetze unter Dach Gastehaus anbringen",
-        "prioritaet": 3,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-08-01",
-        "besitzer": "shared",
-        "beschreibung": "Aus Jahresprogramm 2026"
-      },
-      {
         "titel": "Headboard fuer Bett design und bauen",
         "prioritaet": 3,
         "kategorie": "allgemein",
         "faellig": "2026-08-06",
         "besitzer": "werner",
         "beschreibung": ""
+      },
+      {
+        "titel": "Fleisch kühler",
+        "prioritaet": 3,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-08-07",
+        "besitzer": "werner",
+        "beschreibung": "wiegen und austrennen"
       },
       {
         "titel": "Haus und Hof in Ordnung bringen",
@@ -396,18 +188,10 @@
         "beschreibung": ""
       },
       {
-        "titel": "Werkzeugschrank Farmtools fest anbringe",
+        "titel": "Monatsbericht",
         "prioritaet": 4,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-09",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Tools aufraeumen",
-        "prioritaet": 4,
-        "kategorie": "wohnhaus",
-        "faellig": "2026-07-10",
+        "kategorie": "allgemein",
+        "faellig": "2026-07-06",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -420,26 +204,10 @@
         "beschreibung": ""
       },
       {
-        "titel": "SIM-Karten  aufladen",
-        "prioritaet": 4,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-20",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "cockpit von erichsfelde daen reinfüttern",
         "prioritaet": 4,
         "kategorie": "allgemein",
         "faellig": "2026-07-23",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
-        "titel": "Monatsbericht",
-        "prioritaet": 4,
-        "kategorie": "allgemein",
-        "faellig": "2026-08-06",
         "besitzer": "werner",
         "beschreibung": ""
       },
@@ -468,14 +236,6 @@
         "beschreibung": ""
       },
       {
-        "titel": "Ernst Lerch Trailer – Design erstellen",
-        "prioritaet": 5,
-        "kategorie": "allgemein",
-        "faellig": "2026-07-31",
-        "besitzer": "werner",
-        "beschreibung": ""
-      },
-      {
         "titel": "Solar-Dach  saeubern",
         "prioritaet": 5,
         "kategorie": "wohnhaus",
@@ -499,6 +259,14 @@
         "kategorie": "allgemein",
         "faellig": "2026-08-13",
         "besitzer": "shared",
+        "beschreibung": ""
+      },
+      {
+        "titel": "Werkzeugschrank Farmtools fest anbringe",
+        "prioritaet": 4,
+        "kategorie": "wohnhaus",
+        "faellig": "2026-08-10",
+        "besitzer": "werner",
         "beschreibung": ""
       },
       {
@@ -809,6 +577,24 @@
   },
   "kalender": [
     {
+      "datum": "2026-08-07",
+      "titel": "Strom aussortieren",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-07",
+      "titel": "Fleisch kühler",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-10",
+      "titel": "Werkzeugschrank Farmtools fest anbringe",
+      "kategorie": "wohnhaus",
+      "besitzer": "werner"
+    },
+    {
       "datum": "2026-08-11",
       "titel": "Hackel casing erneurn",
       "kategorie": "allgemein",
@@ -845,9 +631,27 @@
       "besitzer": "shared"
     },
     {
+      "datum": "2026-08-17",
+      "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
+      "kategorie": "wohnhaus",
+      "besitzer": "shared"
+    },
+    {
+      "datum": "2026-08-18",
+      "titel": "Elektrozaun Windmotor",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
       "datum": "2026-08-18",
       "titel": "Werkzeugschrank fuer Werner bauen",
       "kategorie": "wohnhaus",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-19",
+      "titel": "Elektrozaun Windmotor",
+      "kategorie": "allgemein",
       "besitzer": "werner"
     },
     {
@@ -855,6 +659,54 @@
       "titel": "12 Mon. Winterfaersen: 1. Chlamydia + abgekalbt: 3. Spritze",
       "kategorie": "rinder",
       "besitzer": "shared"
+    },
+    {
+      "datum": "2026-08-20",
+      "titel": "Elektrozaun Windmotor",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-20",
+      "titel": "SIM-Karten  aufladen",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-21",
+      "titel": "Elektrozaun Windmotor",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-22",
+      "titel": "Elektrozaun Windmotor",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-23",
+      "titel": "Elektrozaun Windmotor",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-24",
+      "titel": "Elektrozaun Windmotor",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-25",
+      "titel": "Driver License CE machen",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-25",
+      "titel": "Elektrozaun Windmotor",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
     },
     {
       "datum": "2026-08-26",
@@ -870,20 +722,32 @@
     },
     {
       "datum": "2026-08-26",
+      "titel": "Elektrozaun Windmotor",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-26",
       "titel": "Haus und Hof in Ordnung bringen",
       "kategorie": "wohnhaus",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-27",
+      "titel": "Elektrozaun Windmotor",
+      "kategorie": "allgemein",
+      "besitzer": "werner"
+    },
+    {
+      "datum": "2026-08-28",
+      "titel": "Elektrozaun Windmotor",
+      "kategorie": "allgemein",
       "besitzer": "werner"
     },
     {
       "datum": "2026-09-01",
       "titel": "Bullen einsetzen – Winterdeckzeit beginnt",
       "kategorie": "rinder",
-      "besitzer": "shared"
-    },
-    {
-      "datum": "2026-09-01",
-      "titel": "Pferde: 1. Impfung Pferdesterbe + Tetanus",
-      "kategorie": "haustiere",
       "besitzer": "shared"
     },
     {
@@ -935,7 +799,14 @@
         }
       ],
       "weide": [],
-      "haus_hof": []
+      "haus_hof": [
+        {
+          "titel": "Muell: Sortier-/Lageranlage",
+          "kategorie": "wohnhaus",
+          "source": "task",
+          "datum": "2027-01-01"
+        }
+      ]
     },
     "februar": {
       "jahresprogramm": [
@@ -1006,6 +877,12 @@
     "juni": {
       "jahresprogramm": [
         {
+          "titel": "Bullen raus – Deckzeit",
+          "kategorie": "weide",
+          "source": "task",
+          "datum": "2027-06-15"
+        },
+        {
           "titel": "Feuerspritze + andere Feuerloeschgeraete pruefen",
           "kategorie": "sonstige_maschinen",
           "source": "task",
@@ -1045,16 +922,16 @@
     "juli": {
       "jahresprogramm": [
         {
-          "titel": "Animal Health Declaration Form (Q1)",
-          "kategorie": "allgemein",
-          "source": "task",
-          "datum": "2026-07-07"
-        },
-        {
           "titel": "Land Tax pruefen",
           "kategorie": "allgemein",
           "source": "task",
           "datum": "2026-07-15"
+        },
+        {
+          "titel": "Animal Health Declaration Form (Q1)",
+          "kategorie": "allgemein",
+          "source": "task",
+          "datum": "2027-07-07"
         },
         {
           "titel": "Reparaturliste durchgehen",
@@ -1077,44 +954,20 @@
       ],
       "rinder": [
         {
-          "titel": "Kastrieren und Enthornen",
-          "kategorie": "rinder",
-          "source": "task",
-          "datum": "2026-07-15"
-        },
-        {
           "titel": "Winterherde: BVD Hiprabovis + Vibrin spritzen",
           "kategorie": "rinder",
           "source": "task",
           "datum": "2026-07-20"
+        },
+        {
+          "titel": "Kastrieren und Enthornen",
+          "kategorie": "rinder",
+          "source": "task",
+          "datum": "2027-07-15"
         }
       ],
       "weide": [],
       "haus_hof": [
-        {
-          "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
-          "kategorie": "wohnhaus",
-          "source": "task",
-          "datum": "2026-07-15"
-        },
-        {
-          "titel": "Fitting-Raum aufraeumen",
-          "kategorie": "wohnhaus",
-          "source": "task",
-          "datum": "2026-07-16"
-        },
-        {
-          "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
-          "kategorie": "wohnhaus",
-          "source": "task",
-          "datum": "2026-07-17"
-        },
-        {
-          "titel": "Werkzeugkammer Werner aufraeumen",
-          "kategorie": "wohnhaus",
-          "source": "task",
-          "datum": "2026-07-21"
-        },
         {
           "titel": "Werkzeugkammer Jungs aufraeumen",
           "kategorie": "wohnhaus",
@@ -1155,22 +1008,10 @@
           "datum": "2026-08-01"
         },
         {
-          "titel": "Muell: Sortier-/Lageranlage",
+          "titel": "Spuelkasten Gastehaus pruefen (laueft durch)",
           "kategorie": "wohnhaus",
           "source": "task",
-          "datum": "2026-08-01"
-        },
-        {
-          "titel": "Badtuer Gastehaus streichen",
-          "kategorie": "wohnhaus",
-          "source": "task",
-          "datum": "2026-08-01"
-        },
-        {
-          "titel": "Vogelschutznetze unter Dach Gastehaus anbringen",
-          "kategorie": "wohnhaus",
-          "source": "task",
-          "datum": "2026-08-01"
+          "datum": "2026-08-17"
         },
         {
           "titel": "Solar-Dach  saeubern",
@@ -1182,12 +1023,6 @@
     },
     "september": {
       "jahresprogramm": [
-        {
-          "titel": "Pferde: 1. Impfung Pferdesterbe + Tetanus",
-          "kategorie": "haustiere",
-          "source": "task",
-          "datum": "2026-09-01"
-        },
         {
           "titel": "Vit A Sommerherde (falls noetig)",
           "kategorie": "allgemein",
@@ -1205,6 +1040,12 @@
           "kategorie": "allgemein",
           "source": "task",
           "datum": "2026-09-22"
+        },
+        {
+          "titel": "Pferde: 1. Impfung Pferdesterbe + Tetanus",
+          "kategorie": "haustiere",
+          "source": "task",
+          "datum": "2027-09-01"
         },
         {
           "titel": "Ansitze pruefen",
@@ -1267,17 +1108,29 @@
         }
       ],
       "weide": [],
-      "haus_hof": []
+      "haus_hof": [
+        {
+          "titel": "Schlachteraum + Buero: Inspektion & aufraeumen",
+          "kategorie": "wohnhaus",
+          "source": "task",
+          "datum": "2026-10-31"
+        },
+        {
+          "titel": "Fitting-Raum aufraeumen",
+          "kategorie": "wohnhaus",
+          "source": "task",
+          "datum": "2026-10-31"
+        },
+        {
+          "titel": "Werkzeugkammer Werner aufraeumen",
+          "kategorie": "wohnhaus",
+          "source": "task",
+          "datum": "2026-10-31"
+        }
+      ]
     },
     "november": {
-      "jahresprogramm": [
-        {
-          "titel": "Bullen raus – Ende Winterdeckzeit",
-          "kategorie": "weide",
-          "source": "task",
-          "datum": "2026-11-15"
-        }
-      ],
+      "jahresprogramm": [],
       "rinder": [
         {
           "titel": "Supervax alle Kuethe + evtl. Vit A",
