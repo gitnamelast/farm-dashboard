@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-08-08T08:00:49",
+  "exportiert_am": "2026-08-08T08:20:27",
   "aufgaben": {
     "heute": [
       {
@@ -276,7 +276,7 @@
       "temp_max": 15.1,
       "temp_min": 9.6,
       "rainfall_24h": 0.0,
-      "wind_speed": 1.8
+      "wind_speed": 1.9
     },
     "vorhersage": [
       {
