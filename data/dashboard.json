@@ -1,6 +1,6 @@
 {
   "passwort_hash": "735e0804559bf305b77bab2adfc99e89d8d4aa5d79531169cf47a88d145e160b",
-  "exportiert_am": "2026-08-13T08:00:53",
+  "exportiert_am": "2026-08-14T08:00:57",
   "aufgaben": {
     "heute": [
       {
@@ -537,59 +537,59 @@
   },
   "wetter": {
     "aktuell": {
-      "temp_max": 12.4,
-      "temp_min": 7.5,
+      "temp_max": 15.0,
+      "temp_min": 11.0,
       "rainfall_24h": 0.0,
-      "wind_speed": 2.3
+      "wind_speed": 2.4
     },
     "vorhersage": [
-      {
-        "date": "2026-08-13",
-        "wcode": 0,
-        "temp_max": 24.2,
-        "temp_min": 8.4,
-        "rain": 0
-      },
       {
         "date": "2026-08-14",
         "wcode": 0,
         "temp_max": 24.7,
-        "temp_min": 9.4,
+        "temp_min": 9.9,
         "rain": 0
       },
       {
         "date": "2026-08-15",
         "wcode": 0,
-        "temp_max": 24.4,
-        "temp_min": 10.0,
+        "temp_max": 24.7,
+        "temp_min": 10.2,
         "rain": 0
       },
       {
         "date": "2026-08-16",
         "wcode": 0,
-        "temp_max": 24.0,
-        "temp_min": 8.9,
+        "temp_max": 24.3,
+        "temp_min": 9.4,
         "rain": 0
       },
       {
         "date": "2026-08-17",
         "wcode": 0,
-        "temp_max": 23.7,
-        "temp_min": 8.6,
+        "temp_max": 23.5,
+        "temp_min": 8.3,
         "rain": 0
       },
       {
         "date": "2026-08-18",
         "wcode": 0,
-        "temp_max": 25.9,
-        "temp_min": 8.9,
+        "temp_max": 25.2,
+        "temp_min": 9.0,
         "rain": 0
       },
       {
         "date": "2026-08-19",
         "wcode": 0,
-        "temp_max": 26.5,
-        "temp_min": 9.5,
+        "temp_max": 27.9,
+        "temp_min": 10.3,
+        "rain": 0
+      },
+      {
+        "date": "2026-08-20",
+        "wcode": 0,
+        "temp_max": 26.9,
+        "temp_min": 11.1,
         "rain": 0
       }
     ]
@@ -832,12 +832,6 @@
     ]
   },
   "kalender": [
-    {
-      "datum": "2026-08-13",
-      "titel": "Hackel casing erneurn",
-      "kategorie": "allgemein",
-      "besitzer": "shared"
-    },
     {
       "datum": "2026-08-15",
       "titel": "Sommerherde Traechtigkeitsuntersuchung",
